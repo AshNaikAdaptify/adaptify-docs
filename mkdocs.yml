@@ -26,7 +26,13 @@ markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, 
 nav:
   - Home: index.md
   - Get Started: [get-started/index.md, get-started/components.md, get-started/sign-in.md]
-  - Product Vault: [product-vault/index.md]
+  - Product Vault:
+      - product-vault/index.md
+      - product-vault/before-you-start.md
+      - product-vault/create-product.md
+      - product-vault/import-documents.md
+      - product-vault/process-documents.md
+      - product-vault/review-and-publish.md
   - Workbench: [workbench/index.md, workbench/projects.md]
   - Sandbox: [sandbox/index.md]
   - Filing Manager: [filing-manager/index.md]
