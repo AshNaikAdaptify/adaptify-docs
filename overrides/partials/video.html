@@ -1,0 +1,17 @@
+{#- Reusable video macro: YouTube/Vimeo URL -> responsive embed, else placeholder -#}
+{% macro video_embed(url) %}
+{% set src = "" %}
+{% if url %}
+  {% if "youtube.com/watch?v=" in url %}{% set src = "https://www.youtube-nocookie.com/embed/" ~ url.split("v=")[1].split("&")[0] %}
+  {% elif "youtu.be/" in url %}{% set src = "https://www.youtube-nocookie.com/embed/" ~ url.split("youtu.be/")[1].split("?")[0] %}
+  {% elif "vimeo.com/" in url %}{% set src = "https://player.vimeo.com/video/" ~ url.rstrip("/").split("/")[-1] %}
+  {% else %}{% set src = url %}{% endif %}
+{% endif %}
+<div class="adaptify-video">
+{% if src %}
+  <iframe src="{{ src }}" title="Product video" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+{% else %}
+  <div class="adaptify-video__placeholder"><span>&#9654;</span><p>Product video coming soon</p></div>
+{% endif %}
+</div>
+{% endmacro %}

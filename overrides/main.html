@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  {{ super() }}
+  {% set repo = config.extra.feedback_repo %}
+  {% set t = "[Docs feedback] " ~ page.title %}
+  {% set body_base = "Page: " ~ page.title ~ "\nPath: /" ~ page.url ~ "\nSource: docs/" ~ page.file.src_uri ~ "\n\n" %}
+  {% set up = body_base ~ "**What helped you most?**\n\n**Anything we could still improve?**\n" %}
+  {% set down = body_base ~ "**What was missing or unclear?**\n\n**What were you trying to do?**\n\n**Suggested fix (optional):**\n" %}
+  <div class="adaptify-feedback">
+    <p class="adaptify-feedback__q">Was this page helpful?</p>
+    <a class="md-button" target="_blank" rel="noopener" href="https://github.com/{{ repo }}/issues/new?labels=docs&title={{ (t ~ ' (helpful)') | urlencode }}&body={{ up | urlencode }}">&#128077; Yes</a>
+    <a class="md-button" target="_blank" rel="noopener" href="https://github.com/{{ repo }}/issues/new?labels=docs&title={{ (t ~ ' (needs work)') | urlencode }}&body={{ down | urlencode }}">&#128078; No</a>
+    <p class="adaptify-feedback__note">Opens a pre-filled GitHub issue.</p>
+  </div>
+  {#- Giscus comments: fill in repo-id / category-id from https://giscus.app and remove this comment wrapper to enable.
+  <script src="https://giscus.app/client.js"
+    data-repo="AshNaikAdaptify/adaptify-docs" data-repo-id="REPLACE_ME"
+    data-category="Docs feedback" data-category-id="REPLACE_ME"
+    data-mapping="pathname" data-strict="1" data-reactions-enabled="1"
+    data-emit-metadata="0" data-input-position="top" data-theme="light"
+    data-lang="en" crossorigin="anonymous" async></script>
+  -#}
+{% endblock %}

@@ -1,0 +1,34 @@
+site_name: Adaptify Docs
+site_url: https://ashnaikadaptify.github.io/adaptify-docs/
+site_description: Documentation for the Adaptify platform
+repo_url: https://github.com/AshNaikAdaptify/adaptify-docs
+repo_name: AshNaikAdaptify/adaptify-docs
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/adaptify-logo.png
+  favicon: assets/favicon.png
+  font: false
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-night, name: Switch to dark mode}
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-sunny, name: Switch to light mode}
+  features: [navigation.sections, navigation.expand, toc.follow, search.suggest, search.highlight]
+extra_css: [stylesheets/extra.css]
+extra:
+  feedback_repo: AshNaikAdaptify/adaptify-docs
+markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
+nav:
+  - Home: index.md
+  - Get Started: [get-started/index.md, get-started/components.md, get-started/sign-in.md]
+  - Product Vault: [product-vault/index.md]
+  - Workbench: [workbench/index.md, workbench/projects.md]
+  - Sandbox: [sandbox/index.md]
+  - Filing Manager: [filing-manager/index.md]
+  - Rating Catalog: [rating-catalog/index.md]
+  - Reference: [reference/glossary.md]
