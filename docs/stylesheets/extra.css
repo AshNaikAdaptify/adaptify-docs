@@ -1,6 +1,6 @@
 /* Adaptify brand (from adaptify.com CSS): cyan #00b5e2, light cyan #52d4ff, navy #111827, ink #000, grey #3d3d3d/#f2f2f2/#d6d6d6 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono&display=swap");
-:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono";--ad-cyan:#00b5e2;--ad-navy:#111827}
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono&display=swap");
+:root{--md-text-font:"Space Grotesk";--md-code-font:"JetBrains Mono";--ad-cyan:#00b5e2;--ad-navy:#111827}
 [data-md-color-scheme=default]{
   --md-primary-fg-color:#ffffff;--md-primary-bg-color:#111827;--md-primary-bg-color--light:#3d3d3d;
   --md-accent-fg-color:#00b5e2;--md-typeset-a-color:#0091b5;
