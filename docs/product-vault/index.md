@@ -1,45 +1,57 @@
 ---
 title: Product Vault overview
 goals:
-  - Understand what the Product Vault is and why it is the single source of truth
-  - Know which product assets the Vault holds
-  - See how the Vault fits into the Adaptify product lifecycle
-  - Find the right page for each Vault task
+  - Get a quick view of all your products in the Product Vault
+  - Switch between card and list views and open a product's jurisdictions
+  - Understand what a product is made of and what processing does
+  - Choose how to import: one jurisdiction at a time or many at once
 video: ""
 ---
 
 # Product Vault overview
 
-The **Product Vault** (the Vault) maintains your product assets: forms, rules, rates and supporting documents. It is the single source of truth for your products. Product, actuarial, compliance and filing teams all work from the same current version, so nobody has to hunt for the right file.
+The **Product Vault** (the Vault) stores all your existing products in one place, so you can take a quick look at any of them. It is the single source of truth for your forms, rules, rates and supporting documents.
 
-## What the Vault holds
+## Summary chips
 
-| Asset | Where you find it |
+The chips at the top of the Vault show:
+
+- **Products:** how many products are in the Vault
+- **Jurisdictions:** how many jurisdictions (states) they cover
+- **Lines of business:** how many lines they span
+- **Last updated:** when the Vault last changed
+
+## Browse your products
+
+You can view products as cards or as a list. `TODO verify` the view toggle's label and location.
+
+| View | Shows |
 |---|---|
-| Forms | **Forms** tab |
-| Manuals (rates and rules) | **Manuals** tab |
-| Rules | **Rules** tab, pulled from your manuals |
-| Supporting documents | **Supporting Materials** tab |
+| Card view | Each product as a card with its state count and last updated date |
+| List view | The same information as a table |
 
-Assets are organized by product and by **jurisdiction** (a state the product is available in). You upload, process and publish one jurisdiction at a time.
+Open a product to see its jurisdictions.
 
-## How the Vault fits the lifecycle
+## What a product contains
 
-1. The product's assets live in the Vault.
-2. The team opens a project in the **Project Workbench** to create or change a product.
-3. Actuaries test scenarios and settle rates and rules in the **Rating Sandbox**.
-4. **Filing Manager** carries the product through filing and approval.
-5. The **Rating Catalog** supplies the rater and services such as the clause library.
-6. Every finished change returns to the Vault, so it stays current.
+A product is made of:
 
-## The Vault journey
+| Asset | Tab |
+|---|---|
+| Forms | **Forms** |
+| Manuals | **Manuals** |
+| Rules, from your manuals | **Rules** |
+| Supporting documents | **Supporting Materials** |
 
-| Step | Page | Product status |
-|---|---|---|
-| 1. Get your tenant and lists ready | [Before you start](before-you-start.md) | |
-| 2. Create the product with its states | [Create a product](create-product.md) | |
-| 3. Upload documents for each state | [Import documents](import-documents.md) | **Pending Import** |
-| 4. Add metadata and process | [Process documents](process-documents.md) | **Processing** → **Processed** |
-| 5. Publish the jurisdiction | [Review and publish](review-and-publish.md) | Published (**Baseline**) |
+Manuals are split into rules and rate tables. When you import files, each one lands in the matching tab.
 
-Once a jurisdiction is published, your team can start a Product Update in the Workbench.
+After import, background processing reads your manuals and structures them into rates and rules. See [Process documents](process-documents.md).
+
+Products you import become the **Baseline**: the current version that later updates build on. See [Review and publish](review-and-publish.md).
+
+## Import a product
+
+Choose the way that fits your work:
+
+- **One jurisdiction at a time:** build the baseline state by state. Start with [Create a product](create-product.md), then [Import documents](import-documents.md) for each jurisdiction.
+- **Many jurisdictions at once:** use the inventory to populate the whole product from one view. `TODO verify` where the inventory is and how to open it.
