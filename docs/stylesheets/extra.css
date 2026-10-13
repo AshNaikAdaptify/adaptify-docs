@@ -1,6 +1,16 @@
-/* Adaptify brand (from adaptify.com CSS): cyan #00b5e2, light cyan #52d4ff, navy #111827, ink #000, grey #3d3d3d/#f2f2f2/#d6d6d6 */
+/* Adaptify docs theme
+ * Brand source: adaptify.com CSS (cyan #00b5e2, light cyan #52d4ff, navy #111827, greys #3d3d3d/#f2f2f2/#d6d6d6).
+ * To refresh the brand, change only the variables in the :root and [data-md-color-scheme] blocks below;
+ * every rule after them uses var(...). Light = scheme "default", dark = scheme "slate".
+ * Fonts: theme.font is false in mkdocs.yml, so fonts load from the Google Fonts @import below.
+ * Change the family there and in --md-text-font / --md-code-font / --ad-heading-font.
+ */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono&display=swap");
-:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono";--ad-cyan:#00b5e2;--ad-navy:#111827}
+:root{
+  --md-text-font:"Inter";--md-code-font:"JetBrains Mono";--ad-heading-font:"Space Grotesk",Inter,sans-serif;
+  --ad-cyan:#00b5e2;--ad-navy:#111827;--ad-white:#fff;--ad-grey-light:#d6d6d6;--ad-danger:#d90000;--ad-warning:#e0a100;
+  --ad-video-bg:var(--ad-navy);--ad-video-glow:#1d2b45;--ad-video-fg:var(--ad-white);--ad-video-muted:var(--ad-grey-light);--ad-video-play:var(--ad-cyan);
+  --ad-shadow:rgba(17,24,39,.08)}
 [data-md-color-scheme=default]{
   --md-primary-fg-color:#ffffff;--md-primary-bg-color:#111827;--md-primary-bg-color--light:#3d3d3d;
   --md-accent-fg-color:#00b5e2;--md-typeset-a-color:#0091b5;
@@ -39,7 +49,7 @@ body{-webkit-font-smoothing:antialiased}
 .md-nav__item .md-nav__link--active{font-weight:500}
 /* Typography */
 .md-typeset{font-size:.8rem;line-height:1.7;color:var(--md-default-fg-color--light)}
-.md-typeset h1,.md-typeset h2,.md-typeset h3{font-family:"Space Grotesk",Inter,sans-serif;color:var(--md-default-fg-color);letter-spacing:-.01em}
+.md-typeset h1,.md-typeset h2,.md-typeset h3{font-family:var(--ad-heading-font);color:var(--md-default-fg-color);letter-spacing:-.01em}
 .md-typeset h1{font-size:1.6rem;font-weight:600;margin:0 0 1rem}
 .md-typeset h2{font-size:1.05rem;font-weight:600;margin-top:2rem}
 .md-typeset strong{color:var(--md-default-fg-color);font-weight:600}
@@ -48,7 +58,7 @@ body{-webkit-font-smoothing:antialiased}
 /* Callouts & cards */
 .md-typeset .admonition,.md-typeset details{border:1px solid var(--ad-border)!important;border-radius:.6rem;box-shadow:none;background:var(--ad-subtle);font-size:.72rem}
 .md-typeset .admonition-title{background:transparent!important;font-weight:600}
-.md-typeset .warning>.admonition-title:before{background-color:#e0a100}
+.md-typeset .warning>.admonition-title:before{background-color:var(--ad-warning)}
 .md-typeset code{border-radius:.3rem;border:1px solid var(--ad-border)}
 /* Right rail */
 .md-nav--secondary .md-nav__title{font-size:.65rem;font-weight:500;color:var(--md-default-fg-color--lighter);background:none;box-shadow:none;padding-left:.6rem}
@@ -61,9 +71,9 @@ body{-webkit-font-smoothing:antialiased}
 /* Video */
 .adaptify-video{position:relative;width:100%;aspect-ratio:16/9;margin:0 0 1.6rem;border-radius:.7rem;overflow:hidden;border:1px solid var(--ad-border);background:var(--ad-navy)}
 .adaptify-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.adaptify-video__placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:radial-gradient(circle at 30% 20%,#1d2b45 0,#111827 60%)}
-.adaptify-video__placeholder span{display:flex;align-items:center;justify-content:center;width:3.2rem;height:3.2rem;border-radius:50%;background:#00b5e2;font-size:1.3rem;padding-left:.2rem}
-.adaptify-video__placeholder p{margin:.8rem 0 0;font-size:.8rem;font-weight:500;color:#d6d6d6}
+.adaptify-video__placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ad-video-fg);background:radial-gradient(circle at 30% 20%,var(--ad-video-glow) 0,var(--ad-video-bg) 60%)}
+.adaptify-video__placeholder span{display:flex;align-items:center;justify-content:center;width:3.2rem;height:3.2rem;border-radius:50%;background:var(--ad-video-play);font-size:1.3rem;padding-left:.2rem}
+.adaptify-video__placeholder p{margin:.8rem 0 0;font-size:.8rem;font-weight:500;color:var(--ad-video-muted)}
 /* Feedback */
 .adaptify-feedback{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--ad-border);display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 .adaptify-feedback__q{margin:0 .6rem 0 0!important;font-size:.72rem;font-weight:500;color:var(--md-default-fg-color)}
@@ -79,7 +89,7 @@ body{-webkit-font-smoothing:antialiased}
 .adaptify-btn:hover,.adaptify-btn[aria-pressed=true],.adaptify-btn[aria-expanded=true]{border-color:var(--ad-cyan);color:var(--ad-cyan)}
 .adaptify-star{font-size:.8rem;line-height:1}
 .adaptify-share{display:contents}
-.adaptify-share__menu{flex-basis:100%;box-sizing:border-box;display:flex;flex-direction:column;padding:.3rem;background:var(--md-default-bg-color);border:1px solid var(--ad-border);border-radius:.5rem;box-shadow:0 6px 20px rgba(17,24,39,.08)}
+.adaptify-share__menu{flex-basis:100%;box-sizing:border-box;display:flex;flex-direction:column;padding:.3rem;background:var(--md-default-bg-color);border:1px solid var(--ad-border);border-radius:.5rem;box-shadow:0 6px 20px var(--ad-shadow)}
 .adaptify-share__menu[hidden]{display:none}
 .adaptify-share__menu>*{border:0;border-radius:.3rem;text-align:left;padding:.35rem .5rem;display:block}
 .adaptify-share__menu>*[hidden]{display:none}
@@ -93,7 +103,7 @@ body{-webkit-font-smoothing:antialiased}
 .adaptify-bookmarks li{display:flex;align-items:center;justify-content:space-between;gap:.3rem;margin:.15rem 0}
 .adaptify-bookmarks a{color:var(--md-default-fg-color--light)}.adaptify-bookmarks a:hover{color:var(--ad-cyan)}
 .adaptify-bookmarks button{background:none;border:0;cursor:pointer;color:var(--md-default-fg-color--lighter);font-size:.75rem;line-height:1}
-.adaptify-bookmarks button:hover{color:#d90000}
+.adaptify-bookmarks button:hover{color:var(--ad-danger)}
 .adaptify-bookmarks__empty{color:var(--md-default-fg-color--lighter);font-size:.62rem}
 /* Support block */
 .adaptify-support{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--ad-border)}
