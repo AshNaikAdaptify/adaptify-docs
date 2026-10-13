@@ -1,6 +1,9 @@
 /* Adaptify brand (from adaptify.com CSS): cyan #00b5e2, light cyan #52d4ff, navy #111827, ink #000, grey #3d3d3d/#f2f2f2/#d6d6d6 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono&display=swap");
-:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono";--ad-cyan:#00b5e2;--ad-navy:#111827}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap");
+:root{--ad-font:"Inter",system-ui,sans-serif;--ad-font-code:"JetBrains Mono",monospace;--md-text-font:"Inter";--md-code-font:"JetBrains Mono";--ad-cyan:#00b5e2;--ad-navy:#111827;--ad-on-dark:#d6d6d6;--ad-warn:#e0a100;--ad-danger:#d90000;--ad-white:#fff;--ad-navy-2:#1d2b45;
+  --ad-size-body:.8rem;--ad-size-small:.68rem;--ad-size-h1:1.6rem;--ad-size-h2:1.05rem;--ad-size-h3:.9rem}
+body,.md-typeset,.md-nav,.md-header,.md-footer,.md-typeset table,.md-typeset .admonition,.md-typeset details{font-family:var(--ad-font)}
+.md-typeset code,.md-typeset pre{font-family:var(--ad-font-code)}
 [data-md-color-scheme=default]{
   --md-primary-fg-color:#ffffff;--md-primary-bg-color:#111827;--md-primary-bg-color--light:#3d3d3d;
   --md-accent-fg-color:#00b5e2;--md-typeset-a-color:#0091b5;
@@ -38,17 +41,17 @@ body{-webkit-font-smoothing:antialiased}
 .md-nav__link--active,.md-nav__link:hover{color:var(--ad-cyan)!important}
 .md-nav__item .md-nav__link--active{font-weight:500}
 /* Typography */
-.md-typeset{font-size:.8rem;line-height:1.7;color:var(--md-default-fg-color--light)}
-.md-typeset h1,.md-typeset h2,.md-typeset h3{font-family:"Space Grotesk",Inter,sans-serif;color:var(--md-default-fg-color);letter-spacing:-.01em}
-.md-typeset h1{font-size:1.6rem;font-weight:600;margin:0 0 1rem}
-.md-typeset h2{font-size:1.05rem;font-weight:600;margin-top:2rem}
+.md-typeset{font-size:var(--ad-size-body);line-height:1.7;color:var(--md-default-fg-color--light)}
+.md-typeset h1,.md-typeset h2,.md-typeset h3{font-family:var(--ad-font);color:var(--md-default-fg-color);letter-spacing:-.01em}
+.md-typeset h1{font-size:var(--ad-size-h1);font-weight:600;margin:0 0 1rem}
+.md-typeset h2{font-size:var(--ad-size-h2);font-weight:600;margin-top:2rem}
 .md-typeset strong{color:var(--md-default-fg-color);font-weight:600}
 .adaptify-eyebrow{margin:0 0 .25rem;font-size:.68rem;color:var(--md-default-fg-color--lighter)}
 .md-typeset .headerlink{opacity:0;color:var(--md-default-fg-color--lighter);margin-left:.3rem}.md-typeset :hover>.headerlink,.md-typeset .headerlink:focus{opacity:1}.md-typeset .headerlink:hover{color:var(--ad-cyan)}
 /* Callouts & cards */
-.md-typeset .admonition,.md-typeset details{border:1px solid var(--ad-border)!important;border-radius:.6rem;box-shadow:none;background:var(--ad-subtle);font-size:.72rem}
+.md-typeset .admonition,.md-typeset details{border:1px solid var(--ad-border)!important;border-radius:.6rem;box-shadow:none;background:var(--ad-subtle);font-size:var(--ad-size-body)}
 .md-typeset .admonition-title{background:transparent!important;font-weight:600}
-.md-typeset .warning>.admonition-title:before{background-color:#e0a100}
+.md-typeset .warning>.admonition-title:before{background-color:var(--ad-warn)}
 .md-typeset code{border-radius:.3rem;border:1px solid var(--ad-border)}
 /* Right rail */
 .md-nav--secondary .md-nav__title{font-size:.65rem;font-weight:500;color:var(--md-default-fg-color--lighter);background:none;box-shadow:none;padding-left:.6rem}
@@ -61,9 +64,9 @@ body{-webkit-font-smoothing:antialiased}
 /* Video */
 .adaptify-video{position:relative;width:100%;aspect-ratio:16/9;margin:0 0 1.6rem;border-radius:.7rem;overflow:hidden;border:1px solid var(--ad-border);background:var(--ad-navy)}
 .adaptify-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.adaptify-video__placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:radial-gradient(circle at 30% 20%,#1d2b45 0,#111827 60%)}
-.adaptify-video__placeholder span{display:flex;align-items:center;justify-content:center;width:3.2rem;height:3.2rem;border-radius:50%;background:#00b5e2;font-size:1.3rem;padding-left:.2rem}
-.adaptify-video__placeholder p{margin:.8rem 0 0;font-size:.8rem;font-weight:500;color:#d6d6d6}
+.adaptify-video__placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ad-white);background:radial-gradient(circle at 30% 20%,var(--ad-navy-2) 0,var(--ad-navy) 60%)}
+.adaptify-video__placeholder span{display:flex;align-items:center;justify-content:center;width:3.2rem;height:3.2rem;border-radius:50%;background:var(--ad-cyan);font-size:1.3rem;padding-left:.2rem}
+.adaptify-video__placeholder p{margin:.8rem 0 0;font-size:.8rem;font-weight:500;color:var(--ad-on-dark)}
 /* Feedback */
 .adaptify-feedback{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--ad-border);display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 .adaptify-feedback__q{margin:0 .6rem 0 0!important;font-size:.72rem;font-weight:500;color:var(--md-default-fg-color)}
@@ -93,7 +96,7 @@ body{-webkit-font-smoothing:antialiased}
 .adaptify-bookmarks li{display:flex;align-items:center;justify-content:space-between;gap:.3rem;margin:.15rem 0}
 .adaptify-bookmarks a{color:var(--md-default-fg-color--light)}.adaptify-bookmarks a:hover{color:var(--ad-cyan)}
 .adaptify-bookmarks button{background:none;border:0;cursor:pointer;color:var(--md-default-fg-color--lighter);font-size:.75rem;line-height:1}
-.adaptify-bookmarks button:hover{color:#d90000}
+.adaptify-bookmarks button:hover{color:var(--ad-danger)}
 .adaptify-bookmarks__empty{color:var(--md-default-fg-color--lighter);font-size:.62rem}
 /* Support block */
 .adaptify-support{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--ad-border)}
@@ -102,3 +105,7 @@ body{-webkit-font-smoothing:antialiased}
 .adaptify-support__links a{color:var(--md-default-fg-color--light)!important;text-decoration:underline;text-decoration-color:var(--ad-border);text-underline-offset:3px}
 .adaptify-support__links a:hover{color:var(--ad-cyan)!important}
 .md-nav--primary .adaptify-actions{display:none}
+
+.md-typeset h3{font-size:var(--ad-size-h3);font-weight:600}
+.md-typeset table:not([class]){font-size:var(--ad-size-body)}
+.md-typeset ol,.md-typeset ul,.md-typeset p{font-size:inherit}
