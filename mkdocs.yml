@@ -27,7 +27,7 @@ extra:
 markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
 nav:
   - Home: index.md
-  - Get Started: [get-started/index.md, get-started/components.md, get-started/sign-in.md]
+  - Get Started: [get-started/index.md, get-started/dashboard.md, get-started/components.md, get-started/sign-in.md]
   - Product Vault:
       - product-vault/index.md
       - product-vault/before-you-start.md
