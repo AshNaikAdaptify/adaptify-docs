@@ -20,8 +20,10 @@ theme:
       toggle: {icon: material/weather-sunny, name: Switch to light mode}
   features: [navigation.sections, navigation.expand, toc.follow, search.suggest, search.highlight]
 extra_css: [stylesheets/extra.css]
+extra_javascript: [javascripts/features.js]
 extra:
   feedback_repo: AshNaikAdaptify/adaptify-docs
+  support_url: https://adaptify.com/  # TODO: replace with the real Adaptify support URL
 markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
 nav:
   - Home: index.md
@@ -38,3 +40,4 @@ nav:
   - Filing Manager: [filing-manager/index.md]
   - Rating Catalog: [rating-catalog/index.md]
   - Reference: [reference/glossary.md]
+  - Support: [support/index.md]

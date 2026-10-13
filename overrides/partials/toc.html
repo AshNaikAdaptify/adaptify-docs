@@ -1,3 +1,18 @@
+{% if page and page.file %}
+<div class="adaptify-actions">
+  <button type="button" class="adaptify-btn" data-bookmark aria-pressed="false" title="Bookmark this page"><span class="adaptify-star">&#9734;</span> <span data-bookmark-label>Bookmark</span></button>
+  <div class="adaptify-share">
+    <button type="button" class="adaptify-btn" data-share-toggle aria-expanded="false">Share</button>
+    <div class="adaptify-share__menu" hidden>
+      <button type="button" data-share="copy">Copy link</button>
+      <a data-share="email" href="#">Email</a>
+      <button type="button" data-share="native" hidden>Share via&hellip;</button>
+      <button type="button" data-share="md">Copy page as Markdown</button>
+    </div>
+  </div>
+  <span class="adaptify-toast" role="status" aria-live="polite"></span>
+</div>
+{% endif %}
 {% if page.meta and page.meta.goals %}
 <div class="adaptify-goals">
   <p class="adaptify-goals__title">What this page helps you do</p>
