@@ -5,12 +5,12 @@
 {% set has_video = page.meta and "video" in page.meta %}
 {% if "\u003ch1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
-  {% if has_video %}{{ video_embed(page.meta.video) }}{% endif %}
+  {% if has_video %}{{ video_embed(page.meta.video, page.meta.video_poster | d("")) }}{% endif %}
   {{ page.content }}
 {% elif has_video %}
   {% set parts = page.content.split("</h1>", 1) %}
   {{ parts[0] }}</h1>
-  {{ video_embed(page.meta.video) }}
+  {{ video_embed(page.meta.video, page.meta.video_poster | d("")) }}
   {{ parts[1] }}
 {% else %}
   {{ page.content }}
