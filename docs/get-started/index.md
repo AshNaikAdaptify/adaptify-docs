@@ -6,7 +6,8 @@ goals:
   - Explore Product Vault, Project Workbench, Rating Sandbox, and Filing Manager
   - Open the Dashboard to manage your actions and activities
   - Bring products into the Product Vault
-video: ""
+video: ../assets/get-started/getting-started-demo.mp4
+video_poster: ../assets/get-started/getting-started-demo-poster.png
 ---
 
 # Get Started
