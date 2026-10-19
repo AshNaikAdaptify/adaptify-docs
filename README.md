@@ -9,9 +9,12 @@ Published site: https://ashnaikadaptify.github.io/adaptify-docs/
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-.venv/bin/mkdocs serve          # http://127.0.0.1:8000
-.venv/bin/mkdocs build --strict # check before opening a PR
+DOCS_AUDIENCE=internal .venv/bin/mkdocs serve    # http://127.0.0.1:8000
+DOCS_AUDIENCE=internal .venv/bin/mkdocs build --strict
+DOCS_AUDIENCE=external .venv/bin/mkdocs build --strict --site-dir site-external
 ```
+
+`DOCS_AUDIENCE` is required. It is `internal` or `external`, and it does not default.
 
 ## Layout
 
@@ -24,10 +27,19 @@ python3 -m venv .venv
 ```yaml
 ---
 title: Page title
+audience: external   # or internal; required, any capitalization, no default
 goals:
   - What the reader can do after reading
 video: ""   # YouTube or Vimeo URL; empty shows a "coming soon" placeholder
 ---
 ```
+
+Every page needs `audience`. A page without it fails the build. `internal` publishes the staff site (every page). `external` is the customer site: internal pages are left out of the HTML, the search index and the sitemap, and so are `docs/assets/internal/` and assets that only internal pages use.
+
+## Publish
+
+Pull requests build both sites in strict mode. A merge to `main` publishes the **internal** site to GitHub Pages. The repo is public, so that site is publicly readable. Internal docs move to AWS when budget allows.
+
+Do not run `mkdocs gh-deploy`. It force-pushes `gh-pages` and deletes the `pr-preview/` directories that pull request previews use.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how docs cycles work.

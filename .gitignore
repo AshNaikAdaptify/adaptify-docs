@@ -1,4 +1,6 @@
 site/
+site-internal/
+site-external/
 .venv/
 __pycache__/
 .DS_Store

@@ -97,3 +97,6 @@ nav:
       - Glossary: reference/glossary.md
   - Support:
       - Support: support/index.md
+
+hooks:
+  - hooks/audience.py
