@@ -39,12 +39,19 @@ nav:
       - product-vault/import-documents.md
       - product-vault/process-documents.md
       - product-vault/review-and-publish.md
+      - product-vault/releases.md
       - Product import:
           - product-vault/product-import/index.md
           - product-vault/product-import/create-product.md
           - product-vault/product-import/upload-files.md
           - product-vault/product-import/process-and-extract-rules.md
-  - Workbench: [workbench/index.md, workbench/projects.md]
+  - Workbench:
+      - workbench/index.md
+      - Create a project:
+          - workbench/create-project/index.md
+          - workbench/create-project/product-update.md
+      - workbench/update-forms.md
+      - workbench/update-rates.md
   - Sandbox: [sandbox/index.md]
   - Filing Manager: [filing-manager/index.md]
   - Rating Catalog: [rating-catalog/index.md]

@@ -1,32 +1,42 @@
 ---
 title: Review and publish
+audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Confirm rule numbering pulled from your manuals
-  - Publish a processed jurisdiction with the right type, subtypes and effective date
+  - Check a state's files before you publish
+  - Publish a state so it becomes the product's Baseline release
   - Get the product ready for updates in the Workbench
 video: ""
 ---
 
 # Review and publish
 
-Publishing makes a processed jurisdiction the current baseline in the Vault. Your team needs a published product before they can update it in the **Project Workbench**.
+Publishing a state makes its files the product's **Baseline** release in the Vault, marked **Current release**. You need a published state before your team can update it in the Workbench.
 
-## 1. Check rules
+## Before you start
 
-Rules are pulled from your manuals. Open **Rules** and expand the tree, for example `1 MANUAL FORMAT` → `1.1 Multistate Rules Manual`. Make sure numbering is complete. If something is missing, check the manual editions on the **Manuals** tab.
+- Upload the state's files and add their metadata.
+- Run [Process documents](process-documents.md) and check the **Rules** tab.
 
-## 2. Publish
+## Publish a state
 
-1. Select **Review & Publish**.
-2. Review the counts. **Information Pending** should be 0 for Manuals, Forms and Supporting Materials.
-3. Choose the **Type of Insurance**, for example `19.0 Personal Auto`.
-4. Check each **Subtype of Insurance** that applies.
-5. Set the **Effective Date**.
-6. Select **Publish**.
-7. Confirm the release shows as **Baseline** under Product Resources. `TODO verify` exact label.
+1. In **Product Vault**, open the product and choose the state under **Jurisdiction**.
+2. Choose **Review & publish**. The **Review and publish product** panel opens.
+3. Check the cards for **Manual**, **Rates**, **Forms** and **Supporting Materials**. Each shows **Files uploaded** and **Information pending**. Information pending should be 0.
+4. Choose the **Type of insurance**. Then choose the **Subtype of insurance**, if one applies.
+5. Pick the **New business effective date** and the **Renewal effective date** from the calendar.
+6. Read the note **This action cannot be undone**, then publish. `TODO verify` the publish button's label.
 
-Repeat for each jurisdiction you want to publish.
+The state's release now shows as **Baseline** with the **Current release** chip, and the dates you picked under **New business** and **Renewal**. Repeat for each state.
 
-## What's next
+!!! tip "Dates"
+    Pick dates from the calendar. Typed dates may not be saved.
 
-Start a Product Update in the Workbench: **Workbench** → **+ New Project** → **Product Update**. `TODO verify` once the Workbench pages are written.
+## If you can't publish
+
+- **"Failed to publish Product state":** check that no other product uses the same form file name. Upload the form with a file name of its own, then publish again.
+- **A document's edition or title is locked:** this can happen when a document is shared across states before its metadata is added. Add a document's metadata before you share it with other states.
+
+## Next
+
+- [Understand releases](releases.md)
+- [Start a product update](../workbench/create-project/product-update.md)
