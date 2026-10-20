@@ -1,0 +1,65 @@
+{#-
+  Primary sidebar. Home is the nav tree; Bookmarks is the saved-page list.
+  Section links come from navigation.indexes (unlabeled index.md as the first child).
+-#}
+{% import "partials/nav-item.html" as item with context %}
+{% set class = "md-nav md-nav--primary" %}
+{% if "navigation.tabs" in features %}
+  {% set class = class ~ " md-nav--lifted" %}
+{% endif %}
+{% if "toc.integrate" in features %}
+  {% set class = class ~ " md-nav--integrated" %}
+{% endif %}
+<nav class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-nav__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    {{ config.site_name }}
+  </label>
+  {% if config.repo_url %}
+    <div class="md-nav__source">
+      {% include "partials/source.html" %}
+    </div>
+  {% endif %}
+  <div class="adaptify-sidenav">
+    <div class="adaptify-sidenav__tabs" role="tablist" aria-label="Sidebar">
+      <button type="button" class="adaptify-sidenav__tab" role="tab" id="adaptify-tab-home" aria-controls="adaptify-panel-home" aria-selected="true" tabindex="0">Home</button>
+      <button type="button" class="adaptify-sidenav__tab" role="tab" id="adaptify-tab-bookmarks" aria-controls="adaptify-panel-bookmarks" aria-selected="false" tabindex="-1">Bookmarks</button>
+    </div>
+    <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
+      <div class="adaptify-sidenav__tools">
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
+        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+      </div>
+      <ul class="md-nav__list" data-md-scrollfix>
+        {% for nav_item in nav.items %}
+          {% set path = "__nav_" ~ loop.index %}
+          {{ item.render(nav_item, path, 1) }}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-bookmarks" aria-labelledby="adaptify-tab-bookmarks" hidden tabindex="0">
+      <div class="adaptify-bookmarks" data-bookmarks></div>
+    </div>
+  </div>
+</nav>
+<script>
+(function () {
+  try {
+    if (localStorage.getItem("adaptify-sidebar-tab") !== "bookmarks") return;
+  } catch (e) { return; }
+  var home = document.getElementById("adaptify-tab-home");
+  var marks = document.getElementById("adaptify-tab-bookmarks");
+  var homePanel = document.getElementById("adaptify-panel-home");
+  var marksPanel = document.getElementById("adaptify-panel-bookmarks");
+  if (!home || !marks || !homePanel || !marksPanel) return;
+  home.setAttribute("aria-selected", "false");
+  home.tabIndex = -1;
+  marks.setAttribute("aria-selected", "true");
+  marks.tabIndex = 0;
+  homePanel.hidden = true;
+  marksPanel.hidden = false;
+})();
+</script>

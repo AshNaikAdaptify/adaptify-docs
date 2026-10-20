@@ -33,6 +33,16 @@
     data-lang="en" crossorigin="anonymous" async></script>
   -#}
 {% endblock %}
+{% block extrahead %}
+  <script>
+  try {
+    var adaptifyTab = localStorage.getItem("adaptify-sidebar-tab");
+    if (adaptifyTab === "home" || adaptifyTab === "bookmarks") {
+      document.documentElement.setAttribute("data-sidebar-tab", adaptifyTab);
+    }
+  } catch (e) {}
+  </script>
+{% endblock %}
 {% block scripts %}
   {% if page and page.file %}<script id="adaptify-page" type="application/json">{{ {"title": page.title, "md": page.markdown, "src": page.file.src_uri} | tojson }}</script>{% endif %}
   {{ super() }}
