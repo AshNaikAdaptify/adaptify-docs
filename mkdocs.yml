@@ -18,7 +18,7 @@ theme:
       primary: custom
       accent: custom
       toggle: {icon: material/weather-sunny, name: Switch to light mode}
-  features: [navigation.sections, navigation.expand, toc.follow, search.suggest, search.highlight]
+  features: [navigation.sections, navigation.expand, navigation.footer, toc.follow, search.suggest, search.highlight]
 extra_css: [stylesheets/extra.css]
 extra_javascript: [javascripts/features.js]
 extra:
@@ -45,6 +45,14 @@ nav:
           - product-vault/product-import/upload-files.md
           - product-vault/product-import/process-and-extract-rules.md
   - Workbench: [workbench/index.md, workbench/projects.md]
+  - Release to New Release:
+      - Overview: release-to-new-release/index.md
+      - 1. Update your product in Workbench: release-to-new-release/update-in-workbench.md
+      - 2. Create filings from your project: release-to-new-release/create-filings.md
+      - 4. File with the state and record the submission: release-to-new-release/submit-to-state.md
+      - 5. Track objections and responses: release-to-new-release/handle-objections.md
+      - 6. Record approval and archive: release-to-new-release/approve-and-archive.md
+      - 7. Check the new release: release-to-new-release/check-new-release.md
   - Sandbox: [sandbox/index.md]
   - Filing Manager: [filing-manager/index.md]
   - Rating Catalog: [rating-catalog/index.md]
