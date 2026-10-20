@@ -95,7 +95,12 @@ python3 - <<'PY'
 from pathlib import Path
 path = Path("docs/support/index.md")
 text = path.read_text(encoding="utf-8")
-text = text.replace("audience: internal\n", "", 1)
+start = text.find("audience:")
+if start < 0:
+    raise SystemExit("prove_audience: support has no audience line")
+line_end = text.find("\n", start)
+# Drop the whole line, including a trailing comment.
+text = text[:start] + text[line_end + 1:]
 path.write_text(text, encoding="utf-8")
 PY
 
@@ -121,7 +126,11 @@ python3 - <<'PY'
 from pathlib import Path
 path = Path("docs/support/index.md")
 text = path.read_text(encoding="utf-8")
-text = text.replace("audience: internal\n", "audience: staff\n", 1)
+start = text.find("audience:")
+if start < 0:
+    raise SystemExit("prove_audience: support has no audience line")
+line_end = text.find("\n", start)
+text = text[:start] + "audience: staff" + text[line_end:]
 path.write_text(text, encoding="utf-8")
 PY
 for mode in internal external; do

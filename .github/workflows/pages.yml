@@ -19,8 +19,10 @@ name: Pages
 on:
   push:
     branches: [main]
+  # ready_for_review is not in the default set. A cursor[bot] push does not
+  # start Actions; marking the PR ready does. closed still removes the preview.
   pull_request:
-    types: [opened, reopened, synchronize, closed]
+    types: [opened, reopened, synchronize, closed, ready_for_review]
 
 permissions:
   contents: write

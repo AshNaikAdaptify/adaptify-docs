@@ -8,7 +8,10 @@ name: CI
 # does not use that identity. It only reads the repo with the default token.
 
 on:
+  # ready_for_review is not in the default pull_request set. A push from
+  # cursor[bot] does not start Actions; marking the PR ready does.
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
   push:
     branches: [main]
 
