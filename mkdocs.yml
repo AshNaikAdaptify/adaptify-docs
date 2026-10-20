@@ -25,6 +25,22 @@ extra:
   feedback_repo: AshNaikAdaptify/adaptify-docs
   support_url: https://adaptify.com/  # TODO verify: placeholder until Ash confirms the real Adaptify support URL
 markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
+plugins:
+  - search
+  - redirects:
+      redirect_maps: {}
+      # Planned redirects. Add each one in the content PR that removes or moves
+      # that old page. Never add it while the source file still exists.
+      # Assets are not redirected.
+      # workbench/projects.md: workbench/create-project/index.md  # retired in PR #22
+      # product-vault/product-import/index.md: product-vault/bring-in-a-product.md
+      # product-vault/product-import/create-product.md: product-vault/create-product.md
+      # product-vault/product-import/upload-files.md: product-vault/import-documents.md
+      # product-vault/product-import/process-and-extract-rules.md: product-vault/process-documents/index.md
+      # Audience hook: redirects records pages in on_files, before that hook
+      # drops internal pages. A target excluded from the external build does
+      # not fail the build. The redirect HTML is still written; the target
+      # page is not in the external site. The internal build has both.
 nav:
   # Section order follows the site plan of record (site-plan-ash-v3.md). Planned sections
   # with no pages yet (added in later phases): Release to New Release (after Project
