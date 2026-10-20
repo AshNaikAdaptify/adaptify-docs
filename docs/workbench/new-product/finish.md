@@ -15,7 +15,7 @@ When the product's forms are in, move the project through its phases, then compl
 
 1. On the project, select **Submit**. It appears once the project has a form.
 2. The dialog shows the **Current phase** and **Next phase**. Under **Select Assignee**, choose the person. Add a **Due date** if you want one, enter your notes under **Add notes**, then select **Submit**. You see "Successfully submitted!".
-3. Repeat through **Select** → **Review** → **Approve** → **End**. From **Approve** to **End**, the dialog asks only for notes.
+3. Repeat through **Select** → **Review** → **Approve** → **End**. From **Approve** to **End**, the dialog asks only for notes. A rates project goes straight from **Select** to **End**.
 
 From **Review** on, the person in that phase can also select **Reject**. See [Move work through phases](../phases.md).
 
