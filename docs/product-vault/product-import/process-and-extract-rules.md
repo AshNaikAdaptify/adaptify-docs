@@ -9,8 +9,6 @@ video: ""
 
 # Process and extract rules
 
-**Audience:** External
-
 ## Configure rules
 
 This tells the Vault how to find rules in your manuals.

@@ -9,8 +9,6 @@ video: ""
 
 # Upload files for each state
 
-**Audience:** External
-
 You upload files one state at a time.
 
 ![Import page for a state, with tabs and the Browse files button](../../assets/product-import/upload-files.webp)

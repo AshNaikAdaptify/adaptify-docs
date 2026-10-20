@@ -12,9 +12,7 @@ video_poster: ../assets/get-started/getting-started-demo-poster.png
 
 # Get Started
 
-**Audience:** External
-
-Adaptify is Insurance Product Lifecycle Management solution.
+Adaptify is an Insurance Product Lifecycle Management (IPLM) platform.
 
 From concept through the operational life of a product, carriers manage the entire lifecycle in one platform.
 

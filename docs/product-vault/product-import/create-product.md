@@ -9,8 +9,6 @@ video: ""
 
 # Create the product
 
-**Audience:** External
-
 1. Open **Product Vault** and choose **Add product**.
 2. Enter a **Product name**.
 3. Enter a **Description**.

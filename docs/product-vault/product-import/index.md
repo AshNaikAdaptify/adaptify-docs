@@ -11,8 +11,6 @@ video_poster: ../../assets/product-import/product-import-demo-poster.png
 
 # Product import
 
-**Audience:** External
-
 Watch this one-minute demo to see how a product goes into the **Product Vault** (the Vault), from a new product to extracted rules.
 
 ## The four steps
