@@ -1,6 +1,6 @@
 ---
 title: Product import overview
-audience: External
+audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Watch a one-minute demo of a product import
   - See the four steps to bring a product into the Vault

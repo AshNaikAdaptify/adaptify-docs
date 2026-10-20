@@ -1,6 +1,6 @@
 ---
 title: Get Started
-audience: External
+audience: internal  # final audience: external (flips in a release PR)
 goals:
   - See how Adaptify covers the full product lifecycle
   - Explore Product Vault, Project Workbench, Rating Sandbox, and Filing Manager

@@ -1,6 +1,6 @@
 ---
 title: Create the product
-audience: External
+audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Add a new product to the Vault
   - Choose its line of business and states
