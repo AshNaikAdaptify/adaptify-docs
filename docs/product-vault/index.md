@@ -1,58 +1,44 @@
 ---
 title: Product Vault overview
-audience: internal
+audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Get a quick view of all your products in the Product Vault
-  - Switch between card and list views and open a product's jurisdictions
-  - Understand what a product is made of and what processing does
-  - Choose how to import: one jurisdiction at a time or many at once
+  - Find any product in the Product Vault and open one of its states
+  - Know what a product is made of and where each kind of file lives
+  - Choose how to bring a new product in
 video: ""
 ---
 
 # Product Vault overview
 
-The **Product Vault** (the Vault) stores all your existing products in one place, so you can take a quick look at any of them. It is the single source of truth for your forms, rules, rates and supporting documents.
+The **Product Vault** (the Vault) holds every product asset across lines, jurisdictions and releases, in one place. It's where your forms, manuals, rates, rules and supporting materials live.
 
-## Summary chips
+## At the top of the Vault
 
-The chips at the top of the Vault show:
+The summary cards show how many **Products**, **Lines of business** and **Jurisdictions** are in the Vault.
 
-- **Products:** how many products are in the Vault
-- **Jurisdictions:** how many jurisdictions (states) they cover
-- **Lines of business:** how many lines they span
-- **Last updated:** when the Vault last changed
+## Find a product
 
-## Browse your products
+Your products are listed in the **Product catalog**, with each product's **Status** and **Active work**.
 
-You can view products as cards or as a list. `TODO verify` the view toggle's label and location.
-
-| View | Shows |
-|---|---|
-| Card view | Each product as a card with its state count and last updated date |
-| List view | The same information as a table |
-
-Open a product to see its jurisdictions.
+1. Select **Product Vault** in the left navigation.
+2. Use **Search products...**, **Filters** or **Sort** to find the product.
+3. Open the product.
+4. Choose a state under **Jurisdiction**. A status chip next to it shows where that state stands, for example **Pending import** or **Processed**.
 
 ## What a product contains
 
-A product is made of:
+Each state of a product has these tabs. The count on each tab shows how many items it holds.
 
-| Asset | Tab |
+| Tab | Holds |
 |---|---|
-| Forms | **Forms** |
-| Manuals | **Manuals** |
-| Rules, from your manuals | **Rules** |
-| Supporting documents | **Supporting Materials** |
+| **Forms** | Policy forms and endorsements |
+| **Manual** | Manuals, which the Vault reads to find your rules |
+| **Rates** | Rate files. `TODO verify` what lands here when you import a product. |
+| **Rules** | Rules extracted from your manuals |
+| **Supporting Materials** | Supporting documents |
 
-Manuals are split into rules and rate tables. When you import files, each one lands in the matching tab.
+When you publish a state, its files become the product's **Baseline**: the first release that later updates build on. See [Review and publish](review-and-publish.md).
 
-After import, background processing reads your manuals and structures them into rates and rules. See [Process documents](process-documents.md).
+## Bring a product in
 
-Products you import become the **Baseline**: the current version that later updates build on. See [Review and publish](review-and-publish.md).
-
-## Import a product
-
-Choose the way that fits your work:
-
-- **One jurisdiction at a time:** build the baseline state by state. Start with [Create a product](create-product.md), then [Import documents](import-documents.md) for each jurisdiction.
-- **Many jurisdictions at once:** use the inventory to populate the whole product from one view. `TODO verify` where the inventory is and how to open it.
+New to the Vault? Follow [Bring a product into the Vault](bring-in-a-product.md). It takes you from a new product to a published state in four steps.

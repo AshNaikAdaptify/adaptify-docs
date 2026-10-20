@@ -38,16 +38,16 @@ nav:
       - "Your first 10 minutes: tour a product": get-started/quickstart.md
   - Product Vault:
       - Product Vault overview: product-vault/index.md
+      - Bring a product into the Vault: product-vault/bring-in-a-product.md
       - Before you start: product-vault/before-you-start.md
       - Create a product: product-vault/create-product.md
       - Upload documents for a state: product-vault/import-documents.md
-      - Add metadata and process documents: product-vault/process-documents.md
+      - Add metadata and process documents:
+          - product-vault/process-documents/index.md
+          - Add form numbers and editions: product-vault/process-documents/form-metadata.md
+          - Add manual editions and set up rules: product-vault/process-documents/manual-editions-and-rules.md
+          - Process documents and check the rules: product-vault/process-documents/run-processing.md
       - Review and publish: product-vault/review-and-publish.md
-      - Product import:
-          - product-vault/product-import/index.md
-          - product-vault/product-import/create-product.md
-          - product-vault/product-import/upload-files.md
-          - product-vault/product-import/process-and-extract-rules.md
   - Project Workbench:
       - Workbench overview: workbench/index.md
       - Create a project: workbench/create-project/index.md

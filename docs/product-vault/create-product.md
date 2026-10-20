@@ -1,34 +1,40 @@
 ---
 title: Create a product
-audience: internal
+audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Create a product in the Vault from your product list
-  - Choose the right line, Group and Underwriting Company
-  - Add every state the product needs at create time
+  - Add a new product to the Vault
+  - Choose its insurance type, lines of business, Group, Underwriting company and states
 video: ""
 ---
 
 # Create a product
 
+Creating a product gives it a place in the Vault. You add its files in the next step.
+
+## Before you start
+
+Your organization admin sets up the **Group** and **Underwriting company** lists once. See [Before you start](before-you-start.md).
+
 ## Steps
 
-1. Open **Product Vault** from the left navigation.
-2. Choose **Add Existing Product**. You can also start from **Import Product** on the Dashboard. `TODO verify` button labels.
-3. Choose the line and product, for example Personal → Auto.
-4. Enter the product name.
-5. Select the **Group** and a linked **Underwriting Company**.
-6. Select every state (jurisdiction) the product needs.
-7. Save the product, then open it and confirm the states appear.
+1. Open **Product Vault** and select **Add product**. (On the Dashboard, **Import product** also takes you to the Product Vault.)
+2. Enter a **Product name** and a **Description**.
+3. Choose an **Insurance type**, **Personal** or **Commercial**, then choose the **Lines of business**.
+4. Choose your **Group**, then your **Underwriting company**.
+5. Under **Jurisdictions**, select every state the product needs. Double-check them before you save, for example AK, not AZ.
+6. Select **Add product**.
+7. Find the product in the **Product catalog**. Its status shows **Pending import**, ready for its files.
 
-!!! warning "Choose states carefully"
-    Add all states when you create the product and double-check them before you save (for example AK, not AZ). A way to add a state to an existing product has not been documented yet. `TODO verify`
+!!! note
+    If **Underwriting company** shows **No Options**, its companies aren't linked to your Group yet. Ask your organization admin.
 
-## Example
+## Lines of business
 
-| Line | Product | States |
-|---|---|---|
-| Personal | Auto | AK, AL |
-| Personal | Homeowners | AK, AL |
-| Commercial | Motor Truck Cargo | AK, AL |
+Your organization's lists may differ. For example:
 
-Next: [Import documents](import-documents.md).
+| Insurance type | Lines of business |
+|---|---|
+| Personal | Homeowners, Auto, Dwelling Property, Homeowners By Peril |
+| Commercial | Builders Risk, Motor Truck Cargo, Inland Marine, Commercial Output |
+
+Next: [Upload documents for a state](import-documents.md).
