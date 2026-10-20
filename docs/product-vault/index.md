@@ -1,5 +1,6 @@
 ---
 title: Product Vault overview
+audience: internal
 goals:
   - Get a quick view of all your products in the Product Vault
   - Switch between card and list views and open a product's jurisdictions

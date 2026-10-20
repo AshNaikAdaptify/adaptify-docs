@@ -1,6 +1,6 @@
 ---
 title: Process and extract rules
-audience: External
+audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Tell the Vault how your manual headings are numbered
   - Process a state's documents and see the extracted rules
@@ -8,8 +8,6 @@ video: ""
 ---
 
 # Process and extract rules
-
-**Audience:** External
 
 ## Configure rules
 

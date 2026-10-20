@@ -1,5 +1,6 @@
 ---
 title: Support
+audience: internal
 goals:
   - Find the right way to get help with Adaptify
   - Report a problem with these docs
