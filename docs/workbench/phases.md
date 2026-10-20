@@ -15,13 +15,19 @@ Each Workbench project follows a workflow made of phases. When your part is done
 
 1. Go to **Workbench** and open the project. If your update covers several types, open the child project you're working on, for example the forms project (see [Update forms](update-forms.md)).
 2. Check the current phase on the project page.
-3. Select **Submit**.
+3. Select **Submit**. The dialog shows the **Current phase** and **Next phase**.
 4. Under **Select Assignee**, choose the person for the next phase.
 5. If you want a due date, pick it from the calendar. It's optional.
 6. Under **Add notes**, add notes for the next person, for example "Ready for review."
 7. Select **Submit**. You see "Successfully submitted!", and the project moves to the next phase.
 
-Moving from **Approve** to **End** asks only for notes. From **Review** on, the person in that phase can also select **Reject**.
+Moving from **Approve** to **End** asks only for notes.
+
+![Submit dialog: Current phase, Next phase, Select Assignee, Due date and Add notes](../assets/workbench/submit-dialog-assignee-notes.webp)
+
+![Submit dialog from Approve to End: Add notes only](../assets/workbench/submit-dialog-notes-only.webp)
+
+ From **Review** on, the person in that phase can also select **Reject**.
 
 !!! tip
     Pick dates from the calendar instead of typing them. Wait for the dialog to finish before you move on.
