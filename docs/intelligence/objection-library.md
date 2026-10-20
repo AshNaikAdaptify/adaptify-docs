@@ -18,4 +18,4 @@ The Objection Library holds past SERFF objections that states have raised. Look 
 
 ## Next
 
-To answer an objection on one of your filings, add it to the filing's **Objections** tab.
+To answer an objection on one of your filings, add it to the filing's **Objections** tab. See [Track objections and responses](../release-to-new-release/handle-objections.md).

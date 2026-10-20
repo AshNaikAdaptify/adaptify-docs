@@ -66,6 +66,14 @@ nav:
           - workbench/complete-project/index.md
           - Complete as Admitted (create filings): workbench/complete-project/admitted.md
           - Complete as Non-admitted: workbench/complete-project/non-admitted.md
+  - Release to New Release:
+      - Overview: release-to-new-release/index.md
+      - 1. Update your product in Workbench: release-to-new-release/update-in-workbench.md
+      - 2. Create filings from your project: release-to-new-release/create-filings.md
+      - 4. File with the state and record the submission: release-to-new-release/submit-to-state.md
+      - 5. Track objections and responses: release-to-new-release/handle-objections.md
+      - 6. Record approval and archive: release-to-new-release/approve-and-archive.md
+      - 7. Check the new release: release-to-new-release/check-new-release.md
   - Filing Manager:
       - Filing Manager overview: filing-manager/index.md
       - Filing statuses and dispositions: filing-manager/statuses.md
