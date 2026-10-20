@@ -5,7 +5,8 @@ goals:
   - See what each area of Adaptify is for
   - Find your way from the Dashboard to the Product Vault, Project Workbench, Filing Manager and Rating Sandbox
   - Know where to start your first task
-video: ""
+video: ../assets/get-started/get-started-tour.mp4
+video_poster: ../assets/get-started/get-started-tour-poster.png
 ---
 
 # Get Started
