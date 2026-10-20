@@ -35,6 +35,7 @@ nav:
       - Adaptify at a glance: get-started/components.md
       - Sign in and Org Setup: get-started/sign-in.md
       - Your Dashboard: get-started/dashboard.md
+      - "Your first 10 minutes: tour a product": get-started/quickstart.md
   - Product Vault:
       - Product Vault overview: product-vault/index.md
       - Before you start: product-vault/before-you-start.md
