@@ -4,7 +4,8 @@ audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Know what Adaptify is and what each component is for
   - Find where to start
-video: ""
+video: assets/introduction/adaptify-introduction.mp4
+video_poster: assets/introduction/adaptify-introduction-poster.png
 ---
 
 # Adaptify documentation

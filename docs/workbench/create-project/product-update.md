@@ -4,7 +4,8 @@ audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Start a project that updates a product's forms, rates or rules
   - Choose the product and states the update covers
-video: ""
+video: ../../../assets/workbench/start-a-product-update.mp4
+video_poster: ../../../assets/workbench/start-a-product-update-poster.png
 ---
 
 # Start a product update
