@@ -1,5 +1,6 @@
 ---
 title: Dashboard
+audience: internal
 goals:
   - Read the state of your company's products at a glance
   - Start common work from Quick Actions

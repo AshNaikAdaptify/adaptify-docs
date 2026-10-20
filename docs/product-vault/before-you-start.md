@@ -1,5 +1,6 @@
 ---
 title: Before you start
+audience: internal
 goals:
   - Sign in and confirm you are in the right tenant
   - Set up the Group and Underwriting Company lists that new products need
