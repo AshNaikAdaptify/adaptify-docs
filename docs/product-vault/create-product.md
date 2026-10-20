@@ -1,5 +1,6 @@
 ---
 title: Create a product
+audience: internal
 goals:
   - Create a product in the Vault from your product list
   - Choose the right line, Group and Underwriting Company

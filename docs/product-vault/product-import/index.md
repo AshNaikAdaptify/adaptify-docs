@@ -1,6 +1,6 @@
 ---
 title: Product import overview
-audience: External
+audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Watch a one-minute demo of a product import
   - See the four steps to bring a product into the Vault
@@ -10,8 +10,6 @@ video_poster: ../../assets/product-import/product-import-demo-poster.png
 ---
 
 # Product import
-
-**Audience:** External
 
 Watch this one-minute demo to see how a product goes into the **Product Vault** (the Vault), from a new product to extracted rules.
 
