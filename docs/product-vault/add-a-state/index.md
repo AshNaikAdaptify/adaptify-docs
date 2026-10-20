@@ -8,11 +8,11 @@ video: ""
 
 # Add a state to a product
 
-To sell a product in a new state, start from what's already in the Vault rather than rebuilding it.
+There are two ways to add a state. Both are valid. Which one you use depends on whether you already have the product in that state.
 
-| Way | Use it when | Guide |
+## Which way to use
+
+| Your situation | Use | Guide |
 |---|---|---|
-| **In Workbench**, with **New jurisdiction for existing product** (under **+ New project** → **New product**) | You want the new state to start from another state's forms, then review them and publish the new state's **Baseline**. | [Start a project to add a state](../../workbench/create-project/new-jurisdiction.md), then [Copy a state's forms to a new state](from-existing-state.md) |
-| **In the Product Vault**, with **Actions** → **Edit product** | You want the new state to start from its own files, uploaded the same way as your first states. | [Add a state with Edit product](edit-product.md) |
-
-`TODO verify` which way to recommend.
+| You already sell the product in the state, but the state was never added in Adaptify. | **Edit product** in the Product Vault (**Actions** → **Edit product**) | [Add a state with Edit product](edit-product.md) |
+| You're expanding into a new state where you don't have the product yet. | A **Workbench** project: **+ New project** → **New product** → **New jurisdiction for existing product** | [Start a project to add a state](../../workbench/create-project/new-jurisdiction.md), then [Copy a state's forms to a new state](from-existing-state.md) |

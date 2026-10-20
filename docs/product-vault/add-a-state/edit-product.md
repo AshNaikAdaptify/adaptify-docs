@@ -9,7 +9,7 @@ video: ""
 
 # Add a state with Edit product
 
-Use this when the new state starts from its own files, uploaded the same way as your first states.
+Use this when you already sell the product in the state, but the state was never added in Adaptify. If you're expanding into a new state where you don't have the product yet, [start a project to add a state](../../workbench/create-project/new-jurisdiction.md) instead.
 
 ## Steps
 
@@ -26,4 +26,4 @@ Use this when the new state starts from its own files, uploaded the same way as 
 
 Process and publish the new state like your first ones. See [Add metadata and process documents](../process-documents/index.md) and [Review and publish](../review-and-publish.md).
 
-To start the new state from another state's forms instead, see [Copy a state's forms to a new state](from-existing-state.md).
+To compare both ways, see [Add a state to a product](index.md).
