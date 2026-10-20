@@ -18,7 +18,7 @@ theme:
       primary: custom
       accent: custom
       toggle: {icon: material/weather-sunny, name: Switch to light mode}
-  features: [navigation.sections, navigation.expand, navigation.footer, toc.follow, search.suggest, search.highlight]
+  features: [navigation.sections, navigation.expand, toc.follow, search.suggest, search.highlight]
 extra_css: [stylesheets/extra.css]
 extra_javascript: [javascripts/features.js]
 extra:
