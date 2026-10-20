@@ -37,7 +37,8 @@ You set the approval type for each state when you complete a project as Admitted
 | Approval type | Meaning |
 |---|---|
 | **Prior approval** | The state must approve the filing before you use it. |
-| Other types | `TODO verify` the full list, for example "File and use". |
+| **File and use** | You file with the state and can use the filing once it's filed. |
+| **Use and file** | You can use the filing first, then file it within the state's deadline. |
 
 ## Objections
 

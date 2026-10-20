@@ -54,6 +54,8 @@ nav:
           - product-vault/add-a-state/index.md
           - Add a state with Edit product: product-vault/add-a-state/edit-product.md
           - Copy a state's forms to a new state: product-vault/add-a-state/from-existing-state.md
+      - Delete a State: product-vault/delete-a-state.md
+      - Delete Product: product-vault/delete-product.md
   - Project Workbench:
       - Workbench overview: workbench/index.md
       - Create a project:
@@ -71,6 +73,8 @@ nav:
       - Build a new product in Workbench:
           - workbench/new-product/index.md
           - Start a new product project: workbench/new-product/start.md
+          - Add the product's documents: workbench/new-product/add-documents.md
+          - Finish and publish the new product: workbench/new-product/finish.md
   - Release to New Release:
       - Overview: release-to-new-release/index.md
       - 1. Update your product in Workbench: release-to-new-release/update-in-workbench.md

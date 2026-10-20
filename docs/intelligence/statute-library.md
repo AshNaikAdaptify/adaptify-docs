@@ -15,11 +15,13 @@ The **Statute Library** holds the tagged statutes behind the compliance check. E
 
 1. In the left navigation, under **Intelligence**, open **Statute Library**. The **Statutes** count shows how many are in the library.
 2. Choose a **State**.
-3. Narrow the list with **TOI scope** (type of insurance) or **Review status** (**draft** or **reviewed**). `TODO verify` the **TOI scope** options; they may only appear after you choose a state.
+3. Narrow the list with **TOI scope** (type of insurance) or **Review status** (**draft** or **reviewed**). **TOI scope** fills in once you choose a state. It's a searchable tree of types of insurance, starting with **All P&C lines (wildcard)**, then codes such as 01.0 — Property and 04.0 — Homeowners.
 4. To find a specific statute, type in the search box (section, title, requirement or trigger summary), then select **Search**.
 5. Select a statute's **Section** to open it. `TODO verify` what opens.
 
 To see only the statutes flagged for a second look, turn on **Needs review only**. Rows that get mostly negative feedback are flagged **needs review**. Select **Refresh** to reload the list.
+
+![Statute Library filtered to one state, with the TOI scope tree open](../assets/intelligence/statute-library-toi-scope.webp)
 
 ## What each column shows
 
