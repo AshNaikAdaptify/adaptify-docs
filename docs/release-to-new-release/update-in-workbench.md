@@ -13,11 +13,11 @@ Do this when a published product needs new editions of its forms or rates. One W
 
 ## Steps
 
-1. In **Workbench**, choose **+ New project**, then **Product update**.
+1. In **Workbench**, choose **+ New project**, then **Product update**. For each step in detail, see [Start a product update](../workbench/create-project/product-update.md).
 2. **Setup:** under **Project type**, choose **Forms**, **Rates** or both, then choose **Next**. If you choose both, you get one combined project with a child project for each type.
 3. **Configuration:** choose the **Product** and the **Jurisdictions**, for example Personal Auto in Alabama and Alaska. Choose **Next**.
 4. **Finalize:** enter the **Project title** and **Project description**, check the workflow for each type, and pick a **Due date** from the calendar. Choose **Create**.
-5. Open the forms child project and choose **Add form**. In **Add form changes**, choose **Update form**, select the forms, enter the **Updated edition** (for example 01 27) and choose **Change**. In the rates child project, do the same under **Add rate changes** with **Update rate**.
+5. Open the forms child project and choose **Add form**. In **Add form changes**, choose **Update form**, select the forms, enter the **Updated edition** (for example 01 27) and choose **Change**. In the rates child project, do the same under **Add rate changes** with **Update rate**. See [Update forms](../workbench/update-forms.md) and [Update rates](../workbench/update-rates.md).
 6. Move each child project forward with **Submit**. Choose a person under **Select Assignee**, add a **Due date** if you want one, and enter **Add notes**. Form projects move through **Select**, **Review**, **Approve** and **End**. Rate projects move from **Select** to **End**.
 
 When every child project reaches **End**, the combined project shows that all its projects are complete.
