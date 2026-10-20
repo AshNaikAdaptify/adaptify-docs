@@ -9,6 +9,9 @@ video: ""
 
 # Add the product's documents
 
+!!! note
+    This workflow is still being built, so steps and screens may change.
+
 After you [start a new product project](start.md), add the product's forms to it. A **Forms** project has a **Forms** tab only, with no **Rates** or **Rules** tabs.
 
 ## Add a form with its file
@@ -35,7 +38,7 @@ Repeat for each form. To change a form later, select **Edit form** on its row.
 
 ## Rates and rules
 
-A project has one type, so rates and rules each need their own project. Start it the same way as your forms project: **+ New project** → **New product** → the **New product** card, then choose **Rates** or **Rules** under **Project type**. Each wizard run asks for its own **Product information**. `TODO verify` how to add rates or rules to the same new product as your forms.
+A project has one type, so rates and rules each need their own project. Start it the same way as your forms project: **+ New project** → **New product** → the **New product** card, then choose **Rates** or **Rules** under **Project type**. Rates and rules projects merge into the product's release. They don't create a separate product.
 
 `TODO verify` what **Add existing document** asks for in a rates or rules project.
 
