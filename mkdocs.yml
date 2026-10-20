@@ -28,11 +28,10 @@ markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, 
 plugins:
   - search
   - redirects:
-      redirect_maps: {}
-      # Planned redirects. Add each one in the content PR that removes or moves
-      # that old page. Never add it while the source file still exists.
-      # Assets are not redirected.
-      # workbench/projects.md: workbench/create-project/index.md  # retired in PR #22
+      redirect_maps:
+        workbench/projects.md: workbench/create-project/index.md  # retired in PR #22
+      # The other four land in the content PR that retires each old page.
+      # Never add one while that source file still exists. Assets are not redirected.
       # product-vault/product-import/index.md: product-vault/bring-in-a-product.md
       # product-vault/product-import/create-product.md: product-vault/create-product.md
       # product-vault/product-import/upload-files.md: product-vault/import-documents.md
