@@ -9,6 +9,9 @@ video: ""
 
 # Finish and publish the new product
 
+!!! note
+    This workflow is still being built, so steps and screens may change.
+
 When the product's forms are in, move the project through its phases, then complete it. Completing it as **Non-admitted** puts the product in the Product Vault with its first release.
 
 ## Move the project to End

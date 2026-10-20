@@ -9,6 +9,9 @@ video: ""
 
 # Start a new product project
 
+!!! note
+    This workflow is still being built, so steps and screens may change.
+
 Start here when your team is building a brand-new insurance product. The **New product** wizard has five steps: **Product**, **Project**, **Configuration**, **Source** and **Finalize**. Select **Next** to move on, or **Back** to change an earlier step.
 
 ## Steps

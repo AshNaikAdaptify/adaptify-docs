@@ -9,6 +9,9 @@ video: ""
 
 # Build a new product in Workbench
 
+!!! note
+    This workflow is still being built, so steps and screens may change.
+
 A **New product** project takes a brand-new insurance product from idea to build in the Project Workbench (the Workbench). Your team works on it together, phase by phase, like any other project. When you complete it, the product lands in the Product Vault with its first release.
 
 ## The steps
