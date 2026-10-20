@@ -22,7 +22,7 @@ Use this to add a state to a product that's already in the Vault, for example ad
 
 ## Steps
 
-1. In **Workbench**, choose **+ New project**, then **New product**.
+1. In **Workbench**, choose **+ New project**, then **New product**. See [Create a project](../../workbench/create-project/index.md).
 2. **Product:** under **Product type**, choose **New jurisdiction for existing product**.
 3. **Project:** under **Project type**, choose **Forms**.
 4. **Configuration:** under **Product source type**, choose **Product Vault**. Choose the **Existing product**, the **Target jurisdiction** (for example Alaska) and the **Type of insurance**.
@@ -30,7 +30,7 @@ Use this to add a state to a product that's already in the Vault, for example ad
 6. Check the copied forms. Remove any form that only applies to the source state, such as an Alabama amendatory endorsement. `TODO verify` how to remove one.
 7. Move the project through its phases with **Submit**. At **End**, choose **Complete project**, then the **Non-admitted** tab. Check the preview of included and new assets, then confirm.
 
-In the Vault, the new state now has a **Baseline** release marked **Current release**.
+In the Vault, the new state now has a **Baseline** release marked **Current release**. See [Understand releases](../releases.md).
 
 ## Add the new state's own form
 

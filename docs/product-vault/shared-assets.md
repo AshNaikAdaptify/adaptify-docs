@@ -28,7 +28,7 @@ Add a document's metadata, such as its form number and edition, before you use i
 
 ## Update a shared form
 
-You update a shared form in a Workbench project, like any other form. Adaptify starts the change as a draft. The shared document and its unique key stay unchanged until you publish.
+You update a shared form in a Workbench project, like any other form. See [Update forms](../workbench/update-forms.md). Adaptify starts the change as a draft. The shared document and its unique key stay unchanged until you publish.
 
 ## Next
 
