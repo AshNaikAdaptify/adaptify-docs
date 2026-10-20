@@ -2,7 +2,7 @@
 title: Before you start
 audience: internal
 goals:
-  - Sign in and confirm you are in the right tenant
+  - Sign in and confirm your organization
   - Set up the Group and Underwriting Company lists that new products need
   - Check that your product list is ready
 video: ""
@@ -12,14 +12,9 @@ video: ""
 
 A few one-time setup steps make creating products in the Vault smooth.
 
-## Sign in and choose your tenant
+## Sign in
 
-1. Sign in with your email first, then your password.
-2. Open the user menu (your initials) and confirm the organization shown, for example `Organization — {tenant}`.
-3. To change tenant, choose **Switch Tenant** and select the tenant you want, then **Confirm**.
-
-!!! tip "Use a test tenant for practice"
-    Try new steps in a test tenant first. Administrators viewing another tenant see a yellow banner with **Switch Back**.
+Sign in and confirm your organization first. See [Sign in and Org Setup](../get-started/sign-in.md).
 
 ## Set up Group and Underwriting Company
 
