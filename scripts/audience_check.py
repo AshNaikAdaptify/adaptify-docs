@@ -183,7 +183,11 @@ def check(docs_dir: str, site_dir: str, expect: str, config_path: str) -> list[s
         return blob_hits[token]
 
     search = search_docs(site_dir)
-    if not search and planned.pages:
+    # An external build with no external pages has nothing to index. An empty
+    # index is correct there. When pages of that audience exist, an empty index
+    # means the build dropped them.
+    indexed = planned.external_pages if expect == "external" else planned.pages
+    if not search and indexed:
         failures.append("search index missing or empty: search/search_index.json")
     search_keys = set()
     for doc in search:

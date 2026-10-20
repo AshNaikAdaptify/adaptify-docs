@@ -37,6 +37,23 @@ echo "ZZ-SHARED-ASSET" > docs/assets/shared-marker.txt
 printf '\n\nZZ-INTERNAL-MARKER-glossary\n\n[only internal](../assets/only-internal/note.txt)\n\n[shared marker](../assets/shared-marker.txt)\n' >> docs/reference/glossary.md
 printf '\n\n[shared marker](../assets/shared-marker.txt)\n\n```\n[kept in fence](zz-fence-target.md)\n```\n' >> docs/get-started/index.md
 
+# The published tree may mark every page internal (until a release flips the
+# public set). The proof still needs one external page, so this scratch copy
+# marks Get Started external. The repo files are not changed.
+python3 - <<'PY'
+from pathlib import Path
+path = Path("docs/get-started/index.md")
+text = path.read_text(encoding="utf-8")
+start = text.find("audience:")
+if start < 0:
+    raise SystemExit("prove_audience: get-started has no audience line")
+line_end = text.find("\n", start)
+# Replace the whole line. A trailing comment can mention "external" while the
+# value is still internal.
+text = text[:start] + "audience: external" + text[line_end:]
+path.write_text(text, encoding="utf-8")
+PY
+
 DOCS_AUDIENCE=internal "$MKDOCS" build --strict -d "$WORK/site-internal"
 DOCS_AUDIENCE=external "$MKDOCS" build --strict -d "$WORK/site-external"
 
