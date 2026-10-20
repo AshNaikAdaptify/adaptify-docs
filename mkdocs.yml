@@ -44,9 +44,19 @@ nav:
           - product-vault/product-import/create-product.md
           - product-vault/product-import/upload-files.md
           - product-vault/product-import/process-and-extract-rules.md
-  - Workbench: [workbench/index.md, workbench/projects.md]
+  - Workbench:
+      - workbench/index.md
+      - workbench/projects.md
+      - Update rules: workbench/update-rules.md
+      - Move work through phases: workbench/phases.md
+      - "Complete a project: Admitted or Non-admitted":
+          - workbench/complete-project/index.md
+          - Complete as Admitted (create filings): workbench/complete-project/admitted.md
+          - Complete as Non-admitted: workbench/complete-project/non-admitted.md
   - Sandbox: [sandbox/index.md]
-  - Filing Manager: [filing-manager/index.md]
+  - Filing Manager:
+      - filing-manager/index.md
+      - Filing statuses and dispositions: filing-manager/statuses.md
   - Rating Catalog: [rating-catalog/index.md]
   - Reference: [reference/glossary.md]
   - Support: [support/index.md]
