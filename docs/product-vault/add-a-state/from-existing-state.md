@@ -12,6 +12,8 @@ video: ""
 
 Use this to add a state to a product that's already in the Vault, starting from another state's forms, for example adding Alaska to Personal Auto from its Alabama forms. The new state starts with the source state's forms. You then review them, add the new state's own forms and publish.
 
+Use this when you're expanding into a new state where you don't have the product yet. If you already sell the product in the state but it was never added in Adaptify, use [Add a state with Edit product](edit-product.md).
+
 !!! note "Check this flow on the current build"
     Steps 1–5 (the project wizard) were checked on the current build, without creating the project. Steps 6 and 7 and the new-form steps were checked on an earlier build. `TODO verify` them on the current build.
 
@@ -41,4 +43,4 @@ On the project, open **New document** and choose **New document** under **Docume
 - how to upload the form's file
 - the confirm button in **Complete project**
 
-To add a state from its own files instead, see [Add a state with Edit product](edit-product.md). To compare both ways, see [Add a state to a product](index.md).
+To compare both ways, see [Add a state to a product](index.md).
