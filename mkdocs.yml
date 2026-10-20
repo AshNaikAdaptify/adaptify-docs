@@ -56,8 +56,15 @@ nav:
           - Start a product update: workbench/create-project/product-update.md
       - Update forms: workbench/update-forms.md
       - Update rates: workbench/update-rates.md
+      - Update rules: workbench/update-rules.md
+      - Move work through phases: workbench/phases.md
+      - "Complete a project: Admitted or Non-admitted":
+          - workbench/complete-project/index.md
+          - Complete as Admitted (create filings): workbench/complete-project/admitted.md
+          - Complete as Non-admitted: workbench/complete-project/non-admitted.md
   - Filing Manager:
       - Filing Manager overview: filing-manager/index.md
+      - Filing statuses and dispositions: filing-manager/statuses.md
   - Rating Sandbox:
       - Rating Sandbox overview: sandbox/index.md
   - Rating Catalog:
