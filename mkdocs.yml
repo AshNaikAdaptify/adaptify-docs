@@ -66,6 +66,9 @@ nav:
           - workbench/complete-project/index.md
           - Complete as Admitted (create filings): workbench/complete-project/admitted.md
           - Complete as Non-admitted: workbench/complete-project/non-admitted.md
+      - Build a new product in Workbench:
+          - workbench/new-product/index.md
+          - Start a new product project: workbench/new-product/start.md
   - Release to New Release:
       - Overview: release-to-new-release/index.md
       - 1. Update your product in Workbench: release-to-new-release/update-in-workbench.md
