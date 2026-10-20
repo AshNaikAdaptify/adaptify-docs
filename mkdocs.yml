@@ -32,6 +32,7 @@ nav:
       - get-started/dashboard.md
       - get-started/components.md
       - get-started/sign-in.md
+      - get-started/quickstart.md
   - Product Vault:
       - product-vault/index.md
       - product-vault/before-you-start.md

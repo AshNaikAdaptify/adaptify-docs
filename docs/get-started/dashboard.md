@@ -1,53 +1,53 @@
 ---
-title: Dashboard
+title: Your Dashboard
+audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Read the state of your company's products at a glance
-  - Start common work from Quick Actions
-  - Find your tasks and active projects
-  - Catch up on recent activity across your organization
+  - Read what each summary card tells you
+  - Start work from Quick actions
+  - Pick up your next task and follow recent activity
 video: ""
 ---
 
-# Dashboard
+# Your Dashboard
 
-The Dashboard is the first page you see after you sign in. It shows where your products and projects stand, and gets you to your next task quickly.
+The Dashboard is the first page you see after you sign in. Use it to see where your work stands and to pick up your next task. To get back to it, choose **Dashboard** in the left navigation.
 
-## Summary chips
+## Read the summary cards
 
-The chips at the top show the state of your company's products at a glance.
-
-| Chip | What it shows |
+| Card | What it shows |
 |---|---|
-| **Active Projects** | Projects being worked on now in your organization |
-| **Pending Tasks** | Tasks waiting to be done in the system |
-| **Products in Vault** | Products in the [Product Vault](../product-vault/index.md) |
-| **Total Assets (Forms and Manuals)** | Forms and manuals locked and available in the products in the Vault |
+| **Active projects** | Projects in progress. `TODO verify` what it counts. |
+| **Pending tasks** | Tasks waiting to be done. `TODO verify` what it counts. |
+| **Products in Vault** | How many products are in the [Product Vault](../product-vault/index.md). |
+| **Total assets (forms and manuals)** | Forms and manuals across your products. `TODO verify` what it counts. |
 
-## Quick Actions
+## Start work from Quick actions
 
-Quick Actions make it easy to get started.
-
-| Action | Use it to |
+| Quick action | Use it to |
 |---|---|
-| **New Project** | Start a new project. `TODO verify` which screen opens. |
-| **Import Product** | Import a product you use today into the Vault. `TODO verify` which screen opens. |
-| **Workflow Management** | Set up and manage workflows. `TODO verify` which screen opens. |
-| **Team Management** | Manage your team and team members. `TODO verify` which screen opens. |
+| **New project** | Start a new project. |
+| **Import product** | Import a product to the Vault. |
+| **Workflow management** | Manage workflows. |
+| **Team management** | Manage your team. |
 
-## Your Tasks
+`TODO verify` the page each Quick action opens.
 
-**Your Tasks** lists the tasks you need to complete. Select **View All** to see the full list. `TODO verify` where View All leads.
+## Pick up your next task
 
-## Active Projects
+**Your tasks** lists the work assigned to you. Each row shows the item, its type (for example **Filing**), when it arrived (for example **Just now**) and its status (for example **Pending**). When you have nothing to do, it reads "You're all caught up".
 
-**Active Projects** lists the projects in progress. Select **View All** to see every active project. `TODO verify` where View All leads.
+- To work on a task, open its row. `TODO verify` that a row opens the item.
+- To see every task, choose **View all**. `TODO verify` where it leads.
 
-## Recent Activity
+## See the work underway
 
-**Recent Activity** is a feed of everything happening across your projects and products. Scan it to get up to speed on your organization quickly.
+**Active projects** lists the projects in progress. When there are none, it reads "No active projects yet". `TODO verify` opening a project from this list.
 
-## Common tasks
+## Catch up on recent activity
 
-- **Start a project:** select **New Project** in Quick Actions. To update a product, it must be published in the Vault first; see [Review and publish](../product-vault/review-and-publish.md).
-- **Import a product:** select **Import Product** in Quick Actions, then follow [Create a product](../product-vault/create-product.md) and [Import documents](../product-vault/import-documents.md).
-- **Check your tasks:** look at **Your Tasks**, or select **View All** for the full list.
+**Recent activity** sits below **Your tasks** and **Active projects**. Each entry says who did what, for example added a note, moved a project to **End**, created a project or archived a filing. Choose **View all** to see more.
+
+## Next
+
+- Take a [read-only tour of a product](quickstart.md).
+- See how a product moves through Adaptify in [Adaptify at a glance](components.md).
