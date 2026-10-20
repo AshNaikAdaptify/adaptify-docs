@@ -16,9 +16,9 @@ Use **Non-admitted** for states that don't need a filing, for example when you a
 1. Go to **Workbench** and open the project. Every child project should be at **End**.
 2. Select **Complete project**.
 3. Choose the **Non-admitted** tab.
-4. Select **Add non-admitted** and choose the **State**. Under **Release association**, choose **Create new release**. For a new state or a new product, the **Release version** is **Baseline**. `TODO verify` the other **Release association** choices for an existing state.
-5. Pick the **New business effective date** and **Renewal effective date** from the calendar and enter a **Description**. Then check the **Preview**: it lists each state, its release and each asset's change.
-6. Confirm. `TODO verify` the confirm button label.
+4. Select **Add non-admitted** and choose the **State**. Under **Release association**, choose **Create new release** or an existing release. For a new state or a new product, the **Release version** is **Baseline**. `TODO verify` how you choose an existing release.
+5. Pick the **New business effective date** and **Renewal effective date** from the calendar and enter a **Description**. Then select **Preview** and check it: it lists each state, its release and each asset's change.
+6. Select **Complete project**.
 7. Open **Product Vault**, then the product and state. The release you created is listed under **Release**. A new **Baseline** release is marked **Current release**, with no **Review & publish** step.
 
 !!! tip

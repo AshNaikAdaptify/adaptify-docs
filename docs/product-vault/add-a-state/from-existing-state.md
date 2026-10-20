@@ -30,7 +30,7 @@ Use this when you're expanding into a new state where you don't have the product
 4. **Configuration:** under **Product source type**, keep **Product Vault**. Choose the **Source product** and the **Source jurisdiction** to copy from, for example Alabama.
 5. **Source:** choose the **Target jurisdiction** (for example Alaska) and the **Type of insurance**. Then in **Finalize**, enter the **Project title**, **Project description**, **Workflow** and **Due date**, and select **Create project**. The project opens with the source state's forms on the **Forms** tab, each with the change type **Include**.
 6. Check the copied forms. The source state's own state-specific forms, such as an Alabama amendatory endorsement, can be copied too. This is a known issue. Remove any form that only applies to the source state. `TODO verify` how to remove one.
-7. Move the project through its phases with **Submit**. At **End**, choose **Complete project**, then the **Non-admitted** tab. Check the preview of included and new assets, then confirm.
+7. Move the project through its phases with **Submit**. At **End**, choose **Complete project**, then the **Non-admitted** tab. Check the preview of included and new assets, then select **Complete project**.
 
 In the Vault, the new state now has a **Baseline** release marked **Current release**. See [Understand releases](../releases.md).
 
@@ -40,6 +40,6 @@ On the project's **Forms** tab, select **Create form**. In **New document**, kee
 
 **New document** takes the form's details only, with no file upload (a known limitation). See [Add the product's documents](../../workbench/new-product/add-documents.md).
 
-`TODO verify` the confirm button in **Complete project**.
+In **Complete project**, you confirm with **Complete project** on the **Preview**.
 
 To compare both ways, see [Add a state to a product](index.md).

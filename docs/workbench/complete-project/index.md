@@ -14,7 +14,7 @@ When every child project has reached **End**, you finish the project with **Comp
 | Choose | When | Result |
 |---|---|---|
 | **Admitted** | The state needs a filing. | One filing per state in **Filing Manager**. The state gets its new release after the filing is approved and archived. |
-| **Non-admitted** | The state doesn't need a filing. `TODO verify` this guidance with Ash. | A new release in the **Product Vault**, with no filing. |
+| **Non-admitted** | The state doesn't need a filing. | A new release in the **Product Vault**, with no filing. |
 
 ## Before you start
 
