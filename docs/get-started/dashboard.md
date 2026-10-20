@@ -23,14 +23,12 @@ The Dashboard is the first page you see after you sign in. Use it to see where y
 
 ## Start work from Quick actions
 
-| Quick action | Use it to |
+| Quick action | What it opens |
 |---|---|
-| **New project** | Start a new project. |
-| **Import product** | Import a product to the Vault. |
-| **Workflow management** | Manage workflows. |
-| **Team management** | `TODO verify` what it's for. Its subtitle was cut off on screen. |
-
-`TODO verify` the page each Quick action opens.
+| **New project** | **Workbench**, where you choose **+ New project** to start a project. |
+| **Import product** | **Product Vault**, where you choose **Add product** to add a product. |
+| **Workflow management** | The list of your workflows, such as **Product Update** and **Rate Update**. Choose **New workflow** to add one. |
+| **Team management** | **Account management**, with the tabs **Overview**, **Users**, **Form numbering**, **AI configuration** and **Activity**. Choose **Add new user** to add someone. |
 
 ## Pick up your next task
 
