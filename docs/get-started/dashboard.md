@@ -28,7 +28,7 @@ The Dashboard is the first page you see after you sign in. Use it to see where y
 | **New project** | Start a new project. |
 | **Import product** | Import a product to the Vault. |
 | **Workflow management** | Manage workflows. |
-| **Team management** | Manage your team. |
+| **Team management** | `TODO verify` what it's for. Its subtitle was cut off on screen. |
 
 `TODO verify` the page each Quick action opens.
 
