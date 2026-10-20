@@ -30,7 +30,7 @@ Start here when your team is building a brand-new insurance product. The **New p
 
     ![Step 4, Product information with every field filled in](../../assets/workbench/new-product-step-product-information.webp)
 
-6. **Finalize:** under **Project details**, enter the **Project title** and **Project description**, choose the **Workflow**, and pick a **Due date** from the calendar. Under **Team setup**, you're listed in **Default members**. Add anyone else under **Additional members**.
+6. **Finalize:** under **Project details**, enter the **Project title** and **Project description**, and check the **Workflow**: **Product Update** for forms, **Rate Update** for rates or **Rule Update** for rules. Pick a **Due date** from the calendar. **Project description** and **Due date** are both required. Under **Team setup**, you're listed in **Default members**. Add anyone else under **Additional members**.
 
     ![Step 5, Finalize: Project details and Team setup, with the Create project button](../../assets/workbench/new-product-step-finalize.webp)
 
@@ -39,7 +39,7 @@ Start here when your team is building a brand-new insurance product. The **New p
 ![The new project right after Create project, with an empty Forms tab](../../assets/workbench/new-product-project-empty.webp)
 
 !!! tip
-    Pick the due date from the calendar. Typed dates may not be saved.
+    Pick the due date from the calendar, then press **Tab** to leave the field so the date registers. Typed dates may not be saved.
 
 If **Underwriting company** shows "No Options" for your group, ask your organization admin to set up the group's underwriting companies. `TODO verify` where admins set them up.
 

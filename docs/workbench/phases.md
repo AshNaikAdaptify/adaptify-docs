@@ -27,7 +27,7 @@ Moving from **Approve** to **End** asks only for notes.
 
 ![Submit dialog from Approve to End: Add notes only](../assets/workbench/submit-dialog-notes-only.webp)
 
- From **Review** on, the person in that phase can also select **Reject**.
+From **Review** on, the person in that phase can also select **Reject**.
 
 !!! tip
     Pick dates from the calendar instead of typing them. Wait for the dialog to finish before you move on.
@@ -38,7 +38,7 @@ Moving from **Approve** to **End** asks only for notes.
 |---|---|---|
 | Forms | **Product Update** | **Select** → **Review** → **Approve** → **End** |
 | Rates | **Rate Update** | **Select** → **End** |
-| Rules | **Rule Update** | `TODO verify` |
+| Rules | **Rule Update** | **Select** → **Review** → **Approve** → **End** |
 
 Your organization admin manages these workflows under **Workflow management** on the Dashboard. `TODO verify` whether your organization's workflows have the same phases.
 
