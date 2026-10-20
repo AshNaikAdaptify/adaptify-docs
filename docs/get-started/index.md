@@ -1,6 +1,6 @@
 ---
 title: Get Started
-audience: External
+audience: internal  # final audience: external (flips in a release PR)
 goals:
   - See how Adaptify covers the full product lifecycle
   - Explore Product Vault, Project Workbench, Rating Sandbox, and Filing Manager
@@ -12,9 +12,7 @@ video_poster: ../assets/get-started/getting-started-demo-poster.png
 
 # Get Started
 
-**Audience:** External
-
-Adaptify is Insurance Product Lifecycle Management solution.
+Adaptify is an Insurance Product Lifecycle Management (IPLM) platform.
 
 From concept through the operational life of a product, carriers manage the entire lifecycle in one platform.
 
