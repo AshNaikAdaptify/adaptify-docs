@@ -1,5 +1,6 @@
 ---
 title: Review and publish
+audience: internal
 goals:
   - Confirm rule numbering pulled from your manuals
   - Publish a processed jurisdiction with the right type, subtypes and effective date
