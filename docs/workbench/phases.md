@@ -13,7 +13,7 @@ Each Workbench project follows a workflow made of phases. When your part is done
 
 ## Steps
 
-1. Go to **Workbench** and open the project. If your update covers several types, open the child project you're working on, for example the forms project.
+1. Go to **Workbench** and open the project. If your update covers several types, open the child project you're working on, for example the forms project (see [Update forms](update-forms.md)).
 2. Check the current phase on the project page.
 3. Select **Submit**.
 4. Choose the assignee for the next phase. Select the circle next to the person's name. `TODO verify` the field labels in the Submit dialog.

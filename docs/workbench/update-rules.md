@@ -9,7 +9,7 @@ video: ""
 
 # Update rules
 
-A rules project changes the rules of a product that's already published in the Product Vault. You run it in the Project Workbench (the Workbench), like a forms or rates update.
+A rules project changes the rules of a product that's already published in the Product Vault. You run it in the Project Workbench (the Workbench), like a [forms](update-forms.md) or [rates](update-rates.md) update.
 
 ## Before you start
 
@@ -18,7 +18,7 @@ A rules project changes the rules of a product that's already published in the P
 
 ## Steps
 
-1. Go to **Workbench**, select **+ New project**, then choose **Product update**.
+1. Go to **Workbench**, select **+ New project**, then choose **Product update**. See [Start a product update](create-project/product-update.md).
 2. In **Setup**, under **Project type**, choose **Rules**. Select **Next**.
 3. In **Configuration**, choose the product and the states (jurisdictions) to change.
 4. In **Finalize**, enter a title and description, choose the **Rule Update** workflow, and pick a due date from the calendar. Select **Create**. `TODO verify` the Finalize field labels for a rules project.

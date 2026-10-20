@@ -28,4 +28,4 @@ Use **Non-admitted** for states that don't need a filing, for example when you a
 
 ## What happens next
 
-Check the new release in the Product Vault. To add the state's rules, see [Update rules](../update-rules.md).
+Check the new release in the Product Vault. See [Understand releases](../../product-vault/releases.md). To add the state's rules, see [Update rules](../update-rules.md).
