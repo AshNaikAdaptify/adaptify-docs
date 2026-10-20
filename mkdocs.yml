@@ -39,6 +39,10 @@ nav:
       - product-vault/import-documents.md
       - product-vault/process-documents.md
       - product-vault/review-and-publish.md
+      - product-vault/shared-assets.md
+      - Add a state to a product:
+          - product-vault/add-a-state/index.md
+          - product-vault/add-a-state/from-existing-state.md
       - Product import:
           - product-vault/product-import/index.md
           - product-vault/product-import/create-product.md
@@ -48,5 +52,9 @@ nav:
   - Sandbox: [sandbox/index.md]
   - Filing Manager: [filing-manager/index.md]
   - Rating Catalog: [rating-catalog/index.md]
+  - Intelligence:
+      - intelligence/index.md
+      - intelligence/objection-library.md
+  - Reports: [reports/index.md]
   - Reference: [reference/glossary.md]
   - Support: [support/index.md]
