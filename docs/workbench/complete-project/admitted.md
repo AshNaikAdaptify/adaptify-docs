@@ -16,7 +16,7 @@ Use **Admitted** for states that need a filing. Adaptify creates one filing for 
 1. Go to **Workbench** and open the project. Every child project should be at **End**.
 2. Select **Complete project**.
 3. Choose the **Admitted** tab. The filing owners load for your organization.
-4. For each state, choose the approval type, for example **Prior approval**, and the filing owner. `TODO verify` the field labels, and what the per-state **Filing** field controls.
+4. For each state, choose the **Approval Type** (**Prior approval**, **File and use** or **Use and file**) and the **Owner**. The dialog tells you how many filing projects it will create. `TODO verify` what the per-state **Filing** field controls.
 5. Review the summary, then confirm. `TODO verify` the confirm button label.
 6. Open **Filing Manager**. Each state has its own filing, named after your project and the state, for example "Filing - Personal Auto fall update (Form, Rate) (AL)".
 

@@ -11,17 +11,15 @@ video: ""
 
 Use **Non-admitted** for states that don't need a filing, for example when you add a new state to a product. Completing the project creates a release in the Product Vault directly.
 
-`TODO verify` all steps on the current build. They were checked on an earlier build.
-
 ## Steps
 
 1. Go to **Workbench** and open the project. Every child project should be at **End**.
 2. Select **Complete project**.
 3. Choose the **Non-admitted** tab.
-4. Add a configuration for each state, then create a new release or pick an existing one. `TODO verify` the labels for these choices.
-5. Pick the dates from the calendar, then select **Preview** and check what will change.
+4. Select **Add non-admitted** and choose the **State**. Under **Release association**, choose **Create new release**. For a new state or a new product, the **Release version** is **Baseline**. `TODO verify` the other **Release association** choices for an existing state.
+5. Pick the **New business effective date** and **Renewal effective date** from the calendar and enter a **Description**. Then check the **Preview**: it lists each state, its release and each asset's change.
 6. Confirm. `TODO verify` the confirm button label.
-7. Open **Product Vault**, then the product and state. The release you created is listed under **Release**. `TODO verify` whether it shows as the **Current release**.
+7. Open **Product Vault**, then the product and state. The release you created is listed under **Release**. A new **Baseline** release is marked **Current release**, with no **Review & publish** step.
 
 !!! tip
     **Preview** works only with dates picked from the calendar, not typed. Don't press Escape inside a date field: it closes the whole dialog.

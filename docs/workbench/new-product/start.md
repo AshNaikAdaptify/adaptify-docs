@@ -11,17 +11,19 @@ video: ""
 
 Start here when your team is building a brand-new insurance product.
 
-`TODO verify`: the wizard's details for **New product** haven't been checked end to end. The step names and **Finalize** fields below come from the same wizard with **New jurisdiction for existing product** selected.
-
 ## Steps
 
 1. Go to **Workbench**, select **+ New project**, then choose **New product** ("Create a new insurance product").
-2. Under **Product type**, select the **New product** card. **New jurisdiction for existing product** is selected at first. That one adds a state to a product you already have. See [Copy a state's forms to a new state](../../product-vault/add-a-state/from-existing-state.md).
-3. Work through the wizard: **Product**, **Project**, **Configuration** and **Source**. In **Project**, choose **Forms**, **Rates** or **Rules**. `TODO verify` what each step asks for with **New product**.
-4. In **Finalize**, enter the **Project title** and **Project description**, choose the **Workflow**, and pick a **Due date** from the calendar. Add anyone else under **Additional members**.
-5. Select **Create project**. `TODO verify` what opens next.
+2. **Product:** select the **New product** card. (**New jurisdiction for existing product** is selected at first. That one adds a state to a product you already have. See [Start a project to add a state](../create-project/new-jurisdiction.md).)
+3. **Project:** choose **Forms**. The other choices are **Rates** and **Rules**.
+4. **Configuration:** under **Product source type**, choose **None**.
+5. **Source:** under **Product information**, enter the **Product name** and **Product description**, then choose the **Group**, **Underwriting company**, **Insurance type**, **Line of business**, **Jurisdiction** and **Type of insurance** (for example 19.0 Personal Auto). **Subtype** is optional.
+6. **Finalize:** enter the **Project title** and **Project description**, choose the **Workflow**, and pick a **Due date** from the calendar. You're listed under **Default members**. Add anyone else under **Additional members**.
+7. Select **Create project**. The project opens at **Select**, the first of its phases (**Select** → **Review** → **Approve** → **End**), with the **Forms**, **Notes**, **Team** and **Activity** tabs.
 
 !!! tip
     Pick the due date from the calendar. Typed dates may not be saved.
 
-Next: [Build a new product in Workbench](index.md).
+If **Underwriting company** shows "No Options" for your group, ask your organization admin to set up the group's underwriting companies. `TODO verify` where admins set them up.
+
+Next: [Add the product's documents](add-documents.md).
