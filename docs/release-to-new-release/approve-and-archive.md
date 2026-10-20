@@ -14,7 +14,7 @@ Do this when the state approves the filing. Archiving the approved filing create
 ## Steps
 
 1. On the filing, choose the **Pending** chip next to **Submission**.
-2. Set **Disposition status** to **Approved** and pick the **Change date** from the calendar. Save. The submission shows **Approved**.
+2. Set **Disposition status** to **Approved** and pick the **Change date** from the calendar. Save. The submission shows **Approved**. See [Filing statuses and dispositions](../filing-manager/statuses.md).
 3. Choose **Archive project**.
 4. In **Archive project**, check the **Destination product state** (product and state). Under **Release association**, choose **Create new release**. The **Release version** fills in for you.
 5. Enter the **New business effective date**, the **Renewal effective date** and a **Description**, then archive. A success message appears.

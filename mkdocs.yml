@@ -44,6 +44,10 @@ nav:
       - Add metadata and process documents: product-vault/process-documents.md
       - Review and publish: product-vault/review-and-publish.md
       - Understand releases: product-vault/releases.md
+      - Shared assets across states: product-vault/shared-assets.md
+      - Add a state to a product:
+          - product-vault/add-a-state/index.md
+          - Copy a state's forms to a new state: product-vault/add-a-state/from-existing-state.md
       - Product import:
           - product-vault/product-import/index.md
           - product-vault/product-import/create-product.md
@@ -56,6 +60,12 @@ nav:
           - Start a product update: workbench/create-project/product-update.md
       - Update forms: workbench/update-forms.md
       - Update rates: workbench/update-rates.md
+      - Update rules: workbench/update-rules.md
+      - Move work through phases: workbench/phases.md
+      - "Complete a project: Admitted or Non-admitted":
+          - workbench/complete-project/index.md
+          - Complete as Admitted (create filings): workbench/complete-project/admitted.md
+          - Complete as Non-admitted: workbench/complete-project/non-admitted.md
   - Release to New Release:
       - Overview: release-to-new-release/index.md
       - 1. Update your product in Workbench: release-to-new-release/update-in-workbench.md
@@ -66,10 +76,16 @@ nav:
       - 7. Check the new release: release-to-new-release/check-new-release.md
   - Filing Manager:
       - Filing Manager overview: filing-manager/index.md
+      - Filing statuses and dispositions: filing-manager/statuses.md
   - Rating Sandbox:
       - Rating Sandbox overview: sandbox/index.md
   - Rating Catalog:
       - Rating Catalog overview: rating-catalog/index.md
+  - Intelligence:
+      - Intelligence: intelligence/index.md
+      - Objection Library: intelligence/objection-library.md
+  - Reports:
+      - Reports: reports/index.md
   - Reference:
       - Glossary: reference/glossary.md
   - Support:

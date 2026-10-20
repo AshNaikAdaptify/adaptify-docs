@@ -18,7 +18,7 @@ Use this path when a product that's published in the Product Vault needs changes
 
 ## The path
 
-Product Vault (current release) → Workbench project → one filing per state in Filing Manager → Product Vault (new release)
+Product Vault (current release) → Workbench project → one filing per state in [Filing Manager](../filing-manager/index.md) → Product Vault (new release)
 
 1. [Update your product in Workbench](update-in-workbench.md): change forms and rates in one project.
 2. [Create filings from your project](create-filings.md): complete the project as **Admitted** to get one filing per state.

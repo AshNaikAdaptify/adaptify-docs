@@ -22,7 +22,7 @@ Do this when the state sends an objection letter about a filing. Each objection 
 3. Check the **Response due** date shown on the objection. If it isn't the date you picked, edit it. `TODO verify` how to edit it.
 4. Open the objection. Its page has **Response items**, **Forms** and **Supporting documents**.
 5. Add a response item: enter a **Description** and choose a **Preparer**, then choose **+ Add item**.
-6. Choose **View response package**, then **Download ZIP**, and send your response to the state. The objection shows **Response Submitted**.
+6. Choose **View response package**, then **Download ZIP**, and send your response to the state. The objection shows **Response Submitted**. For what each objection status means, see [Filing statuses and dispositions](../filing-manager/statuses.md).
 
 ## Fields
 

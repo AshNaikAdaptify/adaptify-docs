@@ -17,7 +17,7 @@ Do this when the filing is ready to go to the state. You file in SERFF, outside 
 2. The **Generate filing package** dialog lists the **Forms** and **Rates** in the filing. Choose **Download ZIP**. The filing package shows **Generated**.
 3. Outside Adaptify, upload the ZIP to SERFF and submit it. Note the SERFF tracking number.
 4. Back on the filing, choose **Manual submission** to open **Record submission**.
-5. Enter the details in the table below. **Approval type** carries over from the Workbench project, and **Disposition status** stays **Pending**.
+5. Enter the details in the table below. **Approval type** carries over from the Workbench project, and **Disposition status** stays **Pending**. See [Filing statuses and dispositions](../filing-manager/statuses.md).
 6. Save. The submission shows **Pending**, with your SERFF tracking number and the date you submitted.
 
 ## Fields

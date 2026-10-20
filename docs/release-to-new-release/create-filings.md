@@ -9,7 +9,7 @@ video: ""
 
 # Create filings from your project
 
-Do this when every child project in your Workbench project is complete. Completing the project as **Admitted** creates a filing for each state in Filing Manager.
+Do this when every child project in your Workbench project is complete. Completing the project as **Admitted** creates a filing for each state in [Filing Manager](../filing-manager/index.md). For more about this dialog, see [Complete as Admitted](../workbench/complete-project/admitted.md).
 
 ## Steps
 
@@ -33,7 +33,7 @@ Pick any dates from the calendar. Typed dates may not be saved.
 `TODO verify`:
 - what the **Filing** field controls
 - the label of the confirm button
-- when to use the **Non-admitted** tab instead
+- when to use the **Non-admitted** tab instead (see [Complete a project](../workbench/complete-project/index.md))
 
 ## Next
 
