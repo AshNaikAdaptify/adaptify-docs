@@ -43,6 +43,7 @@ nav:
       - Upload documents for a state: product-vault/import-documents.md
       - Add metadata and process documents: product-vault/process-documents.md
       - Review and publish: product-vault/review-and-publish.md
+      - Understand releases: product-vault/releases.md
       - Product import:
           - product-vault/product-import/index.md
           - product-vault/product-import/create-product.md
@@ -50,7 +51,11 @@ nav:
           - product-vault/product-import/process-and-extract-rules.md
   - Project Workbench:
       - Workbench overview: workbench/index.md
-      - Create a project: workbench/create-project/index.md
+      - Create a project:
+          - workbench/create-project/index.md
+          - Start a product update: workbench/create-project/product-update.md
+      - Update forms: workbench/update-forms.md
+      - Update rates: workbench/update-rates.md
   - Filing Manager:
       - Filing Manager overview: filing-manager/index.md
   - Rating Sandbox:
