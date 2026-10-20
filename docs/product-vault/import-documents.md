@@ -1,47 +1,44 @@
 ---
-title: Import documents
-audience: internal
+title: Upload documents for a state
+audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Upload forms, manuals and supporting materials for each state
-  - Organize source files so imports go quickly
-  - Confirm every file arrived by checking counts
+  - Upload the forms, manuals and supporting materials for one state
+  - Organize your files so uploads go quickly
+  - Confirm every file arrived by checking the tab counts
 video: ""
 ---
 
-# Import documents
+# Upload documents for a state
 
-You upload documents for **one jurisdiction at a time**. There is no product-level upload.
+You upload files **one state at a time**.
+
+![Upload page for a state, with the Forms, Manual, Rates, Rules and Supporting Materials tabs and the Browse files button](../assets/product-import/upload-files.webp)
 
 ## Prepare your files
 
-A simple folder layout keeps imports fast:
+A simple folder for each state keeps uploads quick:
 
 ```text
-{Product}/{State}/Forms/                 .doc or .docx files
-{Product}/{State}/Manuals/
-{Product}/{State}/Supporting Documents/  goes to the Supporting Materials tab
+{Product}/{State}/Forms/                  DOC, DOCX or PDF
+{Product}/{State}/Manuals/                PDF, DOC, DOCX, XLS or XLSX
+{Product}/{State}/Supporting Documents/   for the Supporting Materials tab
 ```
 
-## Upload for a state
+## Steps
 
-1. Open the product in the **Product Vault** and select the jurisdiction.
-2. Open the upload or import view for that jurisdiction. `TODO verify` button label.
-3. On **Forms**, use **Bulk Import** and choose the folder of `.doc` or `.docx` forms for that state.
-4. On **Manuals**, upload the manuals for that state.
-5. On **Supporting Materials**, upload the supporting documents for that state.
-6. Let each upload finish before you move to the next tab or state.
+1. Open your product in the Vault and choose the state under **Jurisdiction**.
+2. On the **Forms** tab, select **Browse files**, or drag and drop your files. A form needs a Word file, a PDF, or both.
+3. On the **Manual** tab, upload the state's manuals. Rate manuals in Excel go here too.
+4. On the **Supporting Materials** tab, upload your supporting documents. `TODO verify` this upload on the current build.
+5. Let each upload finish before you start the next one. Uploading one file at a time is the most reliable.
+6. Check that each tab's count matches your files.
 
-Suggested order: finish one state completely (Forms → Manuals → Supporting Materials), then move to the next.
+The state shows **Pending import** until you process it.
 
-## Check the counts
+!!! tip "If a count still shows 0"
+    Refresh the page before you upload again. The count can lag behind the upload, and uploading the same form twice gives a "Duplicate form" error.
 
-An upload is complete when the counts in each tab match your files. For example:
+!!! tip "Use a file name of its own for each form"
+    Give each form a file name that no other product uses. A repeated file name can block publishing later. This is a known issue.
 
-| Product | State | Forms | Manuals | Supporting Materials |
-|---|---|---:|---:|---:|
-| Auto | AK | 2 | 4 | 2 |
-| Auto | AL | 2 | 4 | 2 |
-| Homeowners | AK | 2 | 5 | 2 |
-| Homeowners | AL | 2 | 5 | 2 |
-
-After upload the jurisdiction shows **Pending Import**. That is expected: the next step is [Process documents](process-documents.md).
+Next: [Add metadata and process documents](process-documents/index.md).

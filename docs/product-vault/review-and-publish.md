@@ -15,7 +15,7 @@ Publishing a state makes its files the product's **Baseline** release in the Vau
 ## Before you start
 
 - Upload the state's files and add their metadata.
-- Run [Process documents](process-documents.md) and check the **Rules** tab.
+- Run [Process documents](process-documents/run-processing.md) and check the **Rules** tab.
 
 ## Publish a state
 
