@@ -18,43 +18,55 @@ theme:
       primary: custom
       accent: custom
       toggle: {icon: material/weather-sunny, name: Switch to light mode}
-  features: [navigation.sections, navigation.expand, toc.follow, search.suggest, search.highlight]
+  features: [navigation.sections, navigation.expand, navigation.indexes, navigation.footer, toc.follow, search.suggest, search.highlight]
 extra_css: [stylesheets/extra.css]
 extra_javascript: [javascripts/features.js]
 extra:
   feedback_repo: AshNaikAdaptify/adaptify-docs
-  support_url: https://adaptify.com/  # TODO: replace with the real Adaptify support URL
+  support_url: https://adaptify.com/  # TODO verify: placeholder until Ash confirms the real Adaptify support URL
 markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
 nav:
+  # Section order follows the site plan of record (site-plan-ash-v3.md). Planned sections
+  # with no pages yet (added in later phases): Release to New Release (after Project
+  # Workbench), Intelligence, Reports, Administration (before Reference).
   - Home: index.md
   - Introduction:
       - Get Started: get-started/index.md
-      - get-started/dashboard.md
-      - get-started/components.md
-      - get-started/sign-in.md
+      - Adaptify at a glance: get-started/components.md
+      - Sign in and Org Setup: get-started/sign-in.md
+      - Your Dashboard: get-started/dashboard.md
+      - "Your first 10 minutes: tour a product": get-started/quickstart.md
   - Product Vault:
-      - product-vault/index.md
-      - product-vault/before-you-start.md
-      - product-vault/create-product.md
-      - product-vault/import-documents.md
-      - product-vault/process-documents.md
-      - product-vault/review-and-publish.md
-      - product-vault/shared-assets.md
+      - Product Vault overview: product-vault/index.md
+      - Before you start: product-vault/before-you-start.md
+      - Create a product: product-vault/create-product.md
+      - Upload documents for a state: product-vault/import-documents.md
+      - Add metadata and process documents: product-vault/process-documents.md
+      - Review and publish: product-vault/review-and-publish.md
+      - Shared assets across states: product-vault/shared-assets.md
       - Add a state to a product:
           - product-vault/add-a-state/index.md
-          - product-vault/add-a-state/from-existing-state.md
+          - Copy a state's forms to a new state: product-vault/add-a-state/from-existing-state.md
       - Product import:
           - product-vault/product-import/index.md
           - product-vault/product-import/create-product.md
           - product-vault/product-import/upload-files.md
           - product-vault/product-import/process-and-extract-rules.md
-  - Workbench: [workbench/index.md, workbench/projects.md]
-  - Sandbox: [sandbox/index.md]
-  - Filing Manager: [filing-manager/index.md]
-  - Rating Catalog: [rating-catalog/index.md]
+  - Project Workbench:
+      - Workbench overview: workbench/index.md
+      - Create a project: workbench/create-project/index.md
+  - Filing Manager:
+      - Filing Manager overview: filing-manager/index.md
+  - Rating Sandbox:
+      - Rating Sandbox overview: sandbox/index.md
+  - Rating Catalog:
+      - Rating Catalog overview: rating-catalog/index.md
   - Intelligence:
-      - intelligence/index.md
-      - intelligence/objection-library.md
-  - Reports: [reports/index.md]
-  - Reference: [reference/glossary.md]
-  - Support: [support/index.md]
+      - Intelligence: intelligence/index.md
+      - Objection Library: intelligence/objection-library.md
+  - Reports:
+      - Reports: reports/index.md
+  - Reference:
+      - Glossary: reference/glossary.md
+  - Support:
+      - Support: support/index.md
