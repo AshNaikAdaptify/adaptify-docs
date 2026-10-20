@@ -48,9 +48,14 @@ nav:
           - Add manual editions and set up rules: product-vault/process-documents/manual-editions-and-rules.md
           - Process documents and check the rules: product-vault/process-documents/run-processing.md
       - Review and publish: product-vault/review-and-publish.md
+      - Understand releases: product-vault/releases.md
   - Project Workbench:
       - Workbench overview: workbench/index.md
-      - Create a project: workbench/create-project/index.md
+      - Create a project:
+          - workbench/create-project/index.md
+          - Start a product update: workbench/create-project/product-update.md
+      - Update forms: workbench/update-forms.md
+      - Update rates: workbench/update-rates.md
   - Filing Manager:
       - Filing Manager overview: filing-manager/index.md
   - Rating Sandbox:
