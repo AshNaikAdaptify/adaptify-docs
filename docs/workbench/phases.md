@@ -42,6 +42,10 @@ From **Review** on, the person in that phase can also select **Reject**.
 
 Your organization admin manages these workflows under **Workflow management** on the Dashboard. If your organization has changed its workflows, your phases may differ.
 
+## Delete a project you started by mistake
+
+While the project is in **Select**, open **Actions** and choose **Delete**. From **Review** on, **Actions** no longer appears.
+
 ## What happens next
 
-When every child project reaches **End**, complete the project. See [Complete a project](complete-project/index.md).
+When every child project reaches **End**, the project shows **Complete project** next to the phase stepper. Use it to finish the project. See [Complete a project](complete-project/index.md).

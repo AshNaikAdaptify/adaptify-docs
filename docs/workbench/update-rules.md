@@ -28,6 +28,12 @@ A rules project changes the rules of a product that's already published in the P
 !!! note "Uploading a whole manual"
     A manual you upload in a rules project is added as one rule. It isn't split into separate rules, and a rules project can't copy rules from another state.
 
+## What's in a rules project
+
+A rules project runs your rule changes as their own piece of work. Its page has a **Rules** tab, next to **Notes**, **Team** and **Activity**. Each rule has a rule number, an edition and a name, and you can give the rules a description and an effective date.
+
+Because the **Rule Update** workflow includes **Review** and **Approve**, your rule changes get a review before the project reaches **End**. The phase stepper shows who owns each phase.
+
 ## What happens next
 
 When the project reaches **End**, complete it. See [Complete a project](complete-project/index.md).

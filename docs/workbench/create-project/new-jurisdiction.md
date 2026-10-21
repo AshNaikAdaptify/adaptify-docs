@@ -9,7 +9,9 @@ video: ""
 
 # Start a project to add a state
 
-A **New jurisdiction for existing product** project adds a state to a product that's already in the Vault. The new state starts from another state's forms. You find it under **New product** in the **New project** menu.
+Ready to sell a product in a new state? Start from the forms of a state you've already published, and add the new state's own forms as you go. When you complete the project as Non-admitted, the new state gets its own release in the Product Vault.
+
+A **New jurisdiction for existing product** project does this. You find it under **New product** in the **New project** menu.
 
 Use this when you're expanding into a new state where you don't have the product yet. If you already sell the product in the state but the state was never added in Adaptify, [add it with Edit product](../../product-vault/add-a-state/edit-product.md) instead.
 
