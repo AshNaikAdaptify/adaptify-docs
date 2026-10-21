@@ -9,7 +9,11 @@ video: ""
 
 # Filing Manager overview
 
-**Filing Manager** holds your filings being prepared for submission to regulators, from the first package to approval. Each filing covers one state. Filings are created when you complete a Workbench project as Admitted. See [Complete as Admitted](../workbench/complete-project/admitted.md).
+**Manage filings and objection handling all the way to approvals.**
+
+Filing Manager keeps each state's filing in one place. Your filings come straight from your completed Workbench project, one per state. Generate the filing package, record your submission, and log the state's objections and your responses. When the state approves, record it and archive the filing to create the state's new release.
+
+Filings are created when you complete a Workbench project as **Admitted**. See [Complete as Admitted](../workbench/complete-project/admitted.md).
 
 ## Find a filing
 
@@ -38,4 +42,7 @@ A filing's name comes from its project and state, for example "Filing - Personal
 | Record the state's decision | The **Submission** status chip |
 | Close the filing and create the new release | **Archive project** |
 
-The Release to New Release guide covers each task step by step. For what each status means, see [Filing statuses and dispositions](statuses.md).
+!!! note "Each state moves on its own"
+    Each filing is submitted, approved and archived separately. One state can reach its new release while another is still answering an objection.
+
+The [Release to New Release](../release-to-new-release/index.md) guide covers each task step by step. For what each status means, see [Filing statuses and dispositions](statuses.md).

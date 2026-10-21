@@ -9,7 +9,7 @@ video: ""
 
 # Release to New Release
 
-Use this path when a product that's published in the Product Vault needs changes to its forms or rates. You update the product once, file it state by state, and each state's approval becomes that state's new release.
+Use this path when a published product needs changes to its forms or rates. You update the product once in the Project Workbench. Then you file it state by state in Filing Manager. Each state's approval becomes that state's new release in the Product Vault.
 
 ## Before you start
 
