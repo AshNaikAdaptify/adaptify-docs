@@ -34,18 +34,20 @@ Select **Manage** next to **Rating tables** to:
 
 ## Set up the columns
 
-1. In the empty table, select **+ Add column**.
-2. In **Edit Column**, enter the column's **Name**.
-3. Choose the **Column Type**: **Input** for a value you look up by, such as Zip code, or **Output** for the value you get back, such as Territory.
-4. For an input column, choose the **Column Conditions**: **Equals**, **Greater Than**, **Greater Than or Equal To**, **Less Than**, **Less Than or Equal To** or **Interpolate**.
-5. Under **Select Path**, search for and pick the structure field this column maps to. It fills in the **Risk Item Field**, for example Policy.Location.Zip code, and shows its **Data Type**.
-6. Select **Save**. Add the next column the same way, then select **Save Changes**.
+1. Select the table, then select **Edit**.
+2. Select **New Column**. The **Edit column** panel opens.
+3. Enter the column's **Name**.
+4. Choose the **Column type**: **Input** for a value you look up by, such as Zip code, or **Output** for the value you get back, such as Territory.
+5. For an input column, choose the **Column conditions**: **Equals**, **Greater Than**, **Greater Than or Equal To**, **Less Than**, **Less Than or Equal To** or **Interpolate**.
+6. Under **Select path**, search for and pick the structure field this column maps to. It fills in the **Risk item field**, for example Policy.Vehicle.Territory, and shows its **Data type**.
+7. Select **Save**. Add the next column the same way.
+8. Select **Save changes** to save the table, or **Cancel** to discard your changes. **Undo** and **Redo** step through your edits.
 
-![The Edit Column panel with Name, Column Type, Column Conditions, Data Type, Risk Item Field and the Select Path tree](../assets/rating/edit-column.webp)
+![The Edit column panel with Name, Column type, Column conditions, Data type, Risk item field and the Select path tree](../assets/rating/edit-column.webp)
 
 ## Fill in the table
 
-You can type values straight into the cells while you edit the table. For a large table, it's quicker to use a file:
+While you edit the table, select a cell to type a value into it, then select **Save changes**. For a large table, it's quicker to use a file:
 
 1. Select **Manage** → **Export table**. You get a CSV file with the column headers.
 2. Fill in the rows in Excel and save it as CSV.
@@ -53,4 +55,4 @@ You can type values straight into the cells while you edit the table. For a larg
 
 ## Add the table to a calculation
 
-A table is only used once a calculation uses it. Add each new table to your [Calculations](calculations.md), or it won't be part of the rate order or your tests.
+Add each new table to your [Calculations](calculations.md). That's what brings it into the rate order and your tests.

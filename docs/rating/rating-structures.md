@@ -47,7 +47,7 @@ Use **Multi** for things a policy can have more than one of, such as several loc
 
 ## Build the structure in Excel
 
-Building the structure in Excel is faster than adding fields one by one.
+For a big structure, building it in Excel saves time.
 
 1. On the structure, open **Actions** and choose **Export in XLSX**.
 2. Fill in the file. It has a sheet for each part of the structure, such as **Policy**, **Location** and each coverage. Each sheet lists its fields in these columns:
@@ -72,7 +72,7 @@ Select the header **Edit** to change the **Title**, **Description**, **Status** 
 
 ## Missing a field?
 
-If you find a field is missing while you build a table, add it to your structure file and import it again here. Then go back to your table. You can't add fields from the table screen.
+If you find a field is missing while you build a table, add it to your structure file and import it again here. Then go back to your table. Fields always come from the structure, so your tables and structure stay in step.
 
 !!! tip
     Keep your structure file open while you build tables, and import again whenever you add a field.

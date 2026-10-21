@@ -9,7 +9,7 @@ video: ""
 
 # How rating works in Adaptify
 
-A rater works out the premium for a product. In the [Rating Catalog](../rating-catalog/index.md), each rater ties a product and one of its jurisdictions to the rating structure it's built on.
+Rating is how your approved products become operational. A rater works out the premium for a product. In the [Rating Catalog](../rating-catalog/index.md), each rater ties a product and one of its jurisdictions to the rating structure it's built on.
 
 You build a rater in five parts, in this order:
 

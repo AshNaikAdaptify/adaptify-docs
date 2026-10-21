@@ -29,9 +29,7 @@ Every flow runs from **START** to **END**. In between, you link these nodes with
 - **Calculation:** a set of math steps.
 - **Branch:** a condition that sends the flow one way or another, such as checking for a wind exclusion. Each path can have a label.
 
-Select **Edit** to change the flow. Add nodes from the palette on the left, link them, then select **Save Changes**, or **Cancel** to discard your changes.
-
-![A calculation flow: START, a Calculation node, a table node and END](../assets/rating/calculation-canvas.webp)
+Select **Edit** to change the flow. Add nodes from the palette on the left, then link them.
 
 ## Configure a calculation
 
@@ -49,7 +47,7 @@ For example, step 1 could be Fire Peril Base Rate × Fire Territory Factor, and 
 
 If a part is still empty, you'll see "Values are missing for one or more functions". Fill it in before you save.
 
-![Configure Calculation with three steps and the Binding Type options Step, Path and Value](../assets/rating/configure-calculation.webp)
+![Configure Calculation open over a calculation flow, with three steps and the Binding Type options Step, Path and Value](../assets/rating/configure-calculation.webp)
 
 ## Configure a branch
 

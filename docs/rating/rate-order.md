@@ -10,9 +10,9 @@ video: ""
 
 The rate order is the order Adaptify runs your calculations in. Open the rater and choose the **Rate order calculation** tab.
 
-The calculations are numbered and grouped by risk item, such as **Protected Devices**, **Location** and **Policy**. Use **Search** and **Type** to find one. Select **Edit** to change the order.
+The calculations are numbered and grouped by risk item, such as **Location** and **Policy**. Use **Search** and **Type** to find one. Select **Edit** to change the order. Until a rater has calculations, the tab reads "No calculations found".
 
-![Numbered calculations grouped by risk item on the rate order tab](../assets/rating/rate-order-calculation.webp)
+![The Rate order calculation tab with Search, Type and Edit](../assets/rating/rate-order-calculation.webp)
 
 ## Get the order right
 
