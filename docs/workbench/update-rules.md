@@ -1,6 +1,6 @@
 ---
 title: Update rules
-audience: internal
+audience: external
 goals:
   - Start a rules project for a published product
   - Add your rule changes and move the project to End

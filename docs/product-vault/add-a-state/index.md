@@ -1,6 +1,6 @@
 ---
 title: Add a state to a product
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Choose how to bring an existing product into a new state
 video: ""

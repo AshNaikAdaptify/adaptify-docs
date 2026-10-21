@@ -1,6 +1,6 @@
 ---
 title: Rating Catalog
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Find the raters built on your products and rating structures
   - Filter and sort the rater list

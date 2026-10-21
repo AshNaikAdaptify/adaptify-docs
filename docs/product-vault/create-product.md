@@ -1,6 +1,6 @@
 ---
 title: Create a product
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Add a new product to the Vault
   - Choose its insurance type, lines of business, Group, Underwriting company and states

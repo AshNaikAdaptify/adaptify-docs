@@ -1,6 +1,6 @@
 ---
 title: Adaptify at a glance
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Learn what each of the three components is for
   - See how a product moves from its current release to the next one

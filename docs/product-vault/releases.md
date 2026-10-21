@@ -1,6 +1,6 @@
 ---
 title: Understand releases
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Know what a release is and when a new one is created
   - Switch between a state's releases

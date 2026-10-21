@@ -1,6 +1,6 @@
 ---
 title: How rating works in Adaptify
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Understand the parts of a rater and the order you build them in
   - Know where each part lives in Adaptify

@@ -1,6 +1,6 @@
 ---
 title: Home
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Know what Adaptify is and what each component is for
   - Find where to start

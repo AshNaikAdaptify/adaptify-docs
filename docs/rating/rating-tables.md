@@ -1,6 +1,6 @@
 ---
 title: Rating tables
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Add a rating table and set up its columns
   - Fill a table from a CSV file

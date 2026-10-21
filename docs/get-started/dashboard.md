@@ -1,6 +1,6 @@
 ---
 title: Your Dashboard
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Read what each summary card tells you
   - Start work from Quick actions

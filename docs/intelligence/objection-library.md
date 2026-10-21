@@ -1,6 +1,6 @@
 ---
 title: Objection Library
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Search past SERFF objections before you answer one
 video: ""

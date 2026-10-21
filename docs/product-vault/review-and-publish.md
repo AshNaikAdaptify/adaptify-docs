@@ -1,6 +1,6 @@
 ---
 title: Review and publish
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Check a state's files before you publish
   - Publish a state so it becomes the product's Baseline release

@@ -1,6 +1,6 @@
 ---
 title: Get Started
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - See what each area of Adaptify is for
   - Find your way from the Dashboard to the Product Vault, Project Workbench and Filing Manager

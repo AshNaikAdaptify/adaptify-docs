@@ -1,6 +1,6 @@
 ---
 title: Clause, statute and objection libraries
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Find the three Intelligence libraries in Adaptify
   - Know which library to use for clauses, statutes and objections

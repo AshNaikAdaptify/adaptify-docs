@@ -1,6 +1,6 @@
 ---
 title: Start a product update
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Start a project that updates a product's forms, rates or rules
   - Choose the product and states the update covers

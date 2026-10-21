@@ -1,6 +1,6 @@
 ---
 title: Process documents and check the rules
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Process a state's documents
   - Check that the rules came through before you publish

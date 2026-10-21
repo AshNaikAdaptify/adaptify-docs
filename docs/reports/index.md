@@ -1,6 +1,6 @@
 ---
 title: Reports
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Find Reports and choose a period
   - Know what each Reports tab covers

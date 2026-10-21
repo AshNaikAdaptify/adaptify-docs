@@ -1,6 +1,6 @@
 ---
 title: Bring a product into the Vault
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - See the four steps from a new product to a published state
   - Gather the files you need before you start

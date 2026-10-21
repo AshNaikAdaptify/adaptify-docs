@@ -1,6 +1,6 @@
 ---
 title: Track objections and responses
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Log an objection from the state with its letter
   - Build your response and track it until it's submitted

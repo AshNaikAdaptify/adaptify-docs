@@ -1,6 +1,6 @@
 ---
 title: Update forms
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Give a form a new edition in a Workbench project
 video: ""

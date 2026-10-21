@@ -1,6 +1,6 @@
 ---
 title: Rate order
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Set the order your calculations run in
 video: ""

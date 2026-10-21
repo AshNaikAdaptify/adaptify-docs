@@ -1,6 +1,6 @@
 ---
 title: Open a rater
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Open a rater from the Rating Catalog
   - Know what each tab of a rater is for

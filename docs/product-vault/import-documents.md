@@ -1,6 +1,6 @@
 ---
 title: Upload documents for a state
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Upload the forms, manuals and supporting materials for one state
   - Organize your files so uploads go quickly

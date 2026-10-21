@@ -1,6 +1,6 @@
 ---
 title: Copy a state's forms to a new state
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Start a project that adds a new state from an existing state's forms
   - Add the new state's own forms

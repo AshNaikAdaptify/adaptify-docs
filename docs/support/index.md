@@ -1,6 +1,6 @@
 ---
 title: Support
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Find the right way to get help with Adaptify
   - Report a problem with these docs
