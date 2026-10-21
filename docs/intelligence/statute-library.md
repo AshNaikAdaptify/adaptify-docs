@@ -20,8 +20,6 @@ The **Statute Library** holds the tagged statutes behind the compliance check. E
 
 To see only the statutes flagged for a second look, turn on **Needs review only**. Rows that get mostly negative feedback are flagged **needs review**. Select **Refresh** to reload the list.
 
-![Statute Library filtered to one state, with the TOI scope tree open](../assets/intelligence/statute-library-toi-scope.webp)
-
 ## What each column shows
 
 | Column | Shows |
