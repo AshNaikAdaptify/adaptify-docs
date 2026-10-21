@@ -2,7 +2,7 @@
 title: Calculations
 audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Find a calculation flow for a risk item
+  - Start a calculation flow for a risk item
   - Build calculation steps and branches
 video: ""
 ---
@@ -11,15 +11,15 @@ video: ""
 
 Calculations turn your table values and rating inputs into premium. Each calculation is a flow you draw on a canvas, step by step.
 
-## Find a calculation
+## Find or start a calculation
 
-1. Open the rater and choose the **Calculations** tab. The **Risk Item Calculation** view opens; there's also a **Coverages** view.
-2. Choose the **Risk Item**, such as **Policy** or **Location**.
-3. Choose the **Risk Item Calculation**. Its flow appears on the canvas.
+1. Open the rater and choose the **Calculations** tab. It has two views: **Risk item calculation** and **Coverages**.
+2. Choose the **Risk item**, such as **Policy**, then the **Risk item calculation**. Its flow appears on the canvas.
+3. To start a new one, select **+ Create new**. In **Create new risk item calculation**, enter the **Risk item calculation name**, choose the **Risk item**, then select **+ Create new risk item**.
 
-From here you can **Delete**, **Copy** or **Edit** the calculation, or start another one with **+ Create New**.
+You can also **Delete**, **Copy** or **Edit** the calculation that's open.
 
-![A calculation flow on the Calculations tab: START, a Calculation node, a table node and END](../assets/rating/calculation-canvas.webp)
+![The Create new risk item calculation dialog over the Calculations tab](../assets/rating/create-risk-item-calculation.webp)
 
 ## What's on the canvas
 
@@ -30,6 +30,8 @@ Every flow runs from **START** to **END**. In between, you link these nodes with
 - **Branch:** a condition that sends the flow one way or another, such as checking for a wind exclusion. Each path can have a label.
 
 Select **Edit** to change the flow. Add nodes from the palette on the left, link them, then select **Save Changes**, or **Cancel** to discard your changes.
+
+![A calculation flow: START, a Calculation node, a table node and END](../assets/rating/calculation-canvas.webp)
 
 ## Configure a calculation
 
@@ -55,7 +57,7 @@ Open a **Branch** node to set its condition in **Configure Condition**: give it 
 
 ## Check your work
 
-Use **Validate**, above the rater's tabs, to check the setup.
+Open the rater's **Actions** menu and choose **Validate**.
 
 ## Next
 

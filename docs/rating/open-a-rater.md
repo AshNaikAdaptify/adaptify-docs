@@ -9,24 +9,24 @@ video: ""
 
 # Open a rater
 
-Open a rater from the [Rating Catalog](../rating-catalog/index.md) to build and test it.
+In the [Rating Catalog](../rating-catalog/index.md), select the rater's row in the **Rater catalog** to open it.
 
 ## What's on a rater
 
-- **Back to Rating Catalog** returns you to the list. The breadcrumb shows **Rating Catalog** and the rater's name.
-- **Jurisdictions:** the state you're working on, for example **FL**.
-- **Version Number:** the version, for example **Baseline**, with its status (such as **Draft**) and effective date.
-- **Actions:** at the top right.
+- **Breadcrumb:** **Rating Catalog** and the product's name. The product name is also the rater's title.
+- **Jurisdictions:** the state you're working on, for example **AL**.
+- **Version number:** the version, for example **Baseline**, with its status (such as **Draft**) and effective date.
+- **Actions:** **Create new version**, **Publish**, **Import**, **Export** and **Validate**.
 
-![A rater with the Jurisdictions and Version Number pickers, the Actions button and the Tables tab open](../assets/rating/rater-detail.webp)
+![A rater with the Jurisdictions and Version number pickers, the six tabs and the Actions menu open](../assets/rating/rater-actions-menu.webp)
 
 ## The six tabs
 
 | Tab | Use it to | Guide |
 |---|---|---|
 | **Tables** | Build and fill in your rating tables. | [Rating tables](rating-tables.md) |
-| **Rating Structure** | See the rater's rating structure. | [Rating structures](rating-structures.md) |
-| **Calculations** | Draw the calculation flow for each risk item. | [Calculations](calculations.md) |
-| **Rate Order Calculation** | Set the order the calculations run in. | [Rate order](rate-order.md) |
-| **Manual Tests** | Create test cases one at a time and run them. | [Test a rater](test-a-rater.md) |
-| **Test Suites** | Run many test cases from a file. | [Test a rater](test-a-rater.md#test-suites) |
+| **Rating structure** | See the structure the rater is built on, and pick an item to view its fields. | [Rating structures](rating-structures.md) |
+| **Calculations** | Draw the calculation flow for each risk item or coverage. | [Calculations](calculations.md) |
+| **Rate order calculation** | Set the order the calculations run in. | [Rate order](rate-order.md) |
+| **Manual tests** | Create test cases one at a time and run them. | [Test a rater](test-a-rater.md) |
+| **Test suites** | Run batches of tests from a spreadsheet. | [Test a rater](test-a-rater.md#test-suites) |

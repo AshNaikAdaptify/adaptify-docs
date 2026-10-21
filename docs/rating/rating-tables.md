@@ -11,26 +11,26 @@ video: ""
 
 Rating tables hold your rates and factors, such as base rates, territory factors or age of home factors. Each column is linked to a field in the rating structure, so Adaptify knows what to look up and where to put the result.
 
-Open the rater and choose the **Tables** tab. **Rating Tables** lists the tables. Use **Search tables** to find one, then select it to see it under **Selected Table**. In each table, input columns and output columns are marked with different icons.
+Open the rater and choose the **Tables** tab. The **Rating tables** panel lists the tables. Use **Search tables** to find one, then select it to view it. Input and output columns are marked with different icons.
 
-## The Manage Table menu
+## The Manage menu
 
-Select **Manage Table** to:
+Select **Manage** next to **Rating tables** to:
 
-- **Add New Table**, **Import Table**, **Import Tables**, **Import Tables From Manuals** or **Export All Tables**.
-- For the selected table: **Export Table**, **Copy Table**, **Edit Table Details** or **Delete Table**.
+- **Add new table**, **Import table**, **Import tables**, **Import tables from manuals** or **Export all tables**.
+- Under **Actions for selected table**: **Export table**, **Copy table**, **Edit table details** or **Delete table**. Select a table first.
 
-![The Manage Table menu open on the Tables tab](../assets/rating/manage-table-menu.webp)
+![The Manage menu on the Tables tab](../assets/rating/manage-menu.webp)
 
 ## Add a table
 
-1. Select **Manage Table** → **Add New Table**.
+1. Select **Manage** → **Add new table**.
 2. Enter the **Name** and, if you like, a **Description**.
-3. Choose the **Type**: **None or Unspecified**, **Premiums**, **Loss Costs**, **Factors** or **Relativities**.
-4. Enter the **Rule Number**, if there is one.
-5. Select **Add Table**. You'll see "Table created." and the new, empty table opens.
+3. Choose the **Type**: **None or unspecified**, **Premiums**, **Loss costs**, **Factors** or **Relativities**.
+4. Enter the **Rule number**, if there is one.
+5. Select **Add table**. The new, empty table opens.
 
-![The Add New Table dialog with Name, Description, Type and Rule Number](../assets/rating/add-new-table.webp)
+![The Add new table dialog with Name, Description, Type and Rule number](../assets/rating/add-new-table-live.webp)
 
 ## Set up the columns
 
@@ -47,9 +47,9 @@ Select **Manage Table** to:
 
 You can type values straight into the cells while you edit the table. For a large table, it's quicker to use a file:
 
-1. Select **Manage Table** → **Export Table**. You get a CSV file with the column headers.
+1. Select **Manage** → **Export table**. You get a CSV file with the column headers.
 2. Fill in the rows in Excel and save it as CSV.
-3. Select **Manage Table** → **Import Table**, then **Select CSV file to upload**.
+3. Select **Manage** → **Import table**, then choose your CSV file.
 
 ## Add the table to a calculation
 

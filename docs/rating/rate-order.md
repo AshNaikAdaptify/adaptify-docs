@@ -8,18 +8,18 @@ video: ""
 
 # Rate order
 
-The rate order is the order Adaptify runs your calculations in. Open the rater and choose the **Rate Order Calculation** tab.
+The rate order is the order Adaptify runs your calculations in. Open the rater and choose the **Rate order calculation** tab.
 
-The calculations are numbered and grouped by risk item, such as **Protected Devices**, **Location** and **Policy**. Use **Search Calculations** and **Type** to find one. Select **Edit** to change the order.
+The calculations are numbered and grouped by risk item, such as **Protected Devices**, **Location** and **Policy**. Use **Search** and **Type** to find one. Select **Edit** to change the order.
 
-![The Rate Order Calculation tab with numbered calculations grouped by risk item](../assets/rating/rate-order-calculation.webp)
+![Numbered calculations grouped by risk item on the rate order tab](../assets/rating/rate-order-calculation.webp)
 
 ## Get the order right
 
 - Put the tables before the calculations that use them.
 - Put **Total Premium** last.
 
-When you're done, select **Validate** above the rater's tabs. **Import** and **Export** sit next to it.
+When you're done, open the rater's **Actions** menu and choose **Validate**.
 
 ## Next
 
