@@ -30,7 +30,7 @@ title: Page title
 audience: external   # or internal; required, any capitalization, no default
 goals:
   - What the reader can do after reading
-video: ""   # YouTube or Vimeo URL; empty shows a "coming soon" placeholder
+video: ""   # YouTube, Vimeo, or local .mp4/.webm URL; empty or omitted renders no player
 ---
 ```
 

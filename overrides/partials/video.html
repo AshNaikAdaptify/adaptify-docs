@@ -1,22 +1,23 @@
-{#- Reusable video macro: local .mp4/.webm -> HTML5 video, YouTube/Vimeo URL -> responsive embed, else placeholder -#}
+{#- Reusable video macro: local .mp4/.webm -> HTML5 video, YouTube/Vimeo URL -> responsive embed. Empty or missing url renders nothing. -#}
 {% macro video_embed(url, poster="") %}
 {% set src = "" %}
 {% if url %}
-  {% if "youtube.com/watch?v=" in url %}{% set src = "https://www.youtube-nocookie.com/embed/" ~ url.split("v=")[1].split("&")[0] %}
-  {% elif "youtu.be/" in url %}{% set src = "https://www.youtube-nocookie.com/embed/" ~ url.split("youtu.be/")[1].split("?")[0] %}
-  {% elif "vimeo.com/" in url %}{% set src = "https://player.vimeo.com/video/" ~ url.rstrip("/").split("/")[-1] %}
-  {% else %}{% set src = url %}{% endif %}
+  {% set src = url | string | trim %}
+  {% if "youtube.com/watch?v=" in src %}{% set src = "https://www.youtube-nocookie.com/embed/" ~ src.split("v=")[1].split("&")[0] %}
+  {% elif "youtu.be/" in src %}{% set src = "https://www.youtube-nocookie.com/embed/" ~ src.split("youtu.be/")[1].split("?")[0] %}
+  {% elif "vimeo.com/" in src %}{% set src = "https://player.vimeo.com/video/" ~ src.rstrip("/").split("/")[-1] %}
+  {% endif %}
 {% endif %}
+{%- if src %}
 <div class="adaptify-video">
-{% if src and src.split("?")[0].endswith((".mp4", ".webm")) %}
+{% if src.split("?")[0].endswith((".mp4", ".webm")) %}
   <video controls playsinline preload="metadata"{% if poster %} poster="{{ poster }}"{% endif %} title="Product video">
     <source src="{{ src }}" type="video/{{ "webm" if src.split("?")[0].endswith(".webm") else "mp4" }}">
     Your browser does not support HTML5 video. <a href="{{ src }}">Download the video</a>.
   </video>
-{% elif src %}
-  <iframe src="{{ src }}" title="Product video" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 {% else %}
-  <div class="adaptify-video__placeholder"><span>&#9654;</span><p>Product video coming soon</p></div>
+  <iframe src="{{ src }}" title="Product video" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 {% endif %}
 </div>
+{%- endif %}
 {% endmacro %}
