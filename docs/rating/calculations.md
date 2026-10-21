@@ -30,7 +30,7 @@ The flow that's open appears below the pickers, with **Delete**, **Copy** and **
     - **Calculation:** a set of math steps.
     - **Branch:** sends the flow one way or another, based on a condition.
 3. Connect the nodes in order, from **START** to **END**. For example: START → your base rate table → a premium calculation → END.
-4. Double-click a node to configure it. For a **Table** node, pick the table in **Configure table**. A new Table node stays empty until you pick its table.
+4. Double-click a node to configure it. For a **Table** node, open **Configure table** and pick the table under **Available tables**. It then shows as the **Selected table**. A new Table node stays empty until you pick its table.
 5. Select **Save changes**, or **Cancel** to discard your changes.
 
 Once the flow is saved, each Calculation node shows how many steps it has, for example "Calculation · 1 step".

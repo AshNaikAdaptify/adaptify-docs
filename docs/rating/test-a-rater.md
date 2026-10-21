@@ -22,8 +22,8 @@ You can also **Import** test cases from a JSON file exported from manual tests, 
 ## Run a test
 
 1. Open the test case. The header shows the **Expected premium** and **Actual premium**, with **Execute test** at the top right.
-2. On **Rating inputs**, use the **Policy** tree to move between risk items and coverages. For a **Multi** item, such as **Vehicle**, add an instance, such as **Vehicle #1**. Use **Delete** to remove one.
-3. Select an item to see its inputs on the right, under **Rating inputs**, and fill them in. These are the fields marked as rating inputs in the structure. Some inputs offer a list of values, such as the territories in your table.
+2. On **Rating inputs**, use the **Policy** tree to move between risk items and coverages. For a **Multi** item, such as **Vehicle**, select **Add** to add an instance, such as **Vehicle #1**. Use **Delete** to remove one.
+3. Select an item to see its inputs on the right, under **Rating inputs**, and fill them in. These are the fields marked as rating inputs in the structure. Some inputs offer a list of values, such as the territories in your table. To include a coverage, such as **Bodily Injury Liability**, select it and set **IsIncluded** to **True**.
 4. Give every required input a value, then run the test: select **Execute test**.
 
 The banner shows the result, such as **Passed**, and **Actual premium** shows the premium Adaptify worked out.
