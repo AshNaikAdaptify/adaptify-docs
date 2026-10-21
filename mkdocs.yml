@@ -23,7 +23,8 @@ extra_css: [stylesheets/extra.css]
 extra_javascript: [javascripts/features.js]
 extra:
   feedback_repo: AshNaikAdaptify/adaptify-docs
-  support_url: https://adaptify.com/  # TODO verify: placeholder until Ash confirms the real Adaptify support URL
+  # support_url stays unset until Ash confirms the real Adaptify support URL.
+  # An empty or missing value renders no contact link.
 markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
 nav:
   # Section order follows the site plan of record (site-plan-ash-v3.md). Planned sections

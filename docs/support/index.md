@@ -11,7 +11,7 @@ video: ""
 
 ## Get help with Adaptify
 
-Choose **Contact Adaptify support** at the bottom of any page.
+Use **Report a problem with this page** at the bottom of the page.
 
 To get help faster, include the page you were on, what you were trying to do and what you saw.
 
