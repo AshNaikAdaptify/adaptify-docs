@@ -9,21 +9,23 @@ video: ""
 
 # Adaptify documentation
 
-Adaptify is Insurance Product Lifecycle Management (IPLM). From concept through the operational life of a product, carriers manage the whole lifecycle in one place.
+**Adaptify helps insurance carriers get their products built, filed, approved and operational, all from one platform.**
+
+Adaptify is Insurance Product Lifecycle Management (IPLM). You manage each product's whole life in one place. Your forms, rates and rules live together, state by state. Changes run as projects, and approved work becomes your next release.
 
 [Start here: Get Started](get-started/index.md){ .md-button .md-button--primary }
 
 ## What's in Adaptify
 
-- **[Product Vault](product-vault/index.md):** a governed repository for all Products.
-- **[Project Workbench](workbench/index.md):** a collaborative environment for building new products and updating existing products.
-- **[Rating Sandbox](sandbox/index.md):** evaluate rates, test options and opportunities to improve your offerings.
-- **[Filing Manager](filing-manager/index.md):** manage Filings and objection handling all the way to approvals.
-- **[Rating Catalog](rating-catalog/index.md):** Rating as a Service used for ratings, sandbox, testing and scenario planning.
+- **[Product Vault](product-vault/index.md):** Governed repository for all products.
+- **[Project Workbench](workbench/index.md):** Collaborative environment for building new products and updating existing products.
+- **[Filing Manager](filing-manager/index.md):** Manage filings and objection handling all the way to approvals.
 
 ## Popular pages
 
-- [Adaptify at a glance](get-started/components.md): how a product moves through the five components.
+- [Adaptify at a glance](get-started/components.md): how a product moves through Adaptify.
+- [Bring a product into the Vault](product-vault/bring-in-a-product.md): from a new product to a published state in four steps.
+- [Release to New Release](release-to-new-release/index.md): update a published product, file it state by state and get each state's new release.
 - [Your Dashboard](get-started/dashboard.md): see where your work stands and pick up your next task.
 - [Your first 10 minutes: tour a product](get-started/quickstart.md): a read-only look at a product, a project and a filing.
 - [Glossary](reference/glossary.md): look up an Adaptify or filing term.

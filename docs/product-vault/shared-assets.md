@@ -16,6 +16,8 @@ When the same document is used in more than one place, for example the same form
 
 On a product's **Forms** or **Manual** tab, a shared document shows a **Shared** badge with a count, for example **Shared · 2**.
 
+You'll also see the badge when you copy a state's forms to a new state in a Workbench project. The copied form then shows **Shared** on the product's **Forms** tab. See [Copy a state's forms to a new state](add-a-state/from-existing-state.md).
+
 ## Add metadata before you share
 
 Add a document's metadata, such as its form number and edition, before you use it in another state. Once a document is shared, its **Edition** and title can lock. If that happens, contact Adaptify support.

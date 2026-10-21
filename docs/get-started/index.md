@@ -3,7 +3,7 @@ title: Get Started
 audience: internal  # final audience: external (flips in a release PR)
 goals:
   - See what each area of Adaptify is for
-  - Find your way from the Dashboard to the Product Vault, Project Workbench, Filing Manager and Rating Sandbox
+  - Find your way from the Dashboard to the Product Vault, Project Workbench and Filing Manager
   - Know where to start your first task
 video: ../assets/get-started/get-started-tour.mp4
 video_poster: ../assets/get-started/get-started-tour-poster.png
@@ -11,9 +11,9 @@ video_poster: ../assets/get-started/get-started-tour-poster.png
 
 # Get Started
 
-Adaptify Insurance product Lifecycle Management is the operating system for P&C carriers
+Adaptify Insurance Product Lifecycle Management (IPLM) is the operating system for P&C carriers.
 
-Centralize forms, rules, rates, workflows and governance in one easy to use platform
+Centralize forms, rules, rates, workflows and governance in one easy-to-use platform.
 
 Use the left navigation to move between the areas below at any time. It also lists other areas, such as **Reports** and **Bureau Circulars**.
 
@@ -30,7 +30,7 @@ See [Your Dashboard](dashboard.md).
 
 ## Product Vault
 
-Product Vault is the single source of truth for your product assets.
+Product Vault is a governed repository for all products. It's the single source of truth for your product assets.
 
 - The summary cards count your **Products**, **Lines of business** and **Jurisdictions**.
 - The **Product catalog** lists each product with its **Status** and **Active work**. Use **Search products**, **Filters** and **Sort** to find one, then open it to see its states and releases.
@@ -51,21 +51,12 @@ See [Workbench overview](../workbench/index.md).
 
 ## Filing Manager
 
-Filing Manager lets you manage Filings and objection handling all the way to approvals.
+Filing Manager lets you manage filings and objection handling all the way to approvals.
 
 - **Filings** shows each filing as a card with its state and status.
 - Once you have filings, use **Search filings**, **Filters**, **Sort** and **Group** to find one, then open it.
 
 See [Filing Manager overview](../filing-manager/index.md).
-
-## Rating Sandbox
-
-Rating Sandbox is where you evaluate rates, test options and opportunities to improve your offerings. Open it from **Rating Sandbox** under **Rating** in the left navigation.
-
-- **All harness** lists your test harnesses. Choose **Add harness** to add one.
-- Filter the list by **Lines of business** and **Jurisdictions**, and change the order with **Sort by**.
-
-See [Rating Sandbox overview](../sandbox/index.md).
 
 ## Next
 
