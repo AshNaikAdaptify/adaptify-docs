@@ -22,12 +22,12 @@ Repeat for each form. A form shows **Metadata incomplete** until its details are
 
 ## Read them from the file name
 
-Form file names usually start with the form number and edition, for example `PPA 0001 07 16 Personal Automobile Policy.docx`:
+Form file names usually start with the form number, often followed by the edition, for example `DEMO 0001 Personal Auto Policy.docx` or `DEMO 0002 09 20 Homeowners Policy.docx`:
 
 | File name starts with | Form Number | Edition |
 |---|---|---|
-| `PPA 0001 07 16` | `PPA 0001` | `07 16` |
-| `HO 0003 09 20` | `HO 0003` | `09 20` |
+| `DEMO 0001` | `DEMO 0001` | Not in the name: enter it from the form |
+| `DEMO 0002 09 20` | `DEMO 0002` | `09 20` |
 
 The form number is a prefix plus four digits. The edition is the month and year, as `MM YY`.
 
