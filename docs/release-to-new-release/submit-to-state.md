@@ -22,18 +22,14 @@ Do this when the filing is ready to go to the state. You file in SERFF, outside 
 
 ## Fields
 
-| Field | Required | Example |
-|---|---|---|
-| **Approval type** | Yes (carried over) | Prior approval |
-| **Date submitted** | Yes | Pick from the calendar |
-| **SERFF tracking #** | Yes | ACME-1234-2026 |
-| **Req. new business date** | Yes | 12/01/2026 |
-| **Req. renewal date** | `TODO verify` | 12/01/2026 |
-| **State tracking #** | No | AL-2026-0457 |
-
-`TODO verify`:
-- the label of the save button
-- whether **Req. renewal date** is required
+| Field | Example |
+|---|---|
+| **Approval type** | Prior approval (carried over) |
+| **Date submitted** | Pick from the calendar |
+| **SERFF tracking #** | ACME-1234-2026 |
+| **Req. new business date** | 12/01/2026 |
+| **Req. renewal date** | 12/01/2026 |
+| **State tracking #** (optional) | AL-2026-0457 |
 
 ## Next
 

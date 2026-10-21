@@ -16,10 +16,10 @@ The Dashboard is the first page you see after you sign in. Use it to see where y
 
 | Card | What it shows |
 |---|---|
-| **Active projects** | Projects in progress. `TODO verify` what it counts. |
-| **Pending tasks** | Tasks waiting to be done. `TODO verify` what it counts. |
+| **Active projects** | Projects in progress. |
+| **Pending tasks** | Tasks waiting to be done. |
 | **Products in Vault** | How many products are in the [Product Vault](../product-vault/index.md). |
-| **Total assets (forms and manuals)** | Forms and manuals across your products. `TODO verify` what it counts. |
+| **Total assets (forms and manuals)** | Forms and manuals across your products. |
 
 ## Start work from Quick actions
 
@@ -32,14 +32,11 @@ The Dashboard is the first page you see after you sign in. Use it to see where y
 
 ## Pick up your next task
 
-**Your tasks** lists the work assigned to you. Each row shows the item, its type (for example **Filing**), when it arrived (for example **Just now**) and its status (for example **Pending**). When you have nothing to do, it reads "You're all caught up".
-
-- To work on a task, open its row. `TODO verify` that a row opens the item.
-- To see every task, choose **View all**. `TODO verify` where it leads.
+**Your tasks** lists the work assigned to you. Each row shows the item, its type (for example **Filing**), when it arrived (for example **Just now**) and its status (for example **Pending**). When you have nothing to do, it reads "You're all caught up". Choose **View all** to see more.
 
 ## See the work underway
 
-**Active projects** lists the projects in progress. When there are none, it reads "No active projects yet". `TODO verify` opening a project from this list.
+**Active projects** lists the projects in progress. When there are none, it reads "No active projects yet".
 
 ## Catch up on recent activity
 

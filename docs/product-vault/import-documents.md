@@ -29,7 +29,7 @@ A simple folder for each state keeps uploads quick:
 1. Open your product in the Vault and choose the state under **Jurisdiction**.
 2. On the **Forms** tab, select **Browse files**, or drag and drop your files. A form needs a Word file, a PDF, or both.
 3. On the **Manual** tab, upload the state's manuals. Rate manuals in Excel go here too.
-4. On the **Supporting Materials** tab, upload your supporting documents. `TODO verify` this upload on the current build.
+4. On the **Supporting Materials** tab, upload your supporting documents.
 5. Let each upload finish before you start the next one. Uploading one file at a time is the most reliable.
 6. Check that each tab's count matches your files.
 

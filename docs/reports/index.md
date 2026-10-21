@@ -25,6 +25,4 @@ At the top of the **Reports dashboard**, pick the **Period**, for example **Curr
 
 ## Project Workbench and Filing Manager tabs
 
-The other tabs cover your Workbench projects and your filings. `TODO verify` what each shows. Check these figures against **Workbench** and **Filing Manager** for now.
-
-`TODO verify` what **Products imported** counts.
+The other tabs cover your Workbench projects and your filings.

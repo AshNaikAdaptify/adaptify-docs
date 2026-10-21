@@ -19,12 +19,10 @@ Project Workbench is a collaborative environment for building new products and u
   - **Rate updates:** adjust rating factors and structures.
   - **Rules updates:** modify underwriting rules.
   - **New product:** create a new insurance product.
-
-  `TODO verify` what each card opens.
 - **Project portfolio:** your projects, with a count.
   - Filter them with **Type**.
   - Switch between list and grid views.
-  - Turn on **Show Archived Projects Only** to see archived projects. `TODO verify` which completed projects appear there.
+  - Turn on **Show Archived Projects Only** to see archived projects.
 - **+ New project:** at the top right of the **Project portfolio**. See [Create a project](create-project/index.md).
 
 ## Inside a project

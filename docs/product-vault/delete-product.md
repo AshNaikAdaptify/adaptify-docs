@@ -9,7 +9,7 @@ video: ""
 
 # Delete Product
 
-Use this to fix a mistake, for example a product you created twice or with the wrong details. It isn't meant for routine cleanup. Right now, every user can delete a product.
+Use this to fix a mistake, for example a product you created twice or with the wrong details. It isn't meant for routine cleanup.
 
 You can delete a product only while none of its states is published. Once a state is published, **Delete product** no longer appears.
 
@@ -29,8 +29,6 @@ You can delete a product only while none of its states is published. Once a stat
 
 ## If a state is published
 
-When a product has a published state, its **Actions** menu shows only **Asset summary** and **Edit product**. There's no way to delete it in the app. `TODO verify` what to do if you need a published product removed.
-
-![Actions menu of a product with a published state: Asset summary and Edit product only](../assets/product-vault/published-product-actions-no-delete.webp)
+When a product has a published state, its **Actions** menu shows only **Asset summary** and **Edit product**. There's no way to delete it in the app. If you need a published product removed, contact Adaptify support.
 
 To remove one state instead of the whole product, see [Delete a State](delete-a-state.md).

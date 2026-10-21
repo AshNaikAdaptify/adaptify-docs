@@ -29,12 +29,6 @@ Do this when the state approves the filing. Archiving the approved filing create
 | **Renewal effective date** | 12/01/2026 |
 | **Description** | Fall 2026 forms and rates update |
 
-`TODO verify`:
-- the labels of the save and archive buttons
-- where **Archive project** sits on the filing
-- when to use the other **Disposition status** values (**Disapproved**, **Withdrawn**, **Closed**, **Noted**)
-- when to add the filing to an existing release instead of creating a new one
-
 ## Next
 
 [Check the new release in the Product Vault](check-new-release.md)

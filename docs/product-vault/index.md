@@ -33,7 +33,7 @@ Each state of a product has these tabs. The count on each tab shows how many ite
 |---|---|
 | **Forms** | Policy forms and endorsements |
 | **Manual** | Manuals, which the Vault reads to find your rules |
-| **Rates** | Rate files. `TODO verify` what lands here when you import a product. |
+| **Rates** | Rate files |
 | **Rules** | Rules extracted from your manuals |
 | **Supporting Materials** | Supporting documents |
 

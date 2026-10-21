@@ -31,4 +31,4 @@ Every product needs a **Group** and an **Underwriting Company**. Underwriting Co
 
 ## Check your product list
 
-Products are created from your tenant's product list (lines such as Personal and Commercial, and products such as Auto or Homeowners). Make sure the products you need are on the list before you create them. `TODO verify` where the product list is managed.
+Products are created from your tenant's product list (lines such as Personal and Commercial, and products such as Auto or Homeowners). Make sure the products you need are on the list before you create them. If one is missing, ask your organization admin.

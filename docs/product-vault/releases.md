@@ -29,11 +29,6 @@ The header shows the release's **New business** and **Renewal** dates. The **Cur
 
 On the **Forms** tab, a form that changed in the release you're viewing shows an **Update** chip.
 
-`TODO verify`:
-- how the **Release** list names each release
-- whether earlier releases show a **Prior release** chip
-- whether you can compare two releases
-
 ## Next
 
 - [Start a product update](../workbench/create-project/product-update.md)

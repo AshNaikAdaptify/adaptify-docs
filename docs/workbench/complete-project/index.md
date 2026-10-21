@@ -19,7 +19,7 @@ When every child project has reached **End**, you finish the project with **Comp
 ## Before you start
 
 - Every child project is at **End**. See [Move work through phases](../phases.md).
-- For Admitted, your organization's filing owners are set up. `TODO verify` where they're set up (possibly System Administration → Workflow Definition).
+- For Admitted, your organization's filing owners are set up. If no owners are listed, ask your organization admin.
 
 ## Steps
 

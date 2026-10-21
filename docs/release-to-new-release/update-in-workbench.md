@@ -35,10 +35,6 @@ When every child project reaches **End**, the combined project shows that all it
 
 Keep the description short: only the first 100 characters are kept.
 
-`TODO verify`:
-- whether Finalize asks for an **Owner** (not shown on the current build for a forms-only project)
-- the label of the button that opens **Add rate changes**
-
 ## Next
 
 [Create filings from your project](create-filings.md)

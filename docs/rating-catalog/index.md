@@ -7,4 +7,6 @@ video: ""
 
 # Rating Catalog overview
 
-Placeholder. Content coming soon.
+Rating Catalog is Rating as a Service, used for ratings, sandbox, testing and scenario planning. It lists the raters built on top of your products and rating structures. Open it from **Rating Catalog** under **Rating** in the left navigation.
+
+To see how a product moves through Adaptify, see [Adaptify at a glance](../get-started/components.md).

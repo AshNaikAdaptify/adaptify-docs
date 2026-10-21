@@ -13,8 +13,7 @@ The Objection Library holds past SERFF objections that states have raised. Look 
 ## Find an objection
 
 1. In the left navigation, under **Intelligence**, choose **Objection Library**.
-2. Search the library. `TODO verify` the search box label and any filters.
-3. Open an objection to read it. `TODO verify` what an open objection shows.
+2. Look for objections like the one you're answering, and open one to read it.
 
 ## Next
 

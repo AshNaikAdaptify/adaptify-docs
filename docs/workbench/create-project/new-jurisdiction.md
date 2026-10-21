@@ -33,8 +33,6 @@ The product is published in the state you'll copy from. See [Review and publish]
 
 7. Select **Create project**. The project opens in the **Select** phase. The **Forms** tab lists the source state's forms with the change type **Include**.
 
-![The new project's Forms tab, with a copied form marked Include](../../assets/workbench/add-state-project-forms.webp)
-
 **Target jurisdiction** lists only states the product doesn't have yet.
 
 !!! note "Known limitation: forms only"
