@@ -43,4 +43,6 @@ A rater is built on a rating structure, so the rating structure you want must ex
 
 ![The Add rater dialog with Product, Jurisdiction and Rating structure, and the Cancel and Create buttons](../assets/rating-catalog/add-rater-dialog.webp)
 
+Next, [open a rater](../rating/open-a-rater.md) to build it. For how the pieces fit together, see [How rating works in Adaptify](../rating/index.md).
+
 To see how a product moves through Adaptify, see [Adaptify at a glance](../get-started/components.md).

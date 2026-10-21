@@ -87,8 +87,15 @@ nav:
   - Filing Manager:
       - filing-manager/index.md
       - Filing statuses and dispositions: filing-manager/statuses.md
-  - Rating Catalog:
-      - rating-catalog/index.md
+  - Rating:
+      - How rating works: rating/index.md
+      - Rating Catalog: rating-catalog/index.md
+      - Rating structures: rating/rating-structures.md
+      - Open a rater: rating/open-a-rater.md
+      - Rating tables: rating/rating-tables.md
+      - Calculations: rating/calculations.md
+      - Rate order: rating/rate-order.md
+      - Test a rater: rating/test-a-rater.md
   - Intelligence:
       - intelligence/index.md
       - Clause Library: intelligence/clause-library.md
