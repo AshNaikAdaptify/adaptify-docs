@@ -2828,46 +2828,36 @@
 <thead>
 <tr>
 <th>Field</th>
-<th>Required</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Approval type</strong></td>
-<td>Yes (carried over)</td>
-<td>Prior approval</td>
+<td>Prior approval (carried over)</td>
 </tr>
 <tr>
 <td><strong>Date submitted</strong></td>
-<td>Yes</td>
 <td>Pick from the calendar</td>
 </tr>
 <tr>
 <td><strong>SERFF tracking #</strong></td>
-<td>Yes</td>
 <td>ACME-1234-2026</td>
 </tr>
 <tr>
 <td><strong>Req. new business date</strong></td>
-<td>Yes</td>
 <td>12/01/2026</td>
 </tr>
 <tr>
 <td><strong>Req. renewal date</strong></td>
-<td><code>TODO verify</code></td>
 <td>12/01/2026</td>
 </tr>
 <tr>
-<td><strong>State tracking #</strong></td>
-<td>No</td>
+<td><strong>State tracking #</strong> (optional)</td>
 <td>AL-2026-0457</td>
 </tr>
 </tbody>
 </table>
-<p><code>TODO verify</code>:
-- the label of the save button
-- whether <strong>Req. renewal date</strong> is required</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>If the state sends an objection, see <a href="../handle-objections/">Track objections and responses</a>. If the state approves, go to <a href="../approve-and-archive/">Record approval and archive to a new release</a>.</p>
 
@@ -2987,7 +2977,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# File with the state and record the submission\n\nDo this when the filing is ready to go to the state. You file in SERFF, outside Adaptify, then record the submission in Adaptify.\n\n## Steps\n\n1. In **Filing Manager**, open the state\u0027s filing. Under **Filing information**, choose **Filing package**.\n2. The **Generate filing package** dialog lists the **Forms** and **Rates** in the filing. Choose **Download ZIP**. The filing package shows **Generated**.\n3. Outside Adaptify, upload the ZIP to SERFF and submit it. Note the SERFF tracking number.\n4. Back on the filing, choose **Manual submission** to open **Record submission**.\n5. Enter the details in the table below. **Approval type** carries over from the Workbench project, and **Disposition status** stays **Pending**. See [Filing statuses and dispositions](../filing-manager/statuses.md).\n6. Save. The submission shows **Pending**, with your SERFF tracking number and the date you submitted.\n\n## Fields\n\n| Field | Required | Example |\n|---|---|---|\n| **Approval type** | Yes (carried over) | Prior approval |\n| **Date submitted** | Yes | Pick from the calendar |\n| **SERFF tracking #** | Yes | ACME-1234-2026 |\n| **Req. new business date** | Yes | 12/01/2026 |\n| **Req. renewal date** | `TODO verify` | 12/01/2026 |\n| **State tracking #** | No | AL-2026-0457 |\n\n`TODO verify`:\n- the label of the save button\n- whether **Req. renewal date** is required\n\n## Next\n\nIf the state sends an objection, see [Track objections and responses](handle-objections.md). If the state approves, go to [Record approval and archive to a new release](approve-and-archive.md).\n", "src": "release-to-new-release/submit-to-state.md", "title": "4. File with the state and record the submission"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# File with the state and record the submission\n\nDo this when the filing is ready to go to the state. You file in SERFF, outside Adaptify, then record the submission in Adaptify.\n\n## Steps\n\n1. In **Filing Manager**, open the state\u0027s filing. Under **Filing information**, choose **Filing package**.\n2. The **Generate filing package** dialog lists the **Forms** and **Rates** in the filing. Choose **Download ZIP**. The filing package shows **Generated**.\n3. Outside Adaptify, upload the ZIP to SERFF and submit it. Note the SERFF tracking number.\n4. Back on the filing, choose **Manual submission** to open **Record submission**.\n5. Enter the details in the table below. **Approval type** carries over from the Workbench project, and **Disposition status** stays **Pending**. See [Filing statuses and dispositions](../filing-manager/statuses.md).\n6. Save. The submission shows **Pending**, with your SERFF tracking number and the date you submitted.\n\n## Fields\n\n| Field | Example |\n|---|---|\n| **Approval type** | Prior approval (carried over) |\n| **Date submitted** | Pick from the calendar |\n| **SERFF tracking #** | ACME-1234-2026 |\n| **Req. new business date** | 12/01/2026 |\n| **Req. renewal date** | 12/01/2026 |\n| **State tracking #** (optional) | AL-2026-0457 |\n\n## Next\n\nIf the state sends an objection, see [Track objections and responses](handle-objections.md). If the state approves, go to [Record approval and archive to a new release](approve-and-archive.md).\n", "src": "release-to-new-release/submit-to-state.md", "title": "4. File with the state and record the submission"}</script>
   
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
