@@ -9,11 +9,7 @@ video: ""
 
 # Filing Manager overview
 
-**Manage filings and objection handling all the way to approvals.**
-
-Filing Manager keeps each state's filing in one place. Your filings come straight from your completed Workbench project, one per state. Generate the filing package, record your submission, and log the state's objections and your responses. When the state approves, record it and archive the filing to create the state's new release.
-
-Filings are created when you complete a Workbench project as **Admitted**. See [Complete as Admitted](../workbench/complete-project/admitted.md).
+**Filing Manager** holds your filings being prepared for submission to regulators, from the first package to approval. Each filing covers one state. Filings are created when you complete a Workbench project as Admitted. See [Complete as Admitted](../workbench/complete-project/admitted.md).
 
 ## Find a filing
 

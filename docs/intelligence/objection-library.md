@@ -18,13 +18,7 @@ The Objection Library holds past SERFF objections that states have raised. Look 
 ## When to use it
 
 - **A state sends an objection letter:** before you write your response, see how the state has questioned similar filings.
-- **You're preparing a filing:** check what the state has objected to before, so your filing answers it up front.
-
-## Tips
-
-- Note the state and the issue the letter raises, then look for objections that match both.
-- If the objection cites a statute, look the section up in the [Statute Library](statute-library.md).
-- Keep the state's letter as a PDF. You attach it when you log the objection on your filing.
+- **You're preparing a filing:** check what the state has objected to before.
 
 ## Next
 
