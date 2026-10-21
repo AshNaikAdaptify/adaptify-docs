@@ -2261,7 +2261,7 @@
 
 <div class="adaptify-goals">
   <p class="adaptify-goals__title">What this page helps you do</p>
-  <ul><li>Create a rating structure</li><li>Build the structure's risk items and fields in Excel and import them</li></ul>
+  <ul><li>Create a rating structure</li><li>Build the structure's risk items and fields, in the app or in Excel</li></ul>
 </div>
 
 
@@ -2273,10 +2273,10 @@
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       <li class="md-nav__item">
-  <a href="#open-rating-administration" class="md-nav__link">
+  <a href="#open-your-rating-structures" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Open Rating Administration
+        Open your rating structures
       
     </span>
   </a>
@@ -2300,6 +2300,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#add-risk-items-and-coverages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add risk items and coverages
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#build-the-structure-in-excel" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2308,22 +2317,14 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build the structure in Excel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cardinality-single-or-multi" class="md-nav__link">
+</li><li class="md-nav__item">
+  <a href="#change-the-structures-details-or-status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cardinality: Single or Multi
+        Change the structure's details or status
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li><li class="md-nav__item">
   <a href="#missing-a-field" class="md-nav__link">
@@ -2938,7 +2939,7 @@
 
 <div class="adaptify-goals">
   <p class="adaptify-goals__title">What this page helps you do</p>
-  <ul><li>Create a rating structure</li><li>Build the structure's risk items and fields in Excel and import them</li></ul>
+  <ul><li>Create a rating structure</li><li>Build the structure's risk items and fields, in the app or in Excel</li></ul>
 </div>
 
 
@@ -2950,10 +2951,10 @@
     <label class="md-nav__title" for="__toc"><span class="md-nav__icon md-icon"></span>On this page</label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       <li class="md-nav__item">
-  <a href="#open-rating-administration" class="md-nav__link">
+  <a href="#open-your-rating-structures" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Open Rating Administration
+        Open your rating structures
       
     </span>
   </a>
@@ -2977,6 +2978,15 @@
   </a>
   
 </li><li class="md-nav__item">
+  <a href="#add-risk-items-and-coverages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add risk items and coverages
+      
+    </span>
+  </a>
+  
+</li><li class="md-nav__item">
   <a href="#build-the-structure-in-excel" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2985,22 +2995,14 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build the structure in Excel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cardinality-single-or-multi" class="md-nav__link">
+</li><li class="md-nav__item">
+  <a href="#change-the-structures-details-or-status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cardinality: Single or Multi
+        Change the structure's details or status
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li><li class="md-nav__item">
   <a href="#missing-a-field" class="md-nav__link">
@@ -3053,36 +3055,42 @@
 
   
 <p>A rating structure lists every risk item, coverage and field used to develop the rate. You set it up in <strong>Rating Administration</strong>, before you build tables and calculations.</p>
-<h2 id="open-rating-administration">Open Rating Administration<a class="headerlink" href="#open-rating-administration" title="Permanent link">&para;</a></h2>
-<p>Select <strong>Rating Administration</strong> under <strong>Rating</strong> in the left navigation. You'll see two cards:</p>
-<ul>
-<li><strong>Rating Structure:</strong> configure and manage rating structures, variables and calculation methodologies.</li>
-<li><strong>Rating APIs:</strong> manage API integrations, endpoints and external rating service configurations.</li>
-</ul>
-<p><img alt="Rating Administration with the Rating Structure and Rating APIs cards" src="../../assets/rating/rating-administration-landing.webp" /></p>
-<p>Choose <strong>Rating Structure</strong> to see your <strong>Rating Structures</strong> list. Each structure shows its status (for example <strong>Draft</strong>), <strong>Insurance Type</strong>, <strong>Line of Business</strong> and <strong>Effective Date</strong>.</p>
+<h2 id="open-your-rating-structures">Open your rating structures<a class="headerlink" href="#open-your-rating-structures" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Select <strong>Rating Administration</strong> under <strong>Rating</strong> in the left navigation. You'll see two cards: <strong>Rating structure</strong> and <strong>Rating APIs</strong>.</li>
+<li>Choose the <strong>Rating structure</strong> card. The <strong>Rating structures</strong> list opens.</li>
+</ol>
+<p>Each structure in the list shows its name, a status badge (<strong>Draft</strong> or <strong>Active</strong>), <strong>Insurance type</strong>, <strong>Line of business</strong> and <strong>Effective date</strong>.</p>
 <h2 id="create-a-rating-structure">Create a rating structure<a class="headerlink" href="#create-a-rating-structure" title="Permanent link">&para;</a></h2>
 <ol>
-<li>On <strong>Rating Structures</strong>, select <strong>+ New Rating Structures</strong>.</li>
-<li>In <strong>Add New Rating Structure</strong>, enter the <strong>Name</strong> and <strong>Description</strong>, and pick the <strong>Effective Date</strong>.</li>
-<li>Choose the <strong>Insurance Type</strong>, then the <strong>Line of Business</strong>.</li>
-<li>Select <strong>Add Rating Structure</strong>. You'll see "Rating structure created successfully".</li>
+<li>On <strong>Rating structures</strong>, select <strong>+ New rating structures</strong>.</li>
+<li>In <strong>Add new rating structure</strong>, enter the <strong>Name</strong> and <strong>Description</strong>, and pick the <strong>Effective date</strong>.</li>
+<li>Choose the <strong>Insurance type</strong>, then the <strong>Line of business</strong>. All five fields are required.</li>
+<li>Select <strong>Add rating structure</strong>. You'll see "Rating structure created successfully", and the new structure opens as <strong>Draft</strong> with a single <strong>Policy</strong> item.</li>
 </ol>
-<p><img alt="The Add New Rating Structure dialog with Name, Description, Effective Date, Insurance Type and Line of Business" src="../../assets/rating/add-rating-structure.webp" /></p>
+<p><img alt="The Add new rating structure dialog with Name, Description, Effective date, Insurance type and Line of business" src="../../assets/rating/add-new-rating-structure.webp" /></p>
 <h2 id="whats-on-a-structure">What's on a structure<a class="headerlink" href="#whats-on-a-structure" title="Permanent link">&para;</a></h2>
-<p>Open a structure to see:</p>
 <ul>
-<li>Its <strong>Status</strong>, <strong>Insurance Type</strong>, <strong>Lines of Business</strong> and <strong>Effective Date</strong>, with <strong>Import</strong>, <strong>Export</strong> and <strong>Edit</strong> at the top.</li>
-<li><strong>Rating Structure:</strong> the tree of risk items and coverages, starting with <strong>Policy</strong>. Each item shows its cardinality, such as <strong>Single</strong>. Use <strong>Search structures and fields</strong> to find one.</li>
-<li><strong>Applicable Fields:</strong> select an item in the tree to see its fields. Fields used as rating inputs show an <strong>Input</strong> tag, and rating outputs show an <strong>Output</strong> tag.</li>
+<li><strong>Header:</strong> the name, status badge, description, and the <strong>Insurance type</strong>, <strong>Lines of business</strong> and <strong>Effective date</strong>. <strong>Edit</strong> and <strong>Actions</strong> are at the top right.</li>
+<li><strong>Rating structure:</strong> the tree of risk items and coverages, starting with <strong>Policy</strong>. Each item shows its cardinality, <strong>Single</strong> or <strong>Multi</strong>. Use <strong>Search structures and fields</strong> to find one.</li>
+<li><strong>Applicable fields:</strong> select an item in the tree to see its fields. Fields used as rating inputs show an <strong>Input</strong> tag, and rating outputs show an <strong>Output</strong> tag.</li>
 </ul>
-<p><img alt="A rating structure with the Policy tree on the left and the Location fields under Applicable Fields" src="../../assets/rating/rating-structure-detail.webp" /></p>
+<p><img alt="A rating structure: the Policy tree with a Vehicle risk item and two coverages, and the coverage's fields under Applicable fields" src="../../assets/rating/rating-structure-detail-live.webp" /></p>
+<h2 id="add-risk-items-and-coverages">Add risk items and coverages<a class="headerlink" href="#add-risk-items-and-coverages" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In the <strong>Rating structure</strong> panel, select <strong>Edit</strong>. The tree switches to edit mode and the button becomes <strong>Exit edit</strong>.</li>
+<li>Select <strong>Add</strong> on the item you want to add under.</li>
+<li>In <strong>Add new item</strong>, choose the <strong>Type</strong> (<strong>Risk item</strong> or <strong>Coverage</strong>), and enter the <strong>Name</strong> and <strong>Description</strong>.</li>
+<li>Choose the <strong>Cardinality</strong> and an <strong>Icon</strong>, then select <strong>Add</strong>. You'll see "New item created successfully".</li>
+<li>Select <strong>Exit edit</strong> when you're done.</li>
+</ol>
+<p>Use <strong>Multi</strong> for things a policy can have more than one of, such as several locations or vehicles, scheduled personal property or coverages. Use <strong>Single</strong> for everything else.</p>
 <h2 id="build-the-structure-in-excel">Build the structure in Excel<a class="headerlink" href="#build-the-structure-in-excel" title="Permanent link">&para;</a></h2>
 <p>Building the structure in Excel is faster than adding fields one by one.</p>
 <ol>
-<li>On the structure, select <strong>Export</strong> to download it as an Excel file.</li>
+<li>On the structure, open <strong>Actions</strong> and choose <strong>Export in XLSX</strong>.</li>
 <li>
-<p>Fill it in. The file has a sheet for each part of the structure, such as <strong>Policy</strong>, <strong>Location</strong> and each coverage. Each sheet lists its fields in these columns:</p>
+<p>Fill in the file. It has a sheet for each part of the structure, such as <strong>Policy</strong>, <strong>Location</strong> and each coverage. Each sheet lists its fields in these columns:</p>
 <table>
 <thead>
 <tr>
@@ -3115,11 +3123,13 @@
 </table>
 </li>
 <li>
-<p>Back on the structure, select <strong>Import</strong> and choose your file. You'll see "Import Excel completed successfully".</p>
+<p>Back on the structure, open <strong>Actions</strong> and choose <strong>Import in XLSX</strong>, then pick your file.</p>
 </li>
 </ol>
-<h3 id="cardinality-single-or-multi">Cardinality: Single or Multi<a class="headerlink" href="#cardinality-single-or-multi" title="Permanent link">&para;</a></h3>
-<p>Each risk item or coverage is <strong>Single</strong> or <strong>Multi</strong>. Use <strong>Multi</strong> for things a policy can have more than one of, such as several locations, scheduled personal property or coverages.</p>
+<p><strong>Actions</strong> also has <strong>Import in JSON</strong> and <strong>Export in JSON</strong>.</p>
+<p><img alt="The structure's Actions menu: Import in JSON, Import in XLSX, Export in JSON and Export in XLSX" src="../../assets/rating/structure-actions-menu.webp" /></p>
+<h2 id="change-the-structures-details-or-status">Change the structure's details or status<a class="headerlink" href="#change-the-structures-details-or-status" title="Permanent link">&para;</a></h2>
+<p>Select the header <strong>Edit</strong> to change the <strong>Title</strong>, <strong>Description</strong>, <strong>Status</strong> (<strong>Active</strong> or <strong>Draft</strong>), <strong>Insurance type</strong>, <strong>Lines of business</strong> or <strong>Effective date</strong>. Then select <strong>Save changes</strong>.</p>
 <h2 id="missing-a-field">Missing a field?<a class="headerlink" href="#missing-a-field" title="Permanent link">&para;</a></h2>
 <p>If you find a field is missing while you build a table, add it to your structure file and import it again here. Then go back to your table. You can't add fields from the table screen.</p>
 <div class="admonition tip">
@@ -3245,7 +3255,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Rating Administration and rating structures\n\nA rating structure lists every risk item, coverage and field used to develop the rate. You set it up in **Rating Administration**, before you build tables and calculations.\n\n## Open Rating Administration\n\nSelect **Rating Administration** under **Rating** in the left navigation. You\u0027ll see two cards:\n\n- **Rating Structure:** configure and manage rating structures, variables and calculation methodologies.\n- **Rating APIs:** manage API integrations, endpoints and external rating service configurations.\n\n![Rating Administration with the Rating Structure and Rating APIs cards](../assets/rating/rating-administration-landing.webp)\n\nChoose **Rating Structure** to see your **Rating Structures** list. Each structure shows its status (for example **Draft**), **Insurance Type**, **Line of Business** and **Effective Date**.\n\n## Create a rating structure\n\n1. On **Rating Structures**, select **+ New Rating Structures**.\n2. In **Add New Rating Structure**, enter the **Name** and **Description**, and pick the **Effective Date**.\n3. Choose the **Insurance Type**, then the **Line of Business**.\n4. Select **Add Rating Structure**. You\u0027ll see \"Rating structure created successfully\".\n\n![The Add New Rating Structure dialog with Name, Description, Effective Date, Insurance Type and Line of Business](../assets/rating/add-rating-structure.webp)\n\n## What\u0027s on a structure\n\nOpen a structure to see:\n\n- Its **Status**, **Insurance Type**, **Lines of Business** and **Effective Date**, with **Import**, **Export** and **Edit** at the top.\n- **Rating Structure:** the tree of risk items and coverages, starting with **Policy**. Each item shows its cardinality, such as **Single**. Use **Search structures and fields** to find one.\n- **Applicable Fields:** select an item in the tree to see its fields. Fields used as rating inputs show an **Input** tag, and rating outputs show an **Output** tag.\n\n![A rating structure with the Policy tree on the left and the Location fields under Applicable Fields](../assets/rating/rating-structure-detail.webp)\n\n## Build the structure in Excel\n\nBuilding the structure in Excel is faster than adding fields one by one.\n\n1. On the structure, select **Export** to download it as an Excel file.\n2. Fill it in. The file has a sheet for each part of the structure, such as **Policy**, **Location** and each coverage. Each sheet lists its fields in these columns:\n\n    | Column | What to enter |\n    |---|---|\n    | **Field Name** | The field, for example Zip code or Protection Class. |\n    | **Data Type** | **Number** (decimals are fine), **String** or **Boolean**. Dates use **Date**. |\n    | **Sequence Number** | The order the field appears in on the test input screen. Leave gaps, such as 10, 20, 30, so you can slot new fields in later. |\n    | **Rating Input** | **TRUE** if you need to enter this value to rate, for example Zip code or Protection Class. |\n    | **Rating Output** | **TRUE** only if you want to see the value in the output, for example Territory. |\n\n3. Back on the structure, select **Import** and choose your file. You\u0027ll see \"Import Excel completed successfully\".\n\n### Cardinality: Single or Multi\n\nEach risk item or coverage is **Single** or **Multi**. Use **Multi** for things a policy can have more than one of, such as several locations, scheduled personal property or coverages.\n\n## Missing a field?\n\nIf you find a field is missing while you build a table, add it to your structure file and import it again here. Then go back to your table. You can\u0027t add fields from the table screen.\n\n!!! tip\n    Keep your structure file open while you build tables, and import again whenever you add a field.\n\n## Next\n\n[Open a rater](open-a-rater.md)\n", "src": "rating/rating-structures.md", "title": "Rating structures"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Rating Administration and rating structures\n\nA rating structure lists every risk item, coverage and field used to develop the rate. You set it up in **Rating Administration**, before you build tables and calculations.\n\n## Open your rating structures\n\n1. Select **Rating Administration** under **Rating** in the left navigation. You\u0027ll see two cards: **Rating structure** and **Rating APIs**.\n2. Choose the **Rating structure** card. The **Rating structures** list opens.\n\nEach structure in the list shows its name, a status badge (**Draft** or **Active**), **Insurance type**, **Line of business** and **Effective date**.\n\n## Create a rating structure\n\n1. On **Rating structures**, select **+ New rating structures**.\n2. In **Add new rating structure**, enter the **Name** and **Description**, and pick the **Effective date**.\n3. Choose the **Insurance type**, then the **Line of business**. All five fields are required.\n4. Select **Add rating structure**. You\u0027ll see \"Rating structure created successfully\", and the new structure opens as **Draft** with a single **Policy** item.\n\n![The Add new rating structure dialog with Name, Description, Effective date, Insurance type and Line of business](../assets/rating/add-new-rating-structure.webp)\n\n## What\u0027s on a structure\n\n- **Header:** the name, status badge, description, and the **Insurance type**, **Lines of business** and **Effective date**. **Edit** and **Actions** are at the top right.\n- **Rating structure:** the tree of risk items and coverages, starting with **Policy**. Each item shows its cardinality, **Single** or **Multi**. Use **Search structures and fields** to find one.\n- **Applicable fields:** select an item in the tree to see its fields. Fields used as rating inputs show an **Input** tag, and rating outputs show an **Output** tag.\n\n![A rating structure: the Policy tree with a Vehicle risk item and two coverages, and the coverage\u0027s fields under Applicable fields](../assets/rating/rating-structure-detail-live.webp)\n\n## Add risk items and coverages\n\n1. In the **Rating structure** panel, select **Edit**. The tree switches to edit mode and the button becomes **Exit edit**.\n2. Select **Add** on the item you want to add under.\n3. In **Add new item**, choose the **Type** (**Risk item** or **Coverage**), and enter the **Name** and **Description**.\n4. Choose the **Cardinality** and an **Icon**, then select **Add**. You\u0027ll see \"New item created successfully\".\n5. Select **Exit edit** when you\u0027re done.\n\nUse **Multi** for things a policy can have more than one of, such as several locations or vehicles, scheduled personal property or coverages. Use **Single** for everything else.\n\n## Build the structure in Excel\n\nBuilding the structure in Excel is faster than adding fields one by one.\n\n1. On the structure, open **Actions** and choose **Export in XLSX**.\n2. Fill in the file. It has a sheet for each part of the structure, such as **Policy**, **Location** and each coverage. Each sheet lists its fields in these columns:\n\n    | Column | What to enter |\n    |---|---|\n    | **Field Name** | The field, for example Zip code or Protection Class. |\n    | **Data Type** | **Number** (decimals are fine), **String** or **Boolean**. Dates use **Date**. |\n    | **Sequence Number** | The order the field appears in on the test input screen. Leave gaps, such as 10, 20, 30, so you can slot new fields in later. |\n    | **Rating Input** | **TRUE** if you need to enter this value to rate, for example Zip code or Protection Class. |\n    | **Rating Output** | **TRUE** only if you want to see the value in the output, for example Territory. |\n\n3. Back on the structure, open **Actions** and choose **Import in XLSX**, then pick your file.\n\n**Actions** also has **Import in JSON** and **Export in JSON**.\n\n![The structure\u0027s Actions menu: Import in JSON, Import in XLSX, Export in JSON and Export in XLSX](../assets/rating/structure-actions-menu.webp)\n\n## Change the structure\u0027s details or status\n\nSelect the header **Edit** to change the **Title**, **Description**, **Status** (**Active** or **Draft**), **Insurance type**, **Lines of business** or **Effective date**. Then select **Save changes**.\n\n## Missing a field?\n\nIf you find a field is missing while you build a table, add it to your structure file and import it again here. Then go back to your table. You can\u0027t add fields from the table screen.\n\n!!! tip\n    Keep your structure file open while you build tables, and import again whenever you add a field.\n\n## Next\n\n[Open a rater](open-a-rater.md)\n", "src": "rating/rating-structures.md", "title": "Rating structures"}</script>
   
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
