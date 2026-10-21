@@ -17,7 +17,7 @@ After you [start a new product project](start.md), add the product's forms to it
 - **Add an existing document:** upload the form's Word or PDF file with the same details.
 - **Bulk import:** bring in many forms at once.
 
-Adaptify checks that each form number is available and locks it to your form. Each form you add is listed in the project as an addition.
+Each form you add is listed in the project as an addition.
 
 ![The Forms tab with one form added, change type Addition](../../assets/workbench/new-product-project-form-added.webp)
 

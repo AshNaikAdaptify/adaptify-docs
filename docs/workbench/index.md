@@ -37,7 +37,6 @@ Open it from **Workbench** in the left navigation.
 |---|---|
 | Change forms, rates or rules of a published product | **Product update**. See [Start a product update](create-project/product-update.md). |
 | Sell a product you already have in a new state | **New product** → **New jurisdiction for existing product**. See [Start a project to add a state](create-project/new-jurisdiction.md). |
-| Build a brand-new product | **New product**. See [Build a new product in Workbench](new-product/index.md). |
 
 ## Inside a project
 
