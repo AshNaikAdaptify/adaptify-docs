@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -498,6 +503,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1135,6 +1144,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1605,6 +1670,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1669,6 +1738,62 @@
     
   
     Start a new product project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../workbench/new-product/add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../workbench/new-product/finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
   
 
     
@@ -2670,9 +2795,13 @@
 <li>Open <strong>Product Vault</strong> and open the product.</li>
 <li>Select <strong>Actions</strong>, then <strong>Edit product</strong>.</li>
 <li>Under <strong>Jurisdictions</strong>, add the new state. The rest of the product's details are locked once a state is published.</li>
-<li>Select <strong>Save</strong>. <code>TODO verify</code> what you see after saving, and the new state's status.</li>
-<li>Choose the new state under <strong>Jurisdiction</strong>, then upload its documents. See <a href="../../import-documents/">Upload documents for a state</a>. <code>TODO verify</code> this step.</li>
+<li>Select <strong>Save</strong>. You see "Product updated".</li>
+<li>Choose the new state under <strong>Jurisdiction</strong>. It's empty and marked <strong>pending import</strong>, with "No releases yet — publish this jurisdiction to create its initial release."</li>
+<li>Upload the state's documents on its page, or use <strong>Actions</strong> → <strong>Import forms</strong>, <strong>Import manuals</strong>, <strong>Import rates</strong> or <strong>Import supporting materials</strong>. See <a href="../../import-documents/">Upload documents for a state</a>.</li>
 </ol>
+<p><img alt="Edit product dialog with a second state added under Jurisdictions" src="../../../assets/product-vault/edit-product-add-state.webp" /></p>
+<p><img alt="The new state, marked pending import, with no releases yet and an upload area" src="../../../assets/product-vault/new-state-pending-import.webp" /></p>
+<p>The new state starts empty: no forms are copied from your other states. To start from another state's forms, <a href="../../../workbench/create-project/new-jurisdiction/">start a project to add a state</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can't add a state from the <strong>Jurisdiction</strong> selector on the product page. It only lists the product's current states.</p>
@@ -2797,7 +2926,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Add a state with Edit product\n\nUse this when you already sell the product in the state, but the state was never added in Adaptify. If you\u0027re expanding into a new state where you don\u0027t have the product yet, [start a project to add a state](../../workbench/create-project/new-jurisdiction.md) instead.\n\n## Steps\n\n1. Open **Product Vault** and open the product.\n2. Select **Actions**, then **Edit product**.\n3. Under **Jurisdictions**, add the new state. The rest of the product\u0027s details are locked once a state is published.\n4. Select **Save**. `TODO verify` what you see after saving, and the new state\u0027s status.\n5. Choose the new state under **Jurisdiction**, then upload its documents. See [Upload documents for a state](../import-documents.md). `TODO verify` this step.\n\n!!! note\n    You can\u0027t add a state from the **Jurisdiction** selector on the product page. It only lists the product\u0027s current states.\n\n## What happens next\n\nProcess and publish the new state like your first ones. See [Add metadata and process documents](../process-documents/index.md) and [Review and publish](../review-and-publish.md).\n\nTo compare both ways, see [Add a state to a product](index.md).\n", "src": "product-vault/add-a-state/edit-product.md", "title": "Add a state with Edit product"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Add a state with Edit product\n\nUse this when you already sell the product in the state, but the state was never added in Adaptify. If you\u0027re expanding into a new state where you don\u0027t have the product yet, [start a project to add a state](../../workbench/create-project/new-jurisdiction.md) instead.\n\n## Steps\n\n1. Open **Product Vault** and open the product.\n2. Select **Actions**, then **Edit product**.\n3. Under **Jurisdictions**, add the new state. The rest of the product\u0027s details are locked once a state is published.\n4. Select **Save**. You see \"Product updated\".\n5. Choose the new state under **Jurisdiction**. It\u0027s empty and marked **pending import**, with \"No releases yet \u2014 publish this jurisdiction to create its initial release.\"\n6. Upload the state\u0027s documents on its page, or use **Actions** \u2192 **Import forms**, **Import manuals**, **Import rates** or **Import supporting materials**. See [Upload documents for a state](../import-documents.md).\n\n![Edit product dialog with a second state added under Jurisdictions](../../assets/product-vault/edit-product-add-state.webp)\n\n![The new state, marked pending import, with no releases yet and an upload area](../../assets/product-vault/new-state-pending-import.webp)\n\nThe new state starts empty: no forms are copied from your other states. To start from another state\u0027s forms, [start a project to add a state](../../workbench/create-project/new-jurisdiction.md).\n\n!!! note\n    You can\u0027t add a state from the **Jurisdiction** selector on the product page. It only lists the product\u0027s current states.\n\n## What happens next\n\nProcess and publish the new state like your first ones. See [Add metadata and process documents](../process-documents/index.md) and [Review and publish](../review-and-publish.md).\n\nTo compare both ways, see [Add a state to a product](index.md).\n", "src": "product-vault/add-a-state/edit-product.md", "title": "Add a state with Edit product"}</script>
   
       <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       

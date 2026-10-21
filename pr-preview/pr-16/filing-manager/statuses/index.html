@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -496,6 +501,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1051,6 +1060,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-vault/delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-vault/delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1521,6 +1586,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1585,6 +1654,62 @@
     
   
     Start a new product project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workbench/new-product/add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workbench/new-product/finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
   
 
     
@@ -2758,8 +2883,12 @@
 <td>The state must approve the filing before you use it.</td>
 </tr>
 <tr>
-<td>Other types</td>
-<td><code>TODO verify</code> the full list, for example "File and use".</td>
+<td><strong>File and use</strong></td>
+<td>You file with the state and can use the filing once it's filed.</td>
+</tr>
+<tr>
+<td><strong>Use and file</strong></td>
+<td>You can use the filing first, then file it within the state's deadline.</td>
 </tr>
 </tbody>
 </table>
@@ -2900,7 +3029,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Filing statuses and dispositions\n\nA filing page shows a status for its package, its submission and each objection. This page lists the values confirmed so far. `TODO verify` the full list and what each value does.\n\n## Filing package\n\n| Status | Meaning |\n|---|---|\n| **Not generated** | No package yet. |\n| **Generated** | The package was built and downloaded as a ZIP with **Generate filing package**. |\n\n## Submission and disposition\n\nYou record the submission with **Manual submission**. The **Disposition status** then tracks the state\u0027s decision. To change it, select the status chip next to **Submission**, set **Disposition status** and the **Change date**, and save.\n\n| Status | Meaning |\n|---|---|\n| **Not started** | The submission hasn\u0027t been recorded yet. |\n| **Pending** | Submitted to the state and waiting on a decision. |\n| **Approved** | The state approved the filing. You can now archive it with **Archive project** and create the new release. |\n\n`TODO verify` the other **Disposition status** options and when to use each. The list also shows **Disapproved**, **Withdrawn**, **Closed** and **Noted**, which haven\u0027t been tested yet.\n\n## Approval type\n\nYou set the approval type for each state when you complete a project as Admitted, and it shows again when you record the submission.\n\n| Approval type | Meaning |\n|---|---|\n| **Prior approval** | The state must approve the filing before you use it. |\n| Other types | `TODO verify` the full list, for example \"File and use\". |\n\n## Objections\n\n| Status | Meaning |\n|---|---|\n| **In Progress** | The objection is logged and your response is being prepared. |\n| **Response submitted** | You built the response package for this objection. |\n\nEach response item shows **Complete** when it\u0027s done. `TODO verify` any other objection or item statuses.\n", "src": "filing-manager/statuses.md", "title": "Filing statuses and dispositions"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Filing statuses and dispositions\n\nA filing page shows a status for its package, its submission and each objection. This page lists the values confirmed so far. `TODO verify` the full list and what each value does.\n\n## Filing package\n\n| Status | Meaning |\n|---|---|\n| **Not generated** | No package yet. |\n| **Generated** | The package was built and downloaded as a ZIP with **Generate filing package**. |\n\n## Submission and disposition\n\nYou record the submission with **Manual submission**. The **Disposition status** then tracks the state\u0027s decision. To change it, select the status chip next to **Submission**, set **Disposition status** and the **Change date**, and save.\n\n| Status | Meaning |\n|---|---|\n| **Not started** | The submission hasn\u0027t been recorded yet. |\n| **Pending** | Submitted to the state and waiting on a decision. |\n| **Approved** | The state approved the filing. You can now archive it with **Archive project** and create the new release. |\n\n`TODO verify` the other **Disposition status** options and when to use each. The list also shows **Disapproved**, **Withdrawn**, **Closed** and **Noted**, which haven\u0027t been tested yet.\n\n## Approval type\n\nYou set the approval type for each state when you complete a project as Admitted, and it shows again when you record the submission.\n\n| Approval type | Meaning |\n|---|---|\n| **Prior approval** | The state must approve the filing before you use it. |\n| **File and use** | You file with the state and can use the filing once it\u0027s filed. |\n| **Use and file** | You can use the filing first, then file it within the state\u0027s deadline. |\n\n## Objections\n\n| Status | Meaning |\n|---|---|\n| **In Progress** | The objection is logged and your response is being prepared. |\n| **Response submitted** | You built the response package for this objection. |\n\nEach response item shows **Complete** when it\u0027s done. `TODO verify` any other objection or item statuses.\n", "src": "filing-manager/statuses.md", "title": "Filing statuses and dispositions"}</script>
   
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       

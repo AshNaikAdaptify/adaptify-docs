@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -496,6 +501,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1051,6 +1060,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-vault/delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-vault/delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1525,6 +1590,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1589,6 +1658,62 @@
     
   
     Start a new product project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
   
 
     
@@ -2538,6 +2663,15 @@
     </span>
   </a>
   
+</li><li class="md-nav__item">
+  <a href="#the-other-way-add-product-in-the-product-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The other way: Add product in the Product Vault
+      
+    </span>
+  </a>
+  
 </li>
     </ul>
   
@@ -2575,15 +2709,21 @@
 </div>
 
   
-<p>A <strong>New product</strong> project takes a brand-new insurance product from idea to build in the Project Workbench (the Workbench). Your team works on it together, phase by phase, like any other project.</p>
-<p>Already have the product's documents and just want it in the Product Vault? Use <a href="../../product-vault/create-product/">Create a product</a> instead.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This workflow is still being built, so steps and screens may change.</p>
+</div>
+<p>A <strong>New product</strong> project takes a brand-new insurance product from idea to build in the Project Workbench (the Workbench). Your team works on it together, phase by phase, like any other project. When you complete it, the product lands in the Product Vault with its first release.</p>
 <h2 id="the-steps">The steps<a class="headerlink" href="#the-steps" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="start/">Start a new product project</a>. Choose <strong>New product</strong> and work through the project wizard.</li>
-<li>Add the product's forms, rates and rules to the project. <code>TODO verify</code>: these steps aren't documented yet.</li>
-<li>Finish the project so the product lands in the Product Vault. <code>TODO verify</code>: these steps aren't documented yet.</li>
+<li><a href="add-documents/">Add the product's documents</a>: add each form with its file. A project has one type, so rates and rules each need their own project (a <strong>Rates</strong> or <strong>Rules</strong> project).</li>
+<li><a href="finish/">Finish and publish the new product</a>: move the project to <strong>End</strong> and complete it as <strong>Non-admitted</strong>. The product gets a <strong>Baseline</strong> release, marked <strong>Current release</strong>.</li>
 </ol>
+<p>You won't see the product in the Product Vault until the project is completed. <code>TODO verify</code> whether that's intended.</p>
 <p>To move the project between phases, see <a href="../phases/">Move work through phases</a>.</p>
+<h2 id="the-other-way-add-product-in-the-product-vault">The other way: Add product in the Product Vault<a class="headerlink" href="#the-other-way-add-product-in-the-product-vault" title="Permanent link">&para;</a></h2>
+<p>You can also select <strong>Add product</strong> in the <strong>Product Vault</strong>. That creates the product right away with no Workbench project, marked <strong>Pending Import</strong>, with no release yet. You then upload, process and publish each state yourself. See <a href="../../product-vault/create-product/">Create a product</a>.</p>
 
 
 
@@ -2701,7 +2841,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Build a new product in Workbench\n\nA **New product** project takes a brand-new insurance product from idea to build in the Project Workbench (the Workbench). Your team works on it together, phase by phase, like any other project.\n\nAlready have the product\u0027s documents and just want it in the Product Vault? Use [Create a product](../../product-vault/create-product.md) instead.\n\n## The steps\n\n1. [Start a new product project](start.md). Choose **New product** and work through the project wizard.\n2. Add the product\u0027s forms, rates and rules to the project. `TODO verify`: these steps aren\u0027t documented yet.\n3. Finish the project so the product lands in the Product Vault. `TODO verify`: these steps aren\u0027t documented yet.\n\nTo move the project between phases, see [Move work through phases](../phases.md).\n", "src": "workbench/new-product/index.md", "title": "Build a new product in Workbench"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Build a new product in Workbench\n\n!!! note\n    This workflow is still being built, so steps and screens may change.\n\nA **New product** project takes a brand-new insurance product from idea to build in the Project Workbench (the Workbench). Your team works on it together, phase by phase, like any other project. When you complete it, the product lands in the Product Vault with its first release.\n\n## The steps\n\n1. [Start a new product project](start.md). Choose **New product** and work through the project wizard.\n2. [Add the product\u0027s documents](add-documents.md): add each form with its file. A project has one type, so rates and rules each need their own project (a **Rates** or **Rules** project).\n3. [Finish and publish the new product](finish.md): move the project to **End** and complete it as **Non-admitted**. The product gets a **Baseline** release, marked **Current release**.\n\nYou won\u0027t see the product in the Product Vault until the project is completed. `TODO verify` whether that\u0027s intended.\n\nTo move the project between phases, see [Move work through phases](../phases.md).\n\n## The other way: Add product in the Product Vault\n\nYou can also select **Add product** in the **Product Vault**. That creates the product right away with no Workbench project, marked **Pending Import**, with no release yet. You then upload, process and publish each state yourself. See [Create a product](../../product-vault/create-product.md).\n", "src": "workbench/new-product/index.md", "title": "Build a new product in Workbench"}</script>
   
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       

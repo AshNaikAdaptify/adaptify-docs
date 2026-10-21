@@ -64,10 +64,20 @@ body{-webkit-font-smoothing:antialiased}
 .adaptify-sidenav__tab{appearance:none;-webkit-appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;margin:0 0 -1px;border-radius:0;box-shadow:none;color:var(--md-default-fg-color--light);font:inherit;font-size:.75rem;font-weight:500;line-height:1.2;letter-spacing:0;padding:.65rem .2rem .5rem;flex:1 1 0;text-align:center;cursor:pointer}
 .adaptify-sidenav__tab:hover{color:var(--md-default-fg-color)}
 .adaptify-sidenav__tab[aria-selected=true]{color:var(--md-default-fg-color);border-bottom-color:#0091b5}
-.adaptify-sidenav__tools{display:flex;align-items:center;gap:.05rem;min-height:1.45rem;padding:.45rem .4rem .15rem .7rem}
-.adaptify-sidenav__tool{appearance:none;-webkit-appearance:none;background:transparent;border:0;box-shadow:none;color:var(--md-default-fg-color--light);font:inherit;font-size:.65rem;font-weight:500;line-height:1.2;padding:.2rem .32rem;border-radius:.3rem;cursor:pointer}
+.adaptify-sidenav__tools{position:relative;z-index:4;display:flex;align-items:center;justify-content:flex-end;gap:.15rem;min-height:1.7rem;padding:.35rem .45rem .1rem}
+.adaptify-sidenav__tool{appearance:none;-webkit-appearance:none;position:relative;display:flex;align-items:center;justify-content:center;width:1.65rem;height:1.65rem;padding:0;background:transparent;border:0;border-radius:.3rem;box-shadow:none;color:var(--md-default-fg-color--light);cursor:pointer}
 .adaptify-sidenav__tool:hover{color:var(--md-default-fg-color);background:#e3e8ef}
-.adaptify-sidenav__sep{color:var(--md-default-fg-color--lighter);font-size:.65rem;line-height:1;user-select:none}
+.adaptify-sidenav__glyph{display:flex;width:.9rem;height:.9rem}
+.adaptify-sidenav__glyph svg{display:block;width:100%;height:100%;fill:currentColor}
+.adaptify-tip{position:absolute;z-index:5;right:0;top:calc(100% + .28rem);box-sizing:border-box;width:9.4rem;margin:0;padding:.32rem .45rem;border:1px solid var(--ad-border);border-radius:.35rem;background:#111827;color:#fff;font-size:.68rem;font-weight:500;line-height:1.35;letter-spacing:0;text-align:left;white-space:normal;box-shadow:0 6px 16px rgba(17,24,39,.16);opacity:0;visibility:hidden;pointer-events:none}
+[data-md-color-scheme=slate] .adaptify-tip{background:#1b2433;color:#e8eaee;border-color:#5c6b82;box-shadow:0 6px 16px rgba(0,0,0,.4)}
+@media (hover:hover) and (pointer:fine){
+  .md-sidebar--primary a.md-nav__link[data-tip],.adaptify-bookmarks a[data-tip]{position:relative}
+  .md-sidebar--primary a.md-nav__link[data-tip]::after,.adaptify-bookmarks a[data-tip]::after{content:attr(data-tip);position:absolute;z-index:30;left:0;top:calc(100% + .2rem);box-sizing:border-box;width:max-content;max-width:11rem;padding:.28rem .45rem;border:1px solid var(--ad-border);border-radius:.35rem;background:#111827;color:#fff;font-size:.68rem;font-weight:500;line-height:1.35;letter-spacing:0;text-align:left;white-space:normal;box-shadow:0 6px 16px rgba(17,24,39,.16);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .12s ease,visibility 0s linear .12s}
+  .md-sidebar--primary a.md-nav__link[data-tip]:hover,.md-sidebar--primary a.md-nav__link[data-tip]:focus-visible,.adaptify-bookmarks a[data-tip]:hover,.adaptify-bookmarks a[data-tip]:focus-visible{z-index:5}
+  .md-sidebar--primary a.md-nav__link[data-tip]:hover::after,.md-sidebar--primary a.md-nav__link[data-tip]:focus-visible::after,.adaptify-bookmarks a[data-tip]:hover::after,.adaptify-bookmarks a[data-tip]:focus-visible::after,.adaptify-sidenav__tool:hover .adaptify-tip,.adaptify-sidenav__tool:focus-visible .adaptify-tip{opacity:1;visibility:visible;transition:opacity .12s ease .28s,visibility 0s linear .28s}
+  [data-md-color-scheme=slate] .md-sidebar--primary a.md-nav__link[data-tip]::after,[data-md-color-scheme=slate] .adaptify-bookmarks a[data-tip]::after{background:#1b2433;color:#e8eaee;border-color:#5c6b82;box-shadow:0 6px 16px rgba(0,0,0,.4)}
+}
 html[data-sidebar-tab=bookmarks] #adaptify-panel-home{display:none}
 html[data-sidebar-tab=bookmarks] #adaptify-panel-bookmarks{display:block}
 @media screen and (max-width:76.234375em){

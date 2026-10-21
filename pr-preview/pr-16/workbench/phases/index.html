@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -496,6 +501,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1046,6 +1055,62 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-vault/delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-vault/delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1612,6 +1677,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1676,6 +1745,62 @@
     
   
     Start a new product project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new-product/add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new-product/finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
   
 
     
@@ -2685,12 +2810,16 @@
 <ol>
 <li>Go to <strong>Workbench</strong> and open the project. If your update covers several types, open the child project you're working on, for example the forms project (see <a href="../update-forms/">Update forms</a>).</li>
 <li>Check the current phase on the project page.</li>
-<li>Select <strong>Submit</strong>.</li>
-<li>Choose the assignee for the next phase. Select the circle next to the person's name. <code>TODO verify</code> the field labels in the Submit dialog.</li>
-<li>Pick a due date from the calendar.</li>
-<li>Add notes for the next person, for example "Ready for review."</li>
-<li>Select <strong>Submit</strong>. The project moves to the next phase.</li>
+<li>Select <strong>Submit</strong>. The dialog shows the <strong>Current phase</strong> and <strong>Next phase</strong>.</li>
+<li>Under <strong>Select Assignee</strong>, choose the person for the next phase.</li>
+<li>If you want a due date, pick it from the calendar. It's optional.</li>
+<li>Under <strong>Add notes</strong>, add notes for the next person, for example "Ready for review."</li>
+<li>Select <strong>Submit</strong>. You see "Successfully submitted!", and the project moves to the next phase.</li>
 </ol>
+<p>Moving from <strong>Approve</strong> to <strong>End</strong> asks only for notes.</p>
+<p><img alt="Submit dialog: Current phase, Next phase, Select Assignee, Due date and Add notes" src="../../assets/workbench/submit-dialog-assignee-notes.webp" /></p>
+<p><img alt="Submit dialog from Approve to End: Add notes only" src="../../assets/workbench/submit-dialog-notes-only.webp" /></p>
+<p>From <strong>Review</strong> on, the person in that phase can also select <strong>Reject</strong>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Pick dates from the calendar instead of typing them. Wait for the dialog to finish before you move on.</p>
@@ -2718,7 +2847,7 @@
 <tr>
 <td>Rules</td>
 <td><strong>Rule Update</strong></td>
-<td><code>TODO verify</code></td>
+<td><strong>Select</strong> → <strong>Review</strong> → <strong>Approve</strong> → <strong>End</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2842,7 +2971,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Move work through phases\n\nEach Workbench project follows a workflow made of phases. When your part is done, you submit the project to the next phase and hand it to the next person.\n\n## Steps\n\n1. Go to **Workbench** and open the project. If your update covers several types, open the child project you\u0027re working on, for example the forms project (see [Update forms](update-forms.md)).\n2. Check the current phase on the project page.\n3. Select **Submit**.\n4. Choose the assignee for the next phase. Select the circle next to the person\u0027s name. `TODO verify` the field labels in the Submit dialog.\n5. Pick a due date from the calendar.\n6. Add notes for the next person, for example \"Ready for review.\"\n7. Select **Submit**. The project moves to the next phase.\n\n!!! tip\n    Pick dates from the calendar instead of typing them. Wait for the dialog to finish before you move on.\n\n## Phases by project type\n\n| Project type | Workflow | Phases |\n|---|---|---|\n| Forms | **Product Update** | **Select** \u2192 **Review** \u2192 **Approve** \u2192 **End** |\n| Rates | **Rate Update** | **Select** \u2192 **End** |\n| Rules | **Rule Update** | `TODO verify` |\n\nYour organization admin manages these workflows under **Workflow management** on the Dashboard. `TODO verify` whether your organization\u0027s workflows have the same phases.\n\n## What happens next\n\nWhen every child project reaches **End**, complete the project. See [Complete a project](complete-project/index.md).\n", "src": "workbench/phases.md", "title": "Move work through phases"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Move work through phases\n\nEach Workbench project follows a workflow made of phases. When your part is done, you submit the project to the next phase and hand it to the next person.\n\n## Steps\n\n1. Go to **Workbench** and open the project. If your update covers several types, open the child project you\u0027re working on, for example the forms project (see [Update forms](update-forms.md)).\n2. Check the current phase on the project page.\n3. Select **Submit**. The dialog shows the **Current phase** and **Next phase**.\n4. Under **Select Assignee**, choose the person for the next phase.\n5. If you want a due date, pick it from the calendar. It\u0027s optional.\n6. Under **Add notes**, add notes for the next person, for example \"Ready for review.\"\n7. Select **Submit**. You see \"Successfully submitted!\", and the project moves to the next phase.\n\nMoving from **Approve** to **End** asks only for notes.\n\n![Submit dialog: Current phase, Next phase, Select Assignee, Due date and Add notes](../assets/workbench/submit-dialog-assignee-notes.webp)\n\n![Submit dialog from Approve to End: Add notes only](../assets/workbench/submit-dialog-notes-only.webp)\n\nFrom **Review** on, the person in that phase can also select **Reject**.\n\n!!! tip\n    Pick dates from the calendar instead of typing them. Wait for the dialog to finish before you move on.\n\n## Phases by project type\n\n| Project type | Workflow | Phases |\n|---|---|---|\n| Forms | **Product Update** | **Select** \u2192 **Review** \u2192 **Approve** \u2192 **End** |\n| Rates | **Rate Update** | **Select** \u2192 **End** |\n| Rules | **Rule Update** | **Select** \u2192 **Review** \u2192 **Approve** \u2192 **End** |\n\nYour organization admin manages these workflows under **Workflow management** on the Dashboard. `TODO verify` whether your organization\u0027s workflows have the same phases.\n\n## What happens next\n\nWhen every child project reaches **End**, complete the project. See [Complete a project](complete-project/index.md).\n", "src": "workbench/phases.md", "title": "Move work through phases"}</script>
   
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       

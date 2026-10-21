@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -496,6 +501,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1046,6 +1055,62 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../product-vault/delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../product-vault/delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1614,6 +1679,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1678,6 +1747,62 @@
     
   
     Start a new product project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../new-product/add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../new-product/finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
   
 
     
@@ -2690,13 +2815,28 @@
 <ol>
 <li>In <strong>Workbench</strong>, select <strong>+ New project</strong>, then <strong>New product</strong>.</li>
 <li><strong>Product:</strong> under <strong>Product type</strong>, keep <strong>New jurisdiction for existing product</strong>. It's selected at first.</li>
-<li><strong>Project:</strong> choose <strong>Forms</strong>, <strong>Rates</strong> or <strong>Rules</strong>. <code>TODO verify</code> which types copy from the source state.</li>
-<li><strong>Configuration:</strong> keep <strong>Product Vault</strong> as the <strong>Product source type</strong>. Choose the <strong>Source product</strong> and the <strong>Source jurisdiction</strong> whose forms you want to copy.</li>
-<li><strong>Source:</strong> choose the <strong>Target jurisdiction</strong> (the new state) and the <strong>Type of insurance</strong>, for example 19.0 Personal Auto. Add a <strong>Subtype of insurance</strong> if one applies. The <strong>Existing product</strong> is already filled in.</li>
-<li><strong>Finalize:</strong> enter the <strong>Project title</strong> and <strong>Project description</strong>, choose the <strong>Workflow</strong>, and pick a <strong>Due date</strong> from the calendar. Add anyone else under <strong>Additional members</strong>.</li>
-<li>Select <strong>Create project</strong>. <code>TODO verify</code> what opens next.</li>
+<li><strong>Project:</strong> choose <strong>Forms</strong>.</li>
+<li>
+<p><strong>Configuration:</strong> keep <strong>Product Vault</strong> as the <strong>Product source type</strong>. Choose the <strong>Source product</strong> and the <strong>Source jurisdiction</strong> whose forms you want to copy. <strong>Source jurisdiction</strong> lists only states that have a release.</p>
+<p><img alt="Configuration step: Product Vault selected, with Source product and Source jurisdiction" src="../../../assets/workbench/add-state-project-configuration.webp" /></p>
+</li>
+<li>
+<p><strong>Source:</strong> choose the <strong>Target jurisdiction</strong> (the new state) and the <strong>Type of insurance</strong>, for example 19.0 Personal Auto. Add a <strong>Subtype of insurance</strong> if one applies. The <strong>Existing product</strong> is already filled in.</p>
+</li>
+<li>
+<p><strong>Finalize:</strong> enter the <strong>Project title</strong> and <strong>Project description</strong>, choose the <strong>Workflow</strong>, and pick a <strong>Due date</strong> from the calendar. Add anyone else under <strong>Additional members</strong>.</p>
+<p><img alt="Finalize step with Project title, Project description, Workflow and Due date" src="../../../assets/workbench/add-state-project-finalize.webp" /></p>
+</li>
+<li>
+<p>Select <strong>Create project</strong>. The project opens in the <strong>Select</strong> phase. The <strong>Forms</strong> tab lists the source state's forms with the change type <strong>Include</strong>.</p>
+</li>
 </ol>
+<p><img alt="The new project's Forms tab, with a copied form marked Include" src="../../../assets/workbench/add-state-project-forms.webp" /></p>
 <p><strong>Target jurisdiction</strong> lists only states the product doesn't have yet.</p>
+<div class="admonition note">
+<p class="admonition-title">Known limitation: forms only</p>
+<p>This project copies the source state's forms only. Rates, manuals and supporting materials aren't copied. To add the new state's rules after it's published, see <a href="../../update-rules/">Update rules</a>.</p>
+</div>
 <h2 id="what-happens-next">What happens next<a class="headerlink" href="#what-happens-next" title="Permanent link">&para;</a></h2>
 <p>Review the copied forms, add the new state's own forms and publish the new state. See <a href="../../../product-vault/add-a-state/from-existing-state/">Copy a state's forms to a new state</a>.</p>
 
@@ -2816,7 +2956,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Start a project to add a state\n\nA **New jurisdiction for existing product** project adds a state to a product that\u0027s already in the Vault. The new state starts from another state\u0027s forms. You find it under **New product** in the **New project** menu.\n\nUse this when you\u0027re expanding into a new state where you don\u0027t have the product yet. If you already sell the product in the state but the state was never added in Adaptify, [add it with Edit product](../../product-vault/add-a-state/edit-product.md) instead.\n\n## Before you start\n\nThe product is published in the state you\u0027ll copy from. See [Review and publish](../../product-vault/review-and-publish.md).\n\n## Steps\n\n1. In **Workbench**, select **+ New project**, then **New product**.\n2. **Product:** under **Product type**, keep **New jurisdiction for existing product**. It\u0027s selected at first.\n3. **Project:** choose **Forms**, **Rates** or **Rules**. `TODO verify` which types copy from the source state.\n4. **Configuration:** keep **Product Vault** as the **Product source type**. Choose the **Source product** and the **Source jurisdiction** whose forms you want to copy.\n5. **Source:** choose the **Target jurisdiction** (the new state) and the **Type of insurance**, for example 19.0 Personal Auto. Add a **Subtype of insurance** if one applies. The **Existing product** is already filled in.\n6. **Finalize:** enter the **Project title** and **Project description**, choose the **Workflow**, and pick a **Due date** from the calendar. Add anyone else under **Additional members**.\n7. Select **Create project**. `TODO verify` what opens next.\n\n**Target jurisdiction** lists only states the product doesn\u0027t have yet.\n\n## What happens next\n\nReview the copied forms, add the new state\u0027s own forms and publish the new state. See [Copy a state\u0027s forms to a new state](../../product-vault/add-a-state/from-existing-state.md).\n", "src": "workbench/create-project/new-jurisdiction.md", "title": "Start a project to add a state"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Start a project to add a state\n\nA **New jurisdiction for existing product** project adds a state to a product that\u0027s already in the Vault. The new state starts from another state\u0027s forms. You find it under **New product** in the **New project** menu.\n\nUse this when you\u0027re expanding into a new state where you don\u0027t have the product yet. If you already sell the product in the state but the state was never added in Adaptify, [add it with Edit product](../../product-vault/add-a-state/edit-product.md) instead.\n\n## Before you start\n\nThe product is published in the state you\u0027ll copy from. See [Review and publish](../../product-vault/review-and-publish.md).\n\n## Steps\n\n1. In **Workbench**, select **+ New project**, then **New product**.\n2. **Product:** under **Product type**, keep **New jurisdiction for existing product**. It\u0027s selected at first.\n3. **Project:** choose **Forms**.\n4. **Configuration:** keep **Product Vault** as the **Product source type**. Choose the **Source product** and the **Source jurisdiction** whose forms you want to copy. **Source jurisdiction** lists only states that have a release.\n\n    ![Configuration step: Product Vault selected, with Source product and Source jurisdiction](../../assets/workbench/add-state-project-configuration.webp)\n\n5. **Source:** choose the **Target jurisdiction** (the new state) and the **Type of insurance**, for example 19.0 Personal Auto. Add a **Subtype of insurance** if one applies. The **Existing product** is already filled in.\n6. **Finalize:** enter the **Project title** and **Project description**, choose the **Workflow**, and pick a **Due date** from the calendar. Add anyone else under **Additional members**.\n\n    ![Finalize step with Project title, Project description, Workflow and Due date](../../assets/workbench/add-state-project-finalize.webp)\n\n7. Select **Create project**. The project opens in the **Select** phase. The **Forms** tab lists the source state\u0027s forms with the change type **Include**.\n\n![The new project\u0027s Forms tab, with a copied form marked Include](../../assets/workbench/add-state-project-forms.webp)\n\n**Target jurisdiction** lists only states the product doesn\u0027t have yet.\n\n!!! note \"Known limitation: forms only\"\n    This project copies the source state\u0027s forms only. Rates, manuals and supporting materials aren\u0027t copied. To add the new state\u0027s rules after it\u0027s published, see [Update rules](../update-rules.md).\n\n## What happens next\n\nReview the copied forms, add the new state\u0027s own forms and publish the new state. See [Copy a state\u0027s forms to a new state](../../product-vault/add-a-state/from-existing-state.md).\n", "src": "workbench/create-project/new-jurisdiction.md", "title": "Start a project to add a state"}</script>
   
       <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       

@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../../release-to-new-release/">
+        <link rel="next" href="../add-documents/">
       
       
         
@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -496,6 +501,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1051,6 +1060,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../product-vault/delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../product-vault/delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1525,6 +1590,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1668,6 +1737,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2646,21 +2771,45 @@
 </div>
 
   
-<p>Start here when your team is building a brand-new insurance product.</p>
-<p><code>TODO verify</code>: the wizard's details for <strong>New product</strong> haven't been checked end to end. The step names and <strong>Finalize</strong> fields below come from the same wizard with <strong>New jurisdiction for existing product</strong> selected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This workflow is still being built, so steps and screens may change.</p>
+</div>
+<p>Start here when your team is building a brand-new insurance product. The <strong>New product</strong> wizard has five steps: <strong>Product</strong>, <strong>Project</strong>, <strong>Configuration</strong>, <strong>Source</strong> and <strong>Finalize</strong>. Select <strong>Next</strong> to move on, or <strong>Back</strong> to change an earlier step.</p>
 <h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Go to <strong>Workbench</strong>, select <strong>+ New project</strong>, then choose <strong>New product</strong> ("Create a new insurance product").</li>
-<li>Under <strong>Product type</strong>, select the <strong>New product</strong> card. <strong>New jurisdiction for existing product</strong> is selected at first. That one adds a state to a product you already have. See <a href="../../../product-vault/add-a-state/from-existing-state/">Copy a state's forms to a new state</a>.</li>
-<li>Work through the wizard: <strong>Product</strong>, <strong>Project</strong>, <strong>Configuration</strong> and <strong>Source</strong>. In <strong>Project</strong>, choose <strong>Forms</strong>, <strong>Rates</strong> or <strong>Rules</strong>. <code>TODO verify</code> what each step asks for with <strong>New product</strong>.</li>
-<li>In <strong>Finalize</strong>, enter the <strong>Project title</strong> and <strong>Project description</strong>, choose the <strong>Workflow</strong>, and pick a <strong>Due date</strong> from the calendar. Add anyone else under <strong>Additional members</strong>.</li>
-<li>Select <strong>Create project</strong>. <code>TODO verify</code> what opens next.</li>
+<li>
+<p><strong>Product:</strong> under <strong>Product type</strong>, select the <strong>New product</strong> card. (The other card, <strong>New jurisdiction for existing product</strong>, adds a state to a product you already have. See <a href="../../create-project/new-jurisdiction/">Start a project to add a state</a>.)</p>
+<p><img alt="Step 1, Product type: the New product card selected" src="../../../assets/workbench/new-product-step-product-type.webp" /></p>
+</li>
+<li>
+<p><strong>Project:</strong> under <strong>Project type</strong>, choose <strong>Forms</strong>. A project has one type, so rates and rules each need their own project.</p>
+<p><img alt="Step 2, Project type: Forms, Rates and Rules, with Forms selected" src="../../../assets/workbench/new-product-step-project-type.webp" /></p>
+</li>
+<li>
+<p><strong>Configuration:</strong> under <strong>Product source type</strong>, choose <strong>None</strong>.</p>
+<p><img alt="Step 3, Product source type: Product Vault, Content library and None, with None selected" src="../../../assets/workbench/new-product-step-source-none.webp" /></p>
+</li>
+<li>
+<p><strong>Source:</strong> under <strong>Product information</strong>, enter the <strong>Product name</strong> and <strong>Product description</strong>, then choose the <strong>Group</strong>, <strong>Underwriting company</strong>, <strong>Insurance type</strong>, <strong>Line of business</strong>, <strong>Jurisdiction</strong> and <strong>Type of insurance</strong> (for example 19.0 Personal Auto). <strong>Subtype of insurance</strong> is optional.</p>
+<p><img alt="Step 4, Product information with every field filled in" src="../../../assets/workbench/new-product-step-product-information.webp" /></p>
+</li>
+<li>
+<p><strong>Finalize:</strong> under <strong>Project details</strong>, enter the <strong>Project title</strong> and <strong>Project description</strong>, and check the <strong>Workflow</strong>: <strong>Product Update</strong> for forms, <strong>Rate Update</strong> for rates or <strong>Rule Update</strong> for rules. Pick a <strong>Due date</strong> from the calendar. <strong>Project description</strong> and <strong>Due date</strong> are both required. Under <strong>Team setup</strong>, you're listed in <strong>Default members</strong>. Add anyone else under <strong>Additional members</strong>.</p>
+<p><img alt="Step 5, Finalize: Project details and Team setup, with the Create project button" src="../../../assets/workbench/new-product-step-finalize.webp" /></p>
+</li>
+<li>
+<p>Select <strong>Create project</strong>. The project opens at <strong>Select</strong>, the first of its phases (<strong>Select</strong> → <strong>Review</strong> → <strong>Approve</strong> → <strong>End</strong>), with the <strong>Forms</strong>, <strong>Notes</strong>, <strong>Team</strong> and <strong>Activity</strong> tabs. The <strong>Forms</strong> tab reads "Add new or existing forms to your project to get started."</p>
+</li>
 </ol>
+<p><img alt="The new project right after Create project, with an empty Forms tab" src="../../../assets/workbench/new-product-project-empty.webp" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Pick the due date from the calendar. Typed dates may not be saved.</p>
+<p>Pick the due date from the calendar, then press <strong>Tab</strong> to leave the field so the date registers. Typed dates may not be saved.</p>
 </div>
-<p>Next: <a href="../">Build a new product in Workbench</a>.</p>
+<p>If <strong>Underwriting company</strong> shows "No Options" for your group, ask your organization admin to set up the group's underwriting companies. <code>TODO verify</code> where admins set them up.</p>
+<p>Next: <a href="../add-documents/">Add the product's documents</a>.</p>
 
 
 
@@ -2732,13 +2881,13 @@
         
         
           
-          <a href="../../../release-to-new-release/" class="md-footer__link md-footer__link--next" aria-label="Next: Release to New Release">
+          <a href="../add-documents/" class="md-footer__link md-footer__link--next" aria-label="Next: Add the product&#39;s documents">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Release to New Release
+                Add the product's documents
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2778,7 +2927,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Start a new product project\n\nStart here when your team is building a brand-new insurance product.\n\n`TODO verify`: the wizard\u0027s details for **New product** haven\u0027t been checked end to end. The step names and **Finalize** fields below come from the same wizard with **New jurisdiction for existing product** selected.\n\n## Steps\n\n1. Go to **Workbench**, select **+ New project**, then choose **New product** (\"Create a new insurance product\").\n2. Under **Product type**, select the **New product** card. **New jurisdiction for existing product** is selected at first. That one adds a state to a product you already have. See [Copy a state\u0027s forms to a new state](../../product-vault/add-a-state/from-existing-state.md).\n3. Work through the wizard: **Product**, **Project**, **Configuration** and **Source**. In **Project**, choose **Forms**, **Rates** or **Rules**. `TODO verify` what each step asks for with **New product**.\n4. In **Finalize**, enter the **Project title** and **Project description**, choose the **Workflow**, and pick a **Due date** from the calendar. Add anyone else under **Additional members**.\n5. Select **Create project**. `TODO verify` what opens next.\n\n!!! tip\n    Pick the due date from the calendar. Typed dates may not be saved.\n\nNext: [Build a new product in Workbench](index.md).\n", "src": "workbench/new-product/start.md", "title": "Start a new product project"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Start a new product project\n\n!!! note\n    This workflow is still being built, so steps and screens may change.\n\nStart here when your team is building a brand-new insurance product. The **New product** wizard has five steps: **Product**, **Project**, **Configuration**, **Source** and **Finalize**. Select **Next** to move on, or **Back** to change an earlier step.\n\n## Steps\n\n1. Go to **Workbench**, select **+ New project**, then choose **New product** (\"Create a new insurance product\").\n2. **Product:** under **Product type**, select the **New product** card. (The other card, **New jurisdiction for existing product**, adds a state to a product you already have. See [Start a project to add a state](../create-project/new-jurisdiction.md).)\n\n    ![Step 1, Product type: the New product card selected](../../assets/workbench/new-product-step-product-type.webp)\n\n3. **Project:** under **Project type**, choose **Forms**. A project has one type, so rates and rules each need their own project.\n\n    ![Step 2, Project type: Forms, Rates and Rules, with Forms selected](../../assets/workbench/new-product-step-project-type.webp)\n\n4. **Configuration:** under **Product source type**, choose **None**.\n\n    ![Step 3, Product source type: Product Vault, Content library and None, with None selected](../../assets/workbench/new-product-step-source-none.webp)\n\n5. **Source:** under **Product information**, enter the **Product name** and **Product description**, then choose the **Group**, **Underwriting company**, **Insurance type**, **Line of business**, **Jurisdiction** and **Type of insurance** (for example 19.0 Personal Auto). **Subtype of insurance** is optional.\n\n    ![Step 4, Product information with every field filled in](../../assets/workbench/new-product-step-product-information.webp)\n\n6. **Finalize:** under **Project details**, enter the **Project title** and **Project description**, and check the **Workflow**: **Product Update** for forms, **Rate Update** for rates or **Rule Update** for rules. Pick a **Due date** from the calendar. **Project description** and **Due date** are both required. Under **Team setup**, you\u0027re listed in **Default members**. Add anyone else under **Additional members**.\n\n    ![Step 5, Finalize: Project details and Team setup, with the Create project button](../../assets/workbench/new-product-step-finalize.webp)\n\n7. Select **Create project**. The project opens at **Select**, the first of its phases (**Select** \u2192 **Review** \u2192 **Approve** \u2192 **End**), with the **Forms**, **Notes**, **Team** and **Activity** tabs. The **Forms** tab reads \"Add new or existing forms to your project to get started.\"\n\n![The new project right after Create project, with an empty Forms tab](../../assets/workbench/new-product-project-empty.webp)\n\n!!! tip\n    Pick the due date from the calendar, then press **Tab** to leave the field so the date registers. Typed dates may not be saved.\n\nIf **Underwriting company** shows \"No Options\" for your group, ask your organization admin to set up the group\u0027s underwriting companies. `TODO verify` where admins set them up.\n\nNext: [Add the product\u0027s documents](add-documents.md).\n", "src": "workbench/new-product/start.md", "title": "Start a new product project"}</script>
   
       <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       

@@ -263,9 +263,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13H7v5h5v2H5V10h2v1h5zM8 4v2H4V4zm2-2H2v6h8zm10 9v2h-4v-2zm2-2h-8v6h8zm-2 9v2h-4v-2zm2-2h-8v6h8z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg></span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -496,6 +501,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1046,6 +1055,62 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../product-vault/delete-a-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete a State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../product-vault/delete-product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delete Product
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1605,6 +1670,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1669,6 +1738,62 @@
     
   
     Start a new product project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../new-product/add-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add the product's documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../new-product/finish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finish and publish the new product
   
 
     
@@ -2670,7 +2795,7 @@
 <li>Go to <strong>Workbench</strong> and open the project. Every child project should be at <strong>End</strong>.</li>
 <li>Select <strong>Complete project</strong>.</li>
 <li>Choose the <strong>Admitted</strong> tab. The filing owners load for your organization.</li>
-<li>For each state, choose the approval type, for example <strong>Prior approval</strong>, and the filing owner. <code>TODO verify</code> the field labels, and what the per-state <strong>Filing</strong> field controls.</li>
+<li>For each state, choose the <strong>Approval Type</strong> (<strong>Prior approval</strong>, <strong>File and use</strong> or <strong>Use and file</strong>) and the <strong>Owner</strong>. The dialog tells you how many filing projects it will create. <code>TODO verify</code> what the per-state <strong>Filing</strong> field controls.</li>
 <li>Review the summary, then confirm. <code>TODO verify</code> the confirm button label.</li>
 <li>Open <strong>Filing Manager</strong>. Each state has its own filing, named after your project and the state, for example "Filing - Personal Auto fall update (Form, Rate) (AL)".</li>
 </ol>
@@ -2797,7 +2922,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Complete as Admitted (create filings)\n\nUse **Admitted** for states that need a filing. Adaptify creates one filing for each state in **Filing Manager**.\n\n## Steps\n\n1. Go to **Workbench** and open the project. Every child project should be at **End**.\n2. Select **Complete project**.\n3. Choose the **Admitted** tab. The filing owners load for your organization.\n4. For each state, choose the approval type, for example **Prior approval**, and the filing owner. `TODO verify` the field labels, and what the per-state **Filing** field controls.\n5. Review the summary, then confirm. `TODO verify` the confirm button label.\n6. Open **Filing Manager**. Each state has its own filing, named after your project and the state, for example \"Filing - Personal Auto fall update (Form, Rate) (AL)\".\n\n!!! tip\n    Pick any dates from the calendar. Don\u0027t press Escape inside a date field: it closes the whole dialog, and you start again.\n\n## What happens next\n\nEach state\u0027s filing moves on its own: build the package, file with the state, track objections, record the approval and archive to a new release. The Release to New Release guide walks through every step. For the filing page itself, see [Filing Manager overview](../../filing-manager/index.md).\n", "src": "workbench/complete-project/admitted.md", "title": "Complete as Admitted (create filings)"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Complete as Admitted (create filings)\n\nUse **Admitted** for states that need a filing. Adaptify creates one filing for each state in **Filing Manager**.\n\n## Steps\n\n1. Go to **Workbench** and open the project. Every child project should be at **End**.\n2. Select **Complete project**.\n3. Choose the **Admitted** tab. The filing owners load for your organization.\n4. For each state, choose the **Approval Type** (**Prior approval**, **File and use** or **Use and file**) and the **Owner**. The dialog tells you how many filing projects it will create. `TODO verify` what the per-state **Filing** field controls.\n5. Review the summary, then confirm. `TODO verify` the confirm button label.\n6. Open **Filing Manager**. Each state has its own filing, named after your project and the state, for example \"Filing - Personal Auto fall update (Form, Rate) (AL)\".\n\n!!! tip\n    Pick any dates from the calendar. Don\u0027t press Escape inside a date field: it closes the whole dialog, and you start again.\n\n## What happens next\n\nEach state\u0027s filing moves on its own: build the package, file with the state, track objections, record the approval and archive to a new release. The Release to New Release guide walks through every step. For the filing page itself, see [Filing Manager overview](../../filing-manager/index.md).\n", "src": "workbench/complete-project/admitted.md", "title": "Complete as Admitted (create filings)"}</script>
   
       <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
