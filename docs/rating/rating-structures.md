@@ -33,8 +33,6 @@ Each structure in the list shows its name, a status badge (**Draft** or **Active
 - **Rating structure:** the tree of risk items and coverages, starting with **Policy**. Each item shows its cardinality, **Single** or **Multi**. Use **Search structures and fields** to find one.
 - **Applicable fields:** select an item in the tree to see its fields. Fields used as rating inputs show an **Input** tag, and rating outputs show an **Output** tag.
 
-![A rating structure: the Policy tree with a Vehicle risk item and two coverages, and the coverage's fields under Applicable fields](../assets/rating/rating-structure-detail-live.webp)
-
 ## Add risk items and coverages
 
 1. In the **Rating structure** panel, select **Edit**. The tree switches to edit mode and the button becomes **Exit edit**.
@@ -44,6 +42,19 @@ Each structure in the list shows its name, a status badge (**Draft** or **Active
 5. Select **Exit edit** when you're done.
 
 Use **Multi** for things a policy can have more than one of, such as several locations or vehicles, scheduled personal property or coverages. Use **Single** for everything else.
+
+## Add a field
+
+1. In the **Rating structure** panel, select **Edit** to switch to edit mode.
+2. Select the risk item or coverage in the tree, such as **Vehicle**. Its fields appear under **Applicable fields**.
+3. Select **+ Add field**. The **Add new field** form opens.
+4. Enter the **Field name**, for example Territory, and choose the **Data type**, for example **Text** (it's **String** in the Excel file).
+5. Under **Type**, tick **Input** if you enter this value to rate, or **Output** if you want to see it in the output.
+6. Add a **Description** and **Rule number** if you like.
+7. Select **Save changes**. The new field appears under **Applicable fields** with its **Input** or **Output** tag.
+8. Select **Exit edit** when you're done.
+
+![Adding a Territory field to Vehicle: the Add new field form under Applicable fields, in edit mode](../assets/rating/add-new-field.webp)
 
 ## Build the structure in Excel
 
@@ -72,7 +83,7 @@ Select the header **Edit** to change the **Title**, **Description**, **Status** 
 
 ## Missing a field?
 
-If you find a field is missing while you build a table, add it to your structure file and import it again here. Then go back to your table. Fields always come from the structure, so your tables and structure stay in step.
+If you find a field is missing while you build a table, add it here with **+ Add field**, or add it to your structure file and import it again. Then go back to your table. Fields always come from the structure, so your tables and structure stay in step.
 
 !!! tip
     Keep your structure file open while you build tables, and import again whenever you add a field.
