@@ -87,6 +87,8 @@ nav:
   - Filing Manager:
       - filing-manager/index.md
       - Filing statuses and dispositions: filing-manager/statuses.md
+  - Rating Catalog:
+      - rating-catalog/index.md
   - Intelligence:
       - intelligence/index.md
       - Clause Library: intelligence/clause-library.md
