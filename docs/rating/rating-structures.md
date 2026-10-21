@@ -48,7 +48,7 @@ Use **Multi** for things a policy can have more than one of, such as several loc
 1. In the **Rating structure** panel, select **Edit** to switch to edit mode.
 2. Select the risk item or coverage in the tree, such as **Vehicle**. Its fields appear under **Applicable fields**.
 3. Select **+ Add field**. The **Add new field** form opens.
-4. Enter the **Field name**, for example Territory, and choose the **Data type**, for example Text.
+4. Enter the **Field name**, for example Territory, and choose the **Data type**, for example **Text** (it's **String** in the Excel file).
 5. Under **Type**, tick **Input** if you enter this value to rate, or **Output** if you want to see it in the output.
 6. Add a **Description** and **Rule number** if you like.
 7. Select **Save changes**. The new field appears under **Applicable fields** with its **Input** or **Output** tag.
