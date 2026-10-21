@@ -76,10 +76,12 @@
       ul.appendChild(li);
     });
   }
+  var TIP_SEL = ".md-sidebar--primary a[data-tip], .md-sidebar--primary label.md-nav__link[data-tip], .adaptify-bookmarks a[data-tip]";
+  var tipTimer = 0;
   function titles() {
     document.querySelectorAll(".md-sidebar--primary .md-ellipsis").forEach(function (el) {
       var text = (el.textContent || "").replace(/\s+/g, " ").trim();
-      var link = el.closest("a");
+      var link = el.closest("a") || el.closest("label.md-nav__link");
       if (!link) return;
       link.removeAttribute("title");
       if (text) link.setAttribute("data-tip", text);
@@ -88,6 +90,41 @@
     document.querySelectorAll(".adaptify-bookmarks a, .adaptify-sidenav__tool").forEach(function (el) {
       el.removeAttribute("title");
     });
+  }
+  function floatTip() {
+    var tip = document.getElementById("adaptify-float-tip");
+    if (tip) return tip;
+    tip = document.createElement("div");
+    tip.id = "adaptify-float-tip";
+    tip.className = "adaptify-float-tip";
+    tip.setAttribute("popover", "manual");
+    tip.setAttribute("aria-hidden", "true");
+    document.body.appendChild(tip);
+    return tip;
+  }
+  function hideTip() {
+    clearTimeout(tipTimer);
+    document.querySelectorAll("[data-tip-on]").forEach(function (el) { el.removeAttribute("data-tip-on"); });
+    var tip = document.getElementById("adaptify-float-tip");
+    if (tip && tip.matches(":popover-open")) tip.hidePopover();
+  }
+  function scheduleTip(link) {
+    clearTimeout(tipTimer);
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    var text = link.getAttribute("data-tip");
+    if (!text) return;
+    tipTimer = setTimeout(function () {
+      document.querySelectorAll("[data-tip-on]").forEach(function (el) {
+        if (el !== link) el.removeAttribute("data-tip-on");
+      });
+      link.setAttribute("data-tip-on", "");
+      var tip = floatTip();
+      tip.textContent = text;
+      if (!tip.matches(":popover-open")) tip.showPopover();
+    }, 280);
+  }
+  function tipTarget(node) {
+    return node && node.closest ? node.closest(TIP_SEL) : null;
   }
   function setExpanded(input, open) {
     input.checked = open;
@@ -117,6 +154,7 @@
     }
     paint(homeBtn, homePanel, !marks);
     paint(marksBtn, marksPanel, marks);
+    hideTip();
     document.documentElement.setAttribute("data-sidebar-tab", marks ? "bookmarks" : "home");
     if (persist) {
       try { localStorage.setItem(TAB_KEY, marks ? "bookmarks" : "home"); } catch (e) {}
@@ -203,6 +241,27 @@
     next.focus();
     applyTab(next.id === "adaptify-tab-bookmarks" ? "bookmarks" : "home", true);
   });
+  document.addEventListener("mouseover", function (e) {
+    var link = tipTarget(e.target);
+    if (!link) return;
+    if (e.relatedTarget && link.contains(e.relatedTarget)) return;
+    scheduleTip(link);
+  });
+  document.addEventListener("mouseout", function (e) {
+    var link = tipTarget(e.target);
+    if (!link) return;
+    if (e.relatedTarget && link.contains(e.relatedTarget)) return;
+    hideTip();
+  });
+  document.addEventListener("focusin", function (e) {
+    var link = tipTarget(e.target);
+    if (!link || !link.matches(":focus-visible")) return;
+    scheduleTip(link);
+  });
+  document.addEventListener("focusout", hideTip);
+  document.addEventListener("scroll", function (e) {
+    if (e.target && e.target.closest && e.target.closest(".md-sidebar--primary")) hideTip();
+  }, true);
   if (navigator.share) {
     document.querySelectorAll('[data-share="native"]').forEach(function (n) { n.hidden = false; });
   }

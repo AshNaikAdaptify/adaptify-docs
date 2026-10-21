@@ -95,6 +95,7 @@ nav:
   - Reports:
       - reports/index.md
   - Reference:
+      - reference/index.md
       - Glossary: reference/glossary.md
   - Support:
       - support/index.md
