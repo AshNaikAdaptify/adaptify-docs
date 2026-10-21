@@ -10,7 +10,7 @@ video: ""
 
 # Rating Catalog
 
-The Rating Catalog lists all raters built on top of your products and rating structures. A rater ties a product and one of its states to the rating structure it's built on.
+The Rating Catalog is where approved products become operational. It lists all the raters built on your products and rating structures. Each rater ties a product and one of its jurisdictions to the rating structure it's built on.
 
 Open it from **Rating Catalog** under **Rating** in the left navigation.
 
@@ -26,7 +26,7 @@ Open it from **Rating Catalog** under **Rating** in the left navigation.
 Above the list, use:
 
 - **Insurance type:** **All**, **Personal** or **Commercial**.
-- **Lines of business:** pick one line of business. Each filter has a search box.
+- **Lines of business:** narrow the list to a line of business. Each filter has a search box.
 - **Sort by:** **Alphabetically (A-Z)** or **Alphabetically (Z-A)**.
 
 ![The Insurance type filter open, with All, Personal and Commercial](../assets/rating-catalog/filter-insurance-type.webp)
