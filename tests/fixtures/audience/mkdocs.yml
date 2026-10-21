@@ -1,0 +1,13 @@
+site_name: Audience fixture
+site_url: https://example.invalid/audience-fixture/
+docs_dir: docs
+theme:
+  name: material
+  custom_dir: ../../../overrides
+hooks:
+  - ../../../hooks/audience.py
+extra:
+  feedback_repo: example/fixture
+nav:
+  - Internal: internal.md
+  - External: external.md

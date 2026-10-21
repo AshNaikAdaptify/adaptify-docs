@@ -9,6 +9,9 @@
   {% set up = body_base ~ "**What helped you most?**\n\n**Anything we could still improve?**\n" %}
   {% set down = body_base ~ "**What was missing or unclear?**\n\n**What were you trying to do?**\n\n**Suggested fix (optional):**\n" %}
   {% set problem = body_base ~ "**What is wrong on this page?**\n\n**Where on the page (heading or step)?**\n\n**What did you expect?**\n" %}
+  {#- Empty or unset support_url renders no contact link, same as an empty video. -#}
+  {% set support_href = config.extra.support_url | default('', true) | string | trim %}
+  {% if show_issue_feedback or support_href %}
   <section class="adaptify-support" aria-label="Support">
     {% if show_issue_feedback %}
     <div class="adaptify-feedback">
@@ -21,9 +24,10 @@
       {% if show_issue_feedback %}
       <a target="_blank" rel="noopener" href="https://github.com/{{ repo }}/issues/new?labels=docs&title={{ ('[Docs problem] ' ~ page.title) | urlencode }}&body={{ problem | urlencode }}">Report a problem with this page</a>
       {% endif %}
-      {% if config.extra.support_url %}<a target="_blank" rel="noopener" href="{{ config.extra.support_url }}">Contact Adaptify support</a>{% endif %}
+      {% if support_href %}<a target="_blank" rel="noopener" href="{{ support_href }}">Contact Adaptify support</a>{% endif %}
     </div>
   </section>
+  {% endif %}
   {#- Giscus comments: fill in repo-id / category-id from https://giscus.app and remove this comment wrapper to enable.
   <script src="https://giscus.app/client.js"
     data-repo="AshNaikAdaptify/adaptify-docs" data-repo-id="REPLACE_ME"
