@@ -22,6 +22,8 @@ Use this when you already sell the product in the state, but the state was never
 
 ![The new state, marked pending import, with no releases yet and an upload area](../../assets/product-vault/new-state-pending-import.webp)
 
+Until you publish the new state, the product shows **Pending Import** in the Product Vault's **Product catalog**.
+
 The new state starts empty: no forms are copied from your other states. To start from another state's forms, [start a project to add a state](../../workbench/create-project/new-jurisdiction.md).
 
 !!! note

@@ -15,9 +15,9 @@ Adaptify has five components. Together they cover a product from its current rel
 
 | Component | What it's for | Find it in the left navigation |
 |---|---|---|
-| **Product Vault** | A governed repository for all Products: forms, manuals, rates, rules and supporting materials, state by state. | **Product Vault** |
+| **Product Vault** | A governed repository for all products: forms, manuals, rates, rules and supporting materials, state by state. | **Product Vault** |
 | **Project Workbench** | A collaborative environment for building new products and updating existing products. | **Workbench** |
-| **Filing Manager** | Manage Filings and objection handling all the way to approvals. | **Filing Manager** |
+| **Filing Manager** | Manage filings and objection handling all the way to approvals. | **Filing Manager** |
 | **Rating Sandbox** | Evaluate rates, test options and opportunities to improve your offerings. | **Rating Sandbox**, under **Rating** |
 | **Rating Catalog** | Rating as a Service used for ratings, sandbox, testing and scenario planning. | **Rating Catalog**, under **Rating** |
 
