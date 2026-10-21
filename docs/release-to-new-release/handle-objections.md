@@ -19,10 +19,9 @@ Do this when the state sends an objection letter about a filing. Each objection 
 
 1. On the filing, open the **Objections** tab and choose **+ Add objection**.
 2. Enter the **Objection number** and pick the **Response due** date from the calendar. Drag in the objection letter or choose **Browse files**, then choose **Add objection**. The objection shows **In Progress**.
-3. Check the **Response due** date shown on the objection. If it isn't the date you picked, edit it. `TODO verify` how to edit it.
-4. Open the objection. Its page has **Response items**, **Forms** and **Supporting documents**.
-5. Add a response item: enter a **Description** and choose a **Preparer**, then choose **+ Add item**.
-6. Choose **View response package**, then **Download ZIP**, and send your response to the state. The objection shows **Response Submitted**. For what each objection status means, see [Filing statuses and dispositions](../filing-manager/statuses.md).
+3. Open the objection. Its page has **Response items**, **Forms** and **Supporting documents**.
+4. Add a response item: enter a **Description** and choose a **Preparer**, then choose **+ Add item**.
+5. Choose **View response package**, then **Download ZIP**, and send your response to the state. The objection shows **Response Submitted**. For what each objection status means, see [Filing statuses and dispositions](../filing-manager/statuses.md).
 
 ## Fields
 
@@ -33,11 +32,6 @@ Do this when the state sends an objection letter about a filing. Each objection 
 | Add objection | Objection letter (PDF) | Objection letter.pdf |
 | Response item | **Description** | Provide support for the liability rate change |
 | Response item | **Preparer** | A team member |
-
-`TODO verify`:
-- whether the objection letter is required
-- how a response item's status changes
-- whether you send the response through SERFF
 
 ## Next
 

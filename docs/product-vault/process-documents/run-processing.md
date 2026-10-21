@@ -27,7 +27,7 @@ Processing reads the state's files and pulls the rules out of your manuals. Afte
 
 1. Open the **Rules** tab and expand the tree, for example `1 MANUAL FORMAT` → `1.1 Multistate Rules Manual`.
 2. Check that each manual's headings came through with their numbers and titles in order.
-3. If rules are missing, check that manual's edition and rule setup on the **Manual** tab. `TODO verify` how to reprocess a state.
+3. If rules are missing, check that manual's edition and rule setup on the **Manual** tab.
 
 !!! note "Check the rules, not just the count"
     The **Rules** count can change after you edit metadata, and it doesn't always match the rule tree. Some titles can also come through wrong, for example a page number from a manual's index. These are known issues. Look at the rules themselves before you publish.

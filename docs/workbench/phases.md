@@ -40,7 +40,7 @@ From **Review** on, the person in that phase can also select **Reject**.
 | Rates | **Rate Update** | **Select** → **End** |
 | Rules | **Rule Update** | **Select** → **Review** → **Approve** → **End** |
 
-Your organization admin manages these workflows under **Workflow management** on the Dashboard. `TODO verify` whether your organization's workflows have the same phases.
+Your organization admin manages these workflows under **Workflow management** on the Dashboard. If your organization has changed its workflows, your phases may differ.
 
 ## What happens next
 

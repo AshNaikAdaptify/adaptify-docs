@@ -16,15 +16,9 @@ When the same document is used in more than one place, for example the same form
 
 On a product's **Forms** or **Manual** tab, a shared document shows a **Shared** badge with a count, for example **Shared · 2**.
 
-`TODO verify`:
-- what the count includes (states in this product, or other products too)
-- what opens when you choose the badge
-
 ## Add metadata before you share
 
-Add a document's metadata, such as its form number and edition, before you use it in another state. Once a document is shared, its **Edition** and title can lock.
-
-`TODO verify` how to unlock a shared document's edition or title.
+Add a document's metadata, such as its form number and edition, before you use it in another state. Once a document is shared, its **Edition** and title can lock. If that happens, contact Adaptify support.
 
 ## Update a shared form
 

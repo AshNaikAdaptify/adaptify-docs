@@ -20,8 +20,6 @@ Use this when you already sell the product in the state, but the state was never
 5. Choose the new state under **Jurisdiction**. It's empty and marked **pending import**, with "No releases yet — publish this jurisdiction to create its initial release."
 6. Upload the state's documents on its page, or use **Actions** → **Import forms**, **Import manuals**, **Import rates** or **Import supporting materials**. See [Upload documents for a state](../import-documents.md).
 
-![Edit product dialog with a second state added under Jurisdictions](../../assets/product-vault/edit-product-add-state.webp)
-
 ![The new state, marked pending import, with no releases yet and an upload area](../../assets/product-vault/new-state-pending-import.webp)
 
 The new state starts empty: no forms are copied from your other states. To start from another state's forms, [start a project to add a state](../../workbench/create-project/new-jurisdiction.md).

@@ -23,12 +23,10 @@ A filing's name comes from its project and state, for example "Filing - Personal
 
 | Area | What it shows |
 |---|---|
-| **Path to submission** | A progress tracker for the filing. `TODO verify` what **Show details** lists. |
+| **Path to submission** | A progress tracker for the filing. |
 | **Filing package** | **Not generated** until you select **Generate filing package**, then **Generated**. |
 | **Submission** | **Not started** until you record it with **Manual submission**, then the disposition, such as **Pending** or **Approved**. |
 | **Objections** tab | The state's objections and your responses. Add one with **+ Add objection**. |
-
-`TODO verify` the other tabs and the header fields on the filing page.
 
 ## Where each task starts
 

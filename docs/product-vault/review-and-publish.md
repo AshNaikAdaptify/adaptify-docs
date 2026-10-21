@@ -24,7 +24,7 @@ Publishing a state makes its files the product's **Baseline** release in the Vau
 3. Check the cards for **Manual**, **Rates**, **Forms** and **Supporting Materials**. Each shows **Files uploaded** and **Information pending**. Information pending should be 0.
 4. Choose the **Type of insurance**. Then choose the **Subtype of insurance**, if one applies.
 5. Pick the **New business effective date** and the **Renewal effective date** from the calendar.
-6. Read the note **This action cannot be undone**, then publish. `TODO verify` the publish button's label.
+6. Read the note **This action cannot be undone**, then publish.
 
 The state's release now shows as **Baseline** with the **Current release** chip, and the dates you picked under **New business** and **Renewal**. Repeat for each state.
 

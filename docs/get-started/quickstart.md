@@ -50,8 +50,6 @@ A combined project shows how many child projects are complete, for example **0 o
 
 The filing header shows the **Jurisdiction**, **Filing type**, **Product**, **Target submission**, **Owner** and **Projects**, and a tracker shows how many steps are ready. Under the **Filing** tab, **Filing information** shows the status of the **Filing package** and the **Submission**, followed by the forms and rates in scope. The other tabs are **Objections**, **Notes**, **Team** and **Activity**.
 
-`TODO verify` parts 4 and 5 on Dev. QA confirmed these labels on staging, but Dev has no projects or filings yet.
-
 ## Next
 
 That's the tour. Choose **Dashboard** to go back.

@@ -11,7 +11,7 @@ video: ""
 
 ## Get help with Adaptify
 
-Choose **Contact Adaptify support** at the bottom of any page. `TODO verify` the support channel and its URL.
+Choose **Contact Adaptify support** at the bottom of any page.
 
 To get help faster, include the page you were on, what you were trying to do and what you saw.
 

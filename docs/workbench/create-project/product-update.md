@@ -4,8 +4,7 @@ audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Start a project that updates a product's forms, rates or rules
   - Choose the product and states the update covers
-video: ../../../assets/workbench/start-a-product-update.mp4
-video_poster: ../../../assets/workbench/start-a-product-update-poster.png
+video: ""
 ---
 
 # Start a product update
@@ -15,7 +14,7 @@ Start a product update when a published product needs changes to its forms, rate
 ## Before you start
 
 - The product is published in each state you want to change. See [Review and publish](../../product-vault/review-and-publish.md).
-- Your organization's document storage is set up. Form work needs it. `TODO verify` who sets it up.
+- Your organization's document storage is set up. Form work needs it. If you're not sure, ask your organization admin.
 
 ## Steps
 
@@ -32,7 +31,3 @@ A single project opens at its first phase, **Select**. A combined project opens 
 !!! note "Good to know"
     - The states you choose decide which Vault files the update can use. The states that get filed are worked out later from what you change.
     - Keep the description short. Only the first 100 characters are kept.
-
-`TODO verify`:
-- whether Finalize also asks for an **Owner**
-- the Finalize fields for a combined project, for example a separate workflow per type

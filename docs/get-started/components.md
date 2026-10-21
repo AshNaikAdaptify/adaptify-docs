@@ -26,14 +26,14 @@ Adaptify has five components. Together they cover a product from its current rel
 1. **Start in the Product Vault.** When you publish a product's states, they form its **Baseline** release, marked **Current release**.
 2. **Start a project in the Workbench.** Choose **+ New project**, then **Product update**, and pick **Forms**, **Rates** or **Rules**. Pick more than one to create a combined project with a child project for each type.
 3. **Move the work through phases.** Each child project moves through **Select**, **Review**, **Approve** and **End**. Use **Submit** to hand it to the next person, with notes.
-4. **Complete the project.** Choose **Complete project**. **Admitted** creates a filing for each state in Filing Manager. **Non-admitted** completes the project without a filing. `TODO verify` what Non-admitted does for a product update (QA has verified it only for adding a state, where it published the new state's Baseline).
+4. **Complete the project.** Choose **Complete project**. **Admitted** creates a filing for each state in Filing Manager. **Non-admitted** completes the project without a filing.
 5. **File with the state.** In the filing, generate the **Filing package** and download the ZIP to submit in SERFF. Then record the submission, including **Date submitted** and **SERFF tracking #**.
 6. **Handle objections.** Add each objection the state sends on the filing's **Objections** tab, and track your response there.
 7. **Approve and archive.** Set the **Disposition status** to **Approved**. Then choose **Archive project** and **Create new release**. In the Vault, the new release becomes the **Current release**.
 
-A Release to New Release section, coming later, walks through steps 2–7 in detail.
+[Release to New Release](../release-to-new-release/index.md) walks through steps 2–7 in detail.
 
-**Rating Sandbox and Rating Catalog** sit under **Rating** in the left navigation. `TODO verify` where they fit in a product update.
+**Rating Sandbox** and **Rating Catalog** sit under **Rating** in the left navigation.
 
 ## Next
 

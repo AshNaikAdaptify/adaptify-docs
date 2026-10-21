@@ -15,6 +15,4 @@ When the product's documents are in, your team moves the project through its pha
 
 At **End**, complete the project as **Non-admitted**, with the product's state and effective dates. The product then appears in the **Product Vault** with its first release, **Baseline**, marked **Current release**, with your forms in place. You don't need **Review & publish**.
 
-![A new product in the Product Vault after completing the project: Release Baseline, Current release](../../assets/workbench/new-product-baseline-result.webp)
-
 For filings, see [Complete as Admitted](../complete-project/admitted.md).

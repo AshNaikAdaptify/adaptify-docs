@@ -21,16 +21,12 @@ A rules project changes the rules of a product that's already published in the P
 1. Go to **Workbench**, select **+ New project**, then choose **Product update**. See [Start a product update](create-project/product-update.md).
 2. In **Setup**, under **Project type**, choose **Rules**. Select **Next**.
 3. In **Configuration**, choose the product and the states (jurisdictions) to change.
-4. In **Finalize**, enter a title and description, choose the **Rule Update** workflow, and pick a due date from the calendar. Select **Create**. `TODO verify` the Finalize field labels for a rules project.
-5. In the rules project, add your rule changes. `TODO verify` the name of the add-rule-changes action and its dialog.
+4. In **Finalize**, enter a title, a description and a due date, and check that the workflow is **Rule Update**. Then create the project.
+5. In the rules project, add your rule changes.
 6. Move the project to **End** with **Submit**. The **Rule Update** workflow goes **Select** → **Review** → **Approve** → **End**. See [Move work through phases](phases.md).
 
 !!! note "Uploading a whole manual"
     A manual you upload in a rules project is added as one rule. It isn't split into separate rules, and a rules project can't copy rules from another state.
-
-## Reuse rules from another state
-
-When you add a state, you can reuse the rules already generated for an earlier state: download the generated rules from that state's earlier project and add them to the new state's rules project. `TODO verify` these steps. This path hasn't been tested yet.
 
 ## What happens next
 

@@ -16,7 +16,7 @@ Every form needs a **Form Number** and an **Edition** before you process the sta
 1. Open the product, choose the state under **Jurisdiction**, and open the **Forms** tab.
 2. On a form, select the pencil icon to open its details.
 3. Enter the **Form Number** and **Edition**. These are the only required fields.
-4. Close the dialog to save. `TODO verify` whether forms also have a save button.
+4. Save your changes and close the dialog.
 
 Repeat for each form. A form shows **Metadata incomplete** until its details are in.
 
