@@ -29,9 +29,14 @@
     </div>
     <div class="adaptify-sidenav__panel" role="tabpanel" id="adaptify-panel-home" aria-labelledby="adaptify-tab-home">
       <div class="adaptify-sidenav__tools">
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all">Expand all</button>
-        <span class="adaptify-sidenav__sep" aria-hidden="true">/</span>
-        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none">Collapse all</button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="none" aria-label="Collapse all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true">{% include ".icons/material/file-tree-outline.svg" %}</span>
+          <span class="adaptify-tip" aria-hidden="true">Collapse all sections</span>
+        </button>
+        <button type="button" class="adaptify-sidenav__tool" data-nav-expand="all" aria-label="Expand all sections">
+          <span class="adaptify-sidenav__glyph" aria-hidden="true">{% include ".icons/material/file-tree.svg" %}</span>
+          <span class="adaptify-tip" aria-hidden="true">Expand all sections</span>
+        </button>
       </div>
       <ul class="md-nav__list" data-md-scrollfix>
         {% for nav_item in nav.items %}

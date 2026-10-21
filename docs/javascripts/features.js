@@ -63,11 +63,10 @@
       var x = document.createElement("button");
       a.href = b.url;
       a.textContent = b.title;
-      a.title = b.title;
+      if (b.title) a.setAttribute("data-tip", b.title);
       if (b.url === here) a.className = "is-current";
       x.type = "button";
       x.innerHTML = "&times;";
-      x.title = "Remove bookmark";
       x.setAttribute("aria-label", "Remove " + b.title);
       x.addEventListener("click", function () {
         save(load().filter(function (o) { return o.url !== b.url; }));
@@ -80,13 +79,14 @@
   function titles() {
     document.querySelectorAll(".md-sidebar--primary .md-ellipsis").forEach(function (el) {
       var text = (el.textContent || "").replace(/\s+/g, " ").trim();
-      var link = el.closest("a, label");
-      if (!link || !text) return;
-      var nav = el.closest("nav.md-nav");
-      var collapsed = nav && nav.getAttribute("aria-expanded") === "false";
-      var truncated = el.scrollWidth > el.clientWidth + 1;
-      if (truncated || (collapsed && text.length > 18)) link.title = text;
-      else link.removeAttribute("title");
+      var link = el.closest("a");
+      if (!link) return;
+      link.removeAttribute("title");
+      if (text) link.setAttribute("data-tip", text);
+      else link.removeAttribute("data-tip");
+    });
+    document.querySelectorAll(".adaptify-bookmarks a, .adaptify-sidenav__tool").forEach(function (el) {
+      el.removeAttribute("title");
     });
   }
   function setExpanded(input, open) {
