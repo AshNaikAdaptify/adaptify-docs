@@ -3,7 +3,7 @@ title: Test a rater
 audience: internal  # final audience: external (flips in a release PR)
 goals:
   - Create and run a manual test case
-  - Use the Rate Log to check the math
+  - Use the Rate log to check the math
 video: ""
 ---
 
@@ -15,34 +15,34 @@ Test a rater by entering rating inputs and comparing the premium Adaptify works 
 
 1. Open the rater and choose the **Manual tests** tab.
 2. Select **Create test case**.
-3. In **Add new manual test**, enter the **Test case name** and the **Expected premium**, then select **Add test**. You'll see "Test case added successfully".
+3. In **Add new manual test**, enter the **Test case name** and the **Expected premium**, then select **Add test**.
 
-Each test case in the list has **Export**, **Copy**, **Edit** and **Delete**. You can also **Import** test cases from a JSON file exported from manual tests, or **Export all**.
-
-![The Add new manual test dialog with Test case name and Expected premium](../assets/rating/add-new-manual-test.webp)
+You can also **Import** test cases from a JSON file exported from manual tests, or **Export all**.
 
 ## Run a test
 
-1. Open the test case. You'll see the **Expected Premium** and **Actual Premium**.
-2. On **Rating Inputs**, fill in the inputs. These are the fields marked as rating inputs in the structure, in sequence-number order. Use the **Policy** tree on the left to move between risk items.
-3. Select **Execute Test**. A message tells you whether the test passed, with the premium.
+1. Open the test case. The header shows the **Expected premium** and **Actual premium**, with **Execute test** at the top right.
+2. On **Rating inputs**, use the **Policy** tree to move between risk items and coverages. For a **Multi** item, such as **Vehicle**, add an instance, such as **Vehicle #1**. Use **Delete** to remove one.
+3. Select an item to see its inputs on the right, under **Rating inputs**, and fill them in. These are the fields marked as rating inputs in the structure. Some inputs offer a list of values, such as the territories in your table.
+4. Give every required input a value, then run the test: select **Execute test**.
 
-Give every required input a value, then run the test.
+The banner shows the result, such as **Passed**, and **Actual premium** shows the premium Adaptify worked out.
 
-![A test case with Expected Premium, Actual Premium, Execute Test and the Rating Inputs](../assets/rating/test-case-inputs.webp)
+![A test case's Rating inputs, with Vehicle #1 selected and Territory set to 01](../assets/rating/test-case-inputs.webp)
 
-## Read the Rate Log
+![A passed test: expected premium $100.00 and actual premium $100.00](../assets/rating/test-passed.webp)
 
-Choose **Rate Log** to follow the math step by step. It shows exactly how each premium was worked out.
+## Read the Rate log
 
-- The list on the left shows each calculation, grouped by risk item.
+Choose **Rate log** to follow the math step by step. It shows exactly how each premium was worked out.
+
+- The **Rate log** list on the left shows each calculation, grouped by risk item.
 - For each table lookup, you see the **Input** and **Output**: the field, its path and its value.
-- For each calculation, you see each step with the numbers filled in and its result.
-- For each branch, you see the **IF**, **THEN** and **ELSE**, with the path that was taken.
+- For each calculation, you see the **Variable values**, then each step with the numbers filled in and its result.
 
-Use the filters at the top, such as **Risk Item**, **Coverage** and **Node Type**, to narrow the log.
+Use **Search** and the **Risk item**, **Risk item calculation**, **Coverage** and **Node type** filters to narrow the log. Select **Export PDF** to save it.
 
-![The Rate Log with calculation steps and the numbers used in each one](../assets/rating/rate-log-steps.webp)
+![The Rate log: the table lookup from Territory 01 to a base rate of 100, then BI Premium = (100 × 1) = 100](../assets/rating/rate-log-steps.webp)
 
 ## Test suites
 

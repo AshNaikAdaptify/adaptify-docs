@@ -20,7 +20,7 @@ Select **Manage** next to **Rating tables** to:
 - **Add new table**, **Import table**, **Import tables**, **Import tables from manuals** or **Export all tables**.
 - Under **Actions for selected table**: **Export table**, **Copy table**, **Edit table details** or **Delete table**. Select a table first.
 
-![The Manage menu on the Tables tab](../assets/rating/manage-menu.webp)
+![The Manage menu open on the Tables tab](../assets/rating/manage-menu.webp)
 
 ## Add a table
 
@@ -30,8 +30,6 @@ Select **Manage** next to **Rating tables** to:
 4. Enter the **Rule number**, if there is one.
 5. Select **Add table**. The new, empty table opens.
 
-![The Add new table dialog with Name, Description, Type and Rule number](../assets/rating/add-new-table-live.webp)
-
 ## Set up the columns
 
 1. Select the table, then select **Edit**.
@@ -39,11 +37,11 @@ Select **Manage** next to **Rating tables** to:
 3. Enter the column's **Name**.
 4. Choose the **Column type**: **Input** for a value you look up by, such as Zip code, or **Output** for the value you get back, such as Territory.
 5. For an input column, choose the **Column conditions**: **Equals**, **Greater Than**, **Greater Than or Equal To**, **Less Than**, **Less Than or Equal To** or **Interpolate**.
-6. Under **Select path**, search for and pick the structure field this column maps to. It fills in the **Risk item field**, for example Policy.Vehicle.Territory, and shows its **Data type**.
+6. Under **Select path**, search for and pick the structure field this column maps to. It fills in the **Risk item field**, for example Policy.Vehicle.Territory for an input or Policy.Vehicle.Bodily Injury Liability.Rate for an output, and shows its **Data type**.
 7. Select **Save**. Add the next column the same way.
 8. Select **Save changes** to save the table, or **Cancel** to discard your changes. **Undo** and **Redo** step through your edits.
 
-![The Edit column panel with Name, Column type, Column conditions, Data type, Risk item field and the Select path tree](../assets/rating/edit-column.webp)
+![The Edit column panel for an Output column, with the Risk item field filled in from the Select path tree](../assets/rating/edit-column.webp)
 
 ## Fill in the table
 
@@ -52,6 +50,10 @@ While you edit the table, select a cell to type a value into it, then select **S
 1. Select **Manage** → **Export table**. You get a CSV file with the column headers.
 2. Fill in the rows in Excel and save it as CSV.
 3. Select **Manage** → **Import table**, then choose your CSV file.
+
+The saved table shows its **Description**, **Columns** and **Rows**, with input and output columns marked by different icons.
+
+![A saved rating table with a Territory input column and a Base Rate output column](../assets/rating/rating-table-filled.webp)
 
 ## Add the table to a calculation
 
