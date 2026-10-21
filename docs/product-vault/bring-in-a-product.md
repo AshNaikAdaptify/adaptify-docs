@@ -2,16 +2,14 @@
 title: Bring a product into the Vault
 audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Watch a one-minute demo of bringing a product into the Vault
   - See the four steps from a new product to a published state
   - Gather the files you need before you start
-video: ../../assets/product-import/product-import-demo.mp4
-video_poster: ../../assets/product-import/product-import-demo-poster.png
+video: ""
 ---
 
 # Bring a product into the Vault
 
-Watch this one-minute demo to see how a product goes into the **Product Vault** (the Vault). Then follow the four steps below. You can do them in one sitting.
+Here's how a product goes into the **Product Vault** (the Vault), in four steps. You can do them in one sitting.
 
 ## The four steps
 
