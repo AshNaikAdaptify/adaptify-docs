@@ -8,6 +8,11 @@ video: ""
 
 # Reference
 
-Terms used in Adaptify and in these docs are collected in one place.
+Quick lookups for when you need a definition or a status, not a full guide.
 
-- [Glossary](glossary.md): admitted and non-admitted, filing, release, project, and the other words these guides use.
+| You want to | Go to |
+|---|---|
+| Look up a term, such as admitted, Baseline, combined project or filing package | [Glossary](glossary.md) |
+| Know what a filing, submission or objection status means | [Filing statuses and dispositions](../filing-manager/statuses.md) |
+| See the phases a Workbench project moves through | [Move work through phases](../workbench/phases.md) |
+| See how the parts of Adaptify fit together | [Adaptify at a glance](../get-started/components.md) |

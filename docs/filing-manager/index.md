@@ -38,4 +38,7 @@ A filing's name comes from its project and state, for example "Filing - Personal
 | Record the state's decision | The **Submission** status chip |
 | Close the filing and create the new release | **Archive project** |
 
-The Release to New Release guide covers each task step by step. For what each status means, see [Filing statuses and dispositions](statuses.md).
+!!! note "Each state moves on its own"
+    Each filing is submitted, approved and archived separately. One state can reach its new release while another is still answering an objection.
+
+The [Release to New Release](../release-to-new-release/index.md) guide covers each task step by step. For what each status means, see [Filing statuses and dispositions](statuses.md).
