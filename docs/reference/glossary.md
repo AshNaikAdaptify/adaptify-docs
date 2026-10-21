@@ -27,7 +27,6 @@ Terms you'll see in Adaptify and in these docs, in alphabetical order.
 - **Prior approval:** An approval type you can choose when you complete a project as Admitted and when you record a submission.
 - **Process documents:** The Vault action that turns uploaded files into product assets and extracts rules from your manuals.
 - **Product update:** A Workbench project that updates the forms, rates or rules of a product that's already in the Vault.
-- **Rater:** An item in the Rating Catalog. The catalog lists "all raters built on top of your products and rating structures."
 - **Release:** A version of a product's assets for one state, for example **Baseline**. Use the **Release** picker on a product page to switch versions.
 - **SERFF tracking #:** The tracking number from SERFF that you record on a filing's submission.
 - **Shared:** A badge on a document used in more than one state, for example **Shared · 2**.

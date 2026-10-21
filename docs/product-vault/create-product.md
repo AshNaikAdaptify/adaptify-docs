@@ -41,7 +41,7 @@ Your organization's lists may differ. For example:
 
 ## Add product or a Workbench project?
 
-**Add product** creates the product right away, with no Workbench project and no release yet. Use it when you have the product's documents ready to upload, process and publish yourself. To build a brand-new product with your team, phase by phase, see [Build a new product in Workbench](../workbench/new-product/index.md).
+**Add product** creates the product right away, with no Workbench project and no release yet. Use it when you have the product's documents ready to upload, process and publish yourself.
 
 !!! tip "Made a mistake?"
     While none of the product's states is published, you can still delete it. See [Delete Product](delete-product.md).

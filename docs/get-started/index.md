@@ -3,7 +3,7 @@ title: Get Started
 audience: internal  # final audience: external (flips in a release PR)
 goals:
   - See what each area of Adaptify is for
-  - Find your way from the Dashboard to the Product Vault, Project Workbench, Filing Manager and Rating Sandbox
+  - Find your way from the Dashboard to the Product Vault, Project Workbench and Filing Manager
   - Know where to start your first task
 video: ../assets/get-started/get-started-tour.mp4
 video_poster: ../assets/get-started/get-started-tour-poster.png
@@ -57,12 +57,6 @@ Filing Manager lets you manage filings and objection handling all the way to app
 - Once you have filings, use **Search filings**, **Filters**, **Sort** and **Group** to find one, then open it.
 
 See [Filing Manager overview](../filing-manager/index.md).
-
-## Rating Sandbox
-
-Rating Sandbox is where you evaluate rates, test options and opportunities to improve your offerings. Open it from **Rating Sandbox** under **Rating** in the left navigation.
-
-See [Rating Sandbox overview](../sandbox/index.md).
 
 ## Next
 

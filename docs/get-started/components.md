@@ -2,24 +2,22 @@
 title: Adaptify at a glance
 audience: internal  # final audience: external (flips in a release PR)
 goals:
-  - Learn what each of the five components is for
+  - Learn what each of the three components is for
   - See how a product moves from its current release to the next one
 video: ""
 ---
 
 # Adaptify at a glance
 
-Adaptify has five components. Together they cover a product from its current release, through an update and a state filing, to its next release.
+Adaptify has three components. Together they cover a product from its current release, through an update and a state filing, to its next release.
 
-## The five components
+## The three components
 
 | Component | What it's for | Find it in the left navigation |
 |---|---|---|
 | **Product Vault** | A governed repository for all products: forms, manuals, rates, rules and supporting materials, state by state. | **Product Vault** |
 | **Project Workbench** | A collaborative environment for building new products and updating existing products. | **Workbench** |
 | **Filing Manager** | Manage filings and objection handling all the way to approvals. | **Filing Manager** |
-| **Rating Sandbox** | Evaluate rates, test options and opportunities to improve your offerings. | **Rating Sandbox**, under **Rating** |
-| **Rating Catalog** | Rating as a Service used for ratings, sandbox, testing and scenario planning. | **Rating Catalog**, under **Rating** |
 
 ## How a product moves through Adaptify
 
@@ -32,8 +30,6 @@ Adaptify has five components. Together they cover a product from its current rel
 7. **Approve and archive.** Set the **Disposition status** to **Approved**. Then choose **Archive project** and **Create new release**. In the Vault, the new release becomes the **Current release**.
 
 [Release to New Release](../release-to-new-release/index.md) walks through steps 2–7 in detail.
-
-**Rating Sandbox** and **Rating Catalog** sit under **Rating** in the left navigation.
 
 ## Next
 
