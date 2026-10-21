@@ -1,6 +1,6 @@
 ---
 title: Move work through phases
-audience: internal
+audience: external
 goals:
   - Hand a project to the next phase with an assignee, due date and notes
   - Know which phases forms, rates and rules projects go through

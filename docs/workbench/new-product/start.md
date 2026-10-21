@@ -1,6 +1,6 @@
 ---
 title: Start a new product project
-audience: internal  # final audience: external (flips in a release PR)
+audience: external  # final audience: external (flips in a release PR)
 goals:
   - Open a New product project in Workbench
   - Fill in the project wizard and create the project

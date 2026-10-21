@@ -1,6 +1,6 @@
 ---
 title: Build a new product in Workbench
-audience: internal  # final audience: external (flips in a release PR)
+audience: external  # final audience: external (flips in a release PR)
 goals:
   - Know when to build a new product in Workbench
   - Find the steps from starting the project to the finished product
