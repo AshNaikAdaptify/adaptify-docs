@@ -2401,7 +2401,7 @@
 
 <div class="adaptify-goals">
   <p class="adaptify-goals__title">What this page helps you do</p>
-  <ul><li>Create and run a manual test case</li><li>Use the Rate Log to check the math</li></ul>
+  <ul><li>Create and run a manual test case</li><li>Use the Rate log to check the math</li></ul>
 </div>
 
 
@@ -2434,7 +2434,7 @@
   <a href="#read-the-rate-log" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Read the Rate Log
+        Read the Rate log
       
     </span>
   </a>
@@ -2903,7 +2903,7 @@
 
 <div class="adaptify-goals">
   <p class="adaptify-goals__title">What this page helps you do</p>
-  <ul><li>Create and run a manual test case</li><li>Use the Rate Log to check the math</li></ul>
+  <ul><li>Create and run a manual test case</li><li>Use the Rate log to check the math</li></ul>
 </div>
 
 
@@ -2936,7 +2936,7 @@
   <a href="#read-the-rate-log" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Read the Rate Log
+        Read the Rate log
       
     </span>
   </a>
@@ -2987,28 +2987,28 @@
 <ol>
 <li>Open the rater and choose the <strong>Manual tests</strong> tab.</li>
 <li>Select <strong>Create test case</strong>.</li>
-<li>In <strong>Add new manual test</strong>, enter the <strong>Test case name</strong> and the <strong>Expected premium</strong>, then select <strong>Add test</strong>. You'll see "Test case added successfully".</li>
+<li>In <strong>Add new manual test</strong>, enter the <strong>Test case name</strong> and the <strong>Expected premium</strong>, then select <strong>Add test</strong>.</li>
 </ol>
-<p>Each test case in the list has <strong>Export</strong>, <strong>Copy</strong>, <strong>Edit</strong> and <strong>Delete</strong>. You can also <strong>Import</strong> test cases from a JSON file exported from manual tests, or <strong>Export all</strong>.</p>
-<p><img alt="The Add new manual test dialog with Test case name and Expected premium" src="../../assets/rating/add-new-manual-test.webp" /></p>
+<p>You can also <strong>Import</strong> test cases from a JSON file exported from manual tests, or <strong>Export all</strong>.</p>
 <h2 id="run-a-test">Run a test<a class="headerlink" href="#run-a-test" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Open the test case. You'll see the <strong>Expected Premium</strong> and <strong>Actual Premium</strong>.</li>
-<li>On <strong>Rating Inputs</strong>, fill in the inputs. These are the fields marked as rating inputs in the structure, in sequence-number order. Use the <strong>Policy</strong> tree on the left to move between risk items.</li>
-<li>Select <strong>Execute Test</strong>. A message tells you whether the test passed, with the premium.</li>
+<li>Open the test case. The header shows the <strong>Expected premium</strong> and <strong>Actual premium</strong>, with <strong>Execute test</strong> at the top right.</li>
+<li>On <strong>Rating inputs</strong>, use the <strong>Policy</strong> tree to move between risk items and coverages. For a <strong>Multi</strong> item, such as <strong>Vehicle</strong>, add an instance, such as <strong>Vehicle #1</strong>. Use <strong>Delete</strong> to remove one.</li>
+<li>Select an item to see its inputs on the right, under <strong>Rating inputs</strong>, and fill them in. These are the fields marked as rating inputs in the structure. Some inputs offer a list of values, such as the territories in your table.</li>
+<li>Give every required input a value, then run the test: select <strong>Execute test</strong>.</li>
 </ol>
-<p>Give every required input a value, then run the test.</p>
-<p><img alt="A test case with Expected Premium, Actual Premium, Execute Test and the Rating Inputs" src="../../assets/rating/test-case-inputs.webp" /></p>
-<h2 id="read-the-rate-log">Read the Rate Log<a class="headerlink" href="#read-the-rate-log" title="Permanent link">&para;</a></h2>
-<p>Choose <strong>Rate Log</strong> to follow the math step by step. It shows exactly how each premium was worked out.</p>
+<p>The banner shows the result, such as <strong>Passed</strong>, and <strong>Actual premium</strong> shows the premium Adaptify worked out.</p>
+<p><img alt="A test case's Rating inputs, with Vehicle #1 selected and Territory set to 01" src="../../assets/rating/test-case-inputs.webp" /></p>
+<p><img alt="A passed test: expected premium $100.00 and actual premium $100.00" src="../../assets/rating/test-passed.webp" /></p>
+<h2 id="read-the-rate-log">Read the Rate log<a class="headerlink" href="#read-the-rate-log" title="Permanent link">&para;</a></h2>
+<p>Choose <strong>Rate log</strong> to follow the math step by step. It shows exactly how each premium was worked out.</p>
 <ul>
-<li>The list on the left shows each calculation, grouped by risk item.</li>
+<li>The <strong>Rate log</strong> list on the left shows each calculation, grouped by risk item.</li>
 <li>For each table lookup, you see the <strong>Input</strong> and <strong>Output</strong>: the field, its path and its value.</li>
-<li>For each calculation, you see each step with the numbers filled in and its result.</li>
-<li>For each branch, you see the <strong>IF</strong>, <strong>THEN</strong> and <strong>ELSE</strong>, with the path that was taken.</li>
+<li>For each calculation, you see the <strong>Variable values</strong>, then each step with the numbers filled in and its result.</li>
 </ul>
-<p>Use the filters at the top, such as <strong>Risk Item</strong>, <strong>Coverage</strong> and <strong>Node Type</strong>, to narrow the log.</p>
-<p><img alt="The Rate Log with calculation steps and the numbers used in each one" src="../../assets/rating/rate-log-steps.webp" /></p>
+<p>Use <strong>Search</strong> and the <strong>Risk item</strong>, <strong>Risk item calculation</strong>, <strong>Coverage</strong> and <strong>Node type</strong> filters to narrow the log. Select <strong>Export PDF</strong> to save it.</p>
+<p><img alt="The Rate log: the table lookup from Territory 01 to a base rate of 100, then BI Premium = (100 × 1) = 100" src="../../assets/rating/rate-log-steps.webp" /></p>
 <h2 id="test-suites">Test suites<a class="headerlink" href="#test-suites" title="Permanent link">&para;</a></h2>
 <p>To run a batch of tests from a spreadsheet, use the <strong>Test suites</strong> tab:</p>
 <ol>
@@ -3133,7 +3133,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-  <script id="adaptify-page" type="application/json">{"md": "# Test a rater\n\nTest a rater by entering rating inputs and comparing the premium Adaptify works out with the premium you expect.\n\n## Create a test case\n\n1. Open the rater and choose the **Manual tests** tab.\n2. Select **Create test case**.\n3. In **Add new manual test**, enter the **Test case name** and the **Expected premium**, then select **Add test**. You\u0027ll see \"Test case added successfully\".\n\nEach test case in the list has **Export**, **Copy**, **Edit** and **Delete**. You can also **Import** test cases from a JSON file exported from manual tests, or **Export all**.\n\n![The Add new manual test dialog with Test case name and Expected premium](../assets/rating/add-new-manual-test.webp)\n\n## Run a test\n\n1. Open the test case. You\u0027ll see the **Expected Premium** and **Actual Premium**.\n2. On **Rating Inputs**, fill in the inputs. These are the fields marked as rating inputs in the structure, in sequence-number order. Use the **Policy** tree on the left to move between risk items.\n3. Select **Execute Test**. A message tells you whether the test passed, with the premium.\n\nGive every required input a value, then run the test.\n\n![A test case with Expected Premium, Actual Premium, Execute Test and the Rating Inputs](../assets/rating/test-case-inputs.webp)\n\n## Read the Rate Log\n\nChoose **Rate Log** to follow the math step by step. It shows exactly how each premium was worked out.\n\n- The list on the left shows each calculation, grouped by risk item.\n- For each table lookup, you see the **Input** and **Output**: the field, its path and its value.\n- For each calculation, you see each step with the numbers filled in and its result.\n- For each branch, you see the **IF**, **THEN** and **ELSE**, with the path that was taken.\n\nUse the filters at the top, such as **Risk Item**, **Coverage** and **Node Type**, to narrow the log.\n\n![The Rate Log with calculation steps and the numbers used in each one](../assets/rating/rate-log-steps.webp)\n\n## Test suites\n\nTo run a batch of tests from a spreadsheet, use the **Test suites** tab:\n\n1. Select **Download template** and fill it in.\n2. Select **Create test suite**, enter the **Test suite name**, choose your file (XLSX, XLS or CSV), and select **Create**. You can also use **Import with template**.\n\nEach suite shows how many of its tests passed and failed, its file, when it last ran and its status.\n", "src": "rating/test-a-rater.md", "title": "Test a rater"}</script>
+  <script id="adaptify-page" type="application/json">{"md": "# Test a rater\n\nTest a rater by entering rating inputs and comparing the premium Adaptify works out with the premium you expect.\n\n## Create a test case\n\n1. Open the rater and choose the **Manual tests** tab.\n2. Select **Create test case**.\n3. In **Add new manual test**, enter the **Test case name** and the **Expected premium**, then select **Add test**.\n\nYou can also **Import** test cases from a JSON file exported from manual tests, or **Export all**.\n\n## Run a test\n\n1. Open the test case. The header shows the **Expected premium** and **Actual premium**, with **Execute test** at the top right.\n2. On **Rating inputs**, use the **Policy** tree to move between risk items and coverages. For a **Multi** item, such as **Vehicle**, add an instance, such as **Vehicle #1**. Use **Delete** to remove one.\n3. Select an item to see its inputs on the right, under **Rating inputs**, and fill them in. These are the fields marked as rating inputs in the structure. Some inputs offer a list of values, such as the territories in your table.\n4. Give every required input a value, then run the test: select **Execute test**.\n\nThe banner shows the result, such as **Passed**, and **Actual premium** shows the premium Adaptify worked out.\n\n![A test case\u0027s Rating inputs, with Vehicle #1 selected and Territory set to 01](../assets/rating/test-case-inputs.webp)\n\n![A passed test: expected premium $100.00 and actual premium $100.00](../assets/rating/test-passed.webp)\n\n## Read the Rate log\n\nChoose **Rate log** to follow the math step by step. It shows exactly how each premium was worked out.\n\n- The **Rate log** list on the left shows each calculation, grouped by risk item.\n- For each table lookup, you see the **Input** and **Output**: the field, its path and its value.\n- For each calculation, you see the **Variable values**, then each step with the numbers filled in and its result.\n\nUse **Search** and the **Risk item**, **Risk item calculation**, **Coverage** and **Node type** filters to narrow the log. Select **Export PDF** to save it.\n\n![The Rate log: the table lookup from Territory 01 to a base rate of 100, then BI Premium = (100 \u00d7 1) = 100](../assets/rating/rate-log-steps.webp)\n\n## Test suites\n\nTo run a batch of tests from a spreadsheet, use the **Test suites** tab:\n\n1. Select **Download template** and fill it in.\n2. Select **Create test suite**, enter the **Test suite name**, choose your file (XLSX, XLS or CSV), and select **Create**. You can also use **Import with template**.\n\nEach suite shows how many of its tests passed and failed, its file, when it last ran and its status.\n", "src": "rating/test-a-rater.md", "title": "Test a rater"}</script>
   
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
