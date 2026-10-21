@@ -18,7 +18,7 @@ theme:
       primary: custom
       accent: custom
       toggle: {icon: material/weather-sunny, name: Switch to light mode}
-  features: [navigation.sections, navigation.expand, navigation.indexes, navigation.footer, toc.follow, search.suggest, search.highlight]
+  features: [navigation.indexes, navigation.footer, toc.follow, search.suggest, search.highlight]
 extra_css: [stylesheets/extra.css]
 extra_javascript: [javascripts/features.js]
 extra:
@@ -29,15 +29,16 @@ nav:
   # Section order follows the site plan of record (site-plan-ash-v3.md). Planned sections
   # with no pages yet (added in later phases): Release to New Release (after Project
   # Workbench), Intelligence, Reports, Administration (before Reference).
+  # Each section's index page is the unlabeled first child so the section label is a link.
   - Home: index.md
   - Introduction:
-      - Get Started: get-started/index.md
+      - get-started/index.md
       - Adaptify at a glance: get-started/components.md
       - Sign in and Org Setup: get-started/sign-in.md
       - Your Dashboard: get-started/dashboard.md
       - "Your first 10 minutes: tour a product": get-started/quickstart.md
   - Product Vault:
-      - Product Vault overview: product-vault/index.md
+      - product-vault/index.md
       - Bring a product into the Vault: product-vault/bring-in-a-product.md
       - Before you start: product-vault/before-you-start.md
       - Create a product: product-vault/create-product.md
@@ -57,7 +58,7 @@ nav:
       - Delete a State: product-vault/delete-a-state.md
       - Delete Product: product-vault/delete-product.md
   - Project Workbench:
-      - Workbench overview: workbench/index.md
+      - workbench/index.md
       - Create a project:
           - workbench/create-project/index.md
           - Start a product update: workbench/create-project/product-update.md
@@ -76,7 +77,7 @@ nav:
           - Add the product's documents: workbench/new-product/add-documents.md
           - Finish and publish the new product: workbench/new-product/finish.md
   - Release to New Release:
-      - Overview: release-to-new-release/index.md
+      - release-to-new-release/index.md
       - 1. Update your product in Workbench: release-to-new-release/update-in-workbench.md
       - 2. Create filings from your project: release-to-new-release/create-filings.md
       - 4. File with the state and record the submission: release-to-new-release/submit-to-state.md
@@ -84,20 +85,24 @@ nav:
       - 6. Record approval and archive: release-to-new-release/approve-and-archive.md
       - 7. Check the new release: release-to-new-release/check-new-release.md
   - Filing Manager:
-      - Filing Manager overview: filing-manager/index.md
+      - filing-manager/index.md
       - Filing statuses and dispositions: filing-manager/statuses.md
   - Rating Sandbox:
-      - Rating Sandbox overview: sandbox/index.md
+      - sandbox/index.md
   - Rating Catalog:
-      - Rating Catalog overview: rating-catalog/index.md
+      - rating-catalog/index.md
   - Intelligence:
-      - Clause, statute and objection libraries: intelligence/index.md
+      - intelligence/index.md
       - Clause Library: intelligence/clause-library.md
       - Statute Library: intelligence/statute-library.md
       - Objection Library: intelligence/objection-library.md
   - Reports:
-      - Reports: reports/index.md
+      - reports/index.md
   - Reference:
+      - reference/index.md
       - Glossary: reference/glossary.md
   - Support:
-      - Support: support/index.md
+      - support/index.md
+
+hooks:
+  - hooks/audience.py

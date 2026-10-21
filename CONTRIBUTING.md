@@ -11,7 +11,8 @@
 ## Content
 
 - Markdown only.
-- Every page has `goals:` and `video: ""` in its front matter.
+- Every page has `audience:`, `goals:` and `video: ""` in its front matter.
+- `audience` is `internal` or `external` (any capitalization). It does not default. A missing value fails the build.
 - Mark any step that has not been checked in the product with `TODO verify`.
 - Work and capture screenshots in **Test Tenant** only. Never use a production or Adaptify organization tenant.
 - Plain, positive, task-based language. Use full component names on first mention (Product Vault), then the short form (Vault). Bold exact UI labels.
@@ -23,6 +24,5 @@
 
 ## Build and publish
 
-- No GitHub Actions in v1.
-- Check with `mkdocs build --strict` before opening a PR.
-- Publish by building `main` locally and pushing to the `gh-pages` branch (for example `mkdocs gh-deploy --force`, run from an up-to-date `main`).
+- Pull requests are checked by GitHub Actions: `mkdocs build --strict` for `DOCS_AUDIENCE=internal` and `DOCS_AUDIENCE=external`.
+- A merge to `main` publishes the internal site. Do not run `mkdocs gh-deploy`.

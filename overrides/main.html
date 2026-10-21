@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
   {{ super() }}
+  {#- Public GitHub issues stay off the external build until a feedback API exists. -#}
+  {% set show_issue_feedback = config.extra.get('issue_feedback') %}
   {% set repo = config.extra.feedback_repo %}
   {% set t = "[Docs feedback] " ~ page.title %}
   {% set body_base = "Page: " ~ page.title ~ "\nPath: /" ~ page.url ~ "\nSource: docs/" ~ page.file.src_uri ~ "\n\n" %}
@@ -8,13 +10,17 @@
   {% set down = body_base ~ "**What was missing or unclear?**\n\n**What were you trying to do?**\n\n**Suggested fix (optional):**\n" %}
   {% set problem = body_base ~ "**What is wrong on this page?**\n\n**Where on the page (heading or step)?**\n\n**What did you expect?**\n" %}
   <section class="adaptify-support" aria-label="Support">
+    {% if show_issue_feedback %}
     <div class="adaptify-feedback">
       <p class="adaptify-feedback__q">Was this page helpful?</p>
       <a class="md-button" target="_blank" rel="noopener" href="https://github.com/{{ repo }}/issues/new?labels=docs&title={{ (t ~ ' (helpful)') | urlencode }}&body={{ up | urlencode }}">&#128077; Yes</a>
       <a class="md-button" target="_blank" rel="noopener" href="https://github.com/{{ repo }}/issues/new?labels=docs&title={{ (t ~ ' (needs work)') | urlencode }}&body={{ down | urlencode }}">&#128078; No</a>
     </div>
+    {% endif %}
     <div class="adaptify-support__links">
+      {% if show_issue_feedback %}
       <a target="_blank" rel="noopener" href="https://github.com/{{ repo }}/issues/new?labels=docs&title={{ ('[Docs problem] ' ~ page.title) | urlencode }}&body={{ problem | urlencode }}">Report a problem with this page</a>
+      {% endif %}
       {% if config.extra.support_url %}<a target="_blank" rel="noopener" href="{{ config.extra.support_url }}">Contact Adaptify support</a>{% endif %}
     </div>
   </section>
@@ -26,6 +32,16 @@
     data-emit-metadata="0" data-input-position="top" data-theme="light"
     data-lang="en" crossorigin="anonymous" async></script>
   -#}
+{% endblock %}
+{% block extrahead %}
+  <script>
+  try {
+    var adaptifyTab = localStorage.getItem("adaptify-sidebar-tab");
+    if (adaptifyTab === "home" || adaptifyTab === "bookmarks") {
+      document.documentElement.setAttribute("data-sidebar-tab", adaptifyTab);
+    }
+  } catch (e) {}
+  </script>
 {% endblock %}
 {% block scripts %}
   {% if page and page.file %}<script id="adaptify-page" type="application/json">{{ {"title": page.title, "md": page.markdown, "src": page.file.src_uri} | tojson }}</script>{% endif %}
