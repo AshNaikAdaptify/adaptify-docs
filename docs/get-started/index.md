@@ -5,8 +5,7 @@ goals:
   - See what each area of Adaptify is for
   - Find your way from the Dashboard to the Product Vault, Project Workbench and Filing Manager
   - Know where to start your first task
-video: ../assets/get-started/get-started-tour.mp4
-video_poster: ../assets/get-started/get-started-tour-poster.png
+video: ""
 ---
 
 # Get Started
@@ -14,6 +13,10 @@ video_poster: ../assets/get-started/get-started-tour-poster.png
 Adaptify Insurance Product Lifecycle Management (IPLM) is the operating system for P&C carriers.
 
 Centralize forms, rules, rates, workflows and governance in one easy-to-use platform.
+
+![The Dashboard, with the left navigation, the summary cards, Quick actions, Your tasks, Active projects and Recent activity](../assets/get-started/dashboard-overview.webp)
+
+The Dashboard is where you start. The left navigation lists every area, with **Product Vault**, **Workbench** and **Filing Manager** at the top. Across the top of the page, the summary cards count your active projects, pending tasks, products in the Vault and total assets. **Quick actions** sits below them. **Your tasks** and **Active projects** show what needs you next, and **Recent activity** shows the latest changes across your projects.
 
 Use the left navigation to move between the areas below at any time. It also lists other areas, such as **Reports** and **Bureau Circulars**.
 
