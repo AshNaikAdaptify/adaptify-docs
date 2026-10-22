@@ -1,8 +1,9 @@
 name: CI
 
-# Builds both audiences in strict mode and checks the external output for
-# internal pages, paths and assets. No secrets. pull_request (not
-# pull_request_target), so a fork cannot receive credentials.
+# Builds both audiences in strict mode, checks the external output for
+# internal pages, paths and assets, and checks the redirect map.
+# No secrets. pull_request (not pull_request_target), so a fork cannot
+# receive credentials.
 #
 # Prototype note: bots act on GitHub as Ash (AshNaikAdaptify). This workflow
 # does not use that identity. It only reads the repo with the default token.
@@ -39,6 +40,9 @@ jobs:
 
       - name: Reject inline styles
         run: python scripts/check_inline_styles.py
+
+      - name: Check redirect map
+        run: python scripts/check_redirects.py
 
       - name: Build internal site
         env:

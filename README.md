@@ -43,3 +43,11 @@ Pull requests build both sites in strict mode. A merge to `main` publishes the *
 Do not run `mkdocs gh-deploy`. It force-pushes `gh-pages` and deletes the `pr-preview/` directories that pull request previews use.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how docs cycles work.
+
+## Redirects
+
+Add a redirect in the same PR that removes or moves a page. Put it in `redirect_maps` in `mkdocs.yml`, from the old `docs/` path to the new page. Do not add it while the old file still exists. Assets are not redirected.
+
+`scripts/check_redirects.py` fails if any redirect source still exists under `docs/`, or any target page does not.
+
+The redirects plugin records pages during `on_files`, which runs before the audience hook drops internal pages. A target excluded from the external build does not fail that build. The plugin still writes the redirect HTML, and that HTML points at a page the external site does not publish. The internal build includes the redirect and the page. The same note is under `plugins:` in `mkdocs.yml`.

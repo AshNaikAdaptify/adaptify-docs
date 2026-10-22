@@ -24,5 +24,5 @@
 
 ## Build and publish
 
-- Pull requests are checked by GitHub Actions: `mkdocs build --strict` for `DOCS_AUDIENCE=internal` and `DOCS_AUDIENCE=external`.
+- Pull requests are checked by GitHub Actions: `scripts/check_redirects.py`, then `mkdocs build --strict` for `DOCS_AUDIENCE=internal` and `DOCS_AUDIENCE=external`.
 - A merge to `main` publishes the internal site. Do not run `mkdocs gh-deploy`.
