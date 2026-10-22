@@ -360,6 +360,18 @@ def on_config(config):
     config.extra["docs_audience"] = mode
     # Public GitHub issues stay off the external build until a feedback API exists.
     config.extra["issue_feedback"] = mode == "internal"
+    # The pencil and the header repository link are staff-only. Release
+    # candidates build with DOCS_AUDIENCE=external, so those links must be
+    # absent from customer HTML. Empty strings are falsy for the theme and
+    # for MkDocs' edit URL.
+    if mode == "internal":
+        config.repo_url = "https://github.com/AshNaikAdaptify/adaptify-docs"
+        config.repo_name = "AshNaikAdaptify/adaptify-docs"
+        config.edit_uri = "edit/main/docs/"
+    else:
+        config.repo_url = ""
+        config.repo_name = ""
+        config.edit_uri = ""
     if mode == "external" and config.nav:
         config.nav = prune_nav(config.nav, config.docs_dir)
     return config

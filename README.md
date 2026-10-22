@@ -36,6 +36,8 @@ video: ""   # YouTube, Vimeo, or local .mp4/.webm URL; empty or omitted renders 
 
 Every page needs `audience`. A page without it fails the build. `internal` publishes the staff site (every page). `external` is the customer site: internal pages are left out of the HTML, the search index and the sitemap, and so are `docs/assets/internal/` and assets that only internal pages use.
 
+Internal builds show an **Edit this page** pencil that opens the page on GitHub (`edit/main/docs/`). That link is internal-only by design. External builds, including release candidates, clear `repo_url`, `repo_name`, and `edit_uri`, so the pencil and the header link to the public repository are both absent.
+
 ## Publish
 
 Pull requests build both sites in strict mode. A merge to `main` publishes the **internal** site to GitHub Pages. The repo is public, so that site is publicly readable. Internal docs move to AWS when budget allows.
