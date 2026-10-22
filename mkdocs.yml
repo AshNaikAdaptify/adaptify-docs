@@ -25,6 +25,8 @@ extra:
   feedback_repo: AshNaikAdaptify/adaptify-docs
   # support_url stays unset until Ash confirms the real Adaptify support URL.
   # An empty or missing value renders no contact link.
+  # support_email adds the external "Report a problem" mailto. Empty renders none.
+  support_email: ""
 markdown_extensions: [admonition, attr_list, md_in_html, toc: {permalink: true, title: On this page}]
 plugins:
   - search

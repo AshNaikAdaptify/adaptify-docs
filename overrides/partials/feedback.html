@@ -1,0 +1,24 @@
+{#-
+  Customer vote widget. Internal builds set extra.issue_feedback and keep the
+  GitHub links in main.html, so this partial renders nothing for them.
+  release is not baked in: feedback.js reads /_rc/<n>/ from the live URL.
+-#}
+{% if not config.extra.get("issue_feedback") %}
+  {% set support_email = config.extra.support_email | default("", true) | string | trim %}
+  {% set page_path = "/" ~ page.url if page.url else "/" %}
+  <div class="adaptify-vote" data-adaptify-vote data-endpoint="/_feedback" data-path="{{ page_path }}">
+    <div class="adaptify-vote__controls">
+      <button type="button" class="adaptify-vote__btn" data-vote="up" title="This page was helpful" aria-label="This page was helpful">
+        {% include ".icons/material/thumb-up.svg" %}
+      </button>
+      <button type="button" class="adaptify-vote__btn" data-vote="down" title="This page was not helpful" aria-label="This page was not helpful">
+        {% include ".icons/material/thumb-down.svg" %}
+      </button>
+      {% if support_email %}
+        <a class="adaptify-vote__report" href="mailto:{{ support_email | e }}?subject={{ page_path | urlencode }}">Report a problem</a>
+      {% endif %}
+    </div>
+    <p class="adaptify-vote__thanks">Thanks for the feedback.</p>
+  </div>
+  <script src="{{ 'javascripts/feedback.js' | url }}"></script>
+{% endif %}
