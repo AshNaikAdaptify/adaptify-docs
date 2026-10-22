@@ -29,6 +29,52 @@ hits() {
   fi
 }
 
+html_hits() {
+  # $1 needle, $2 directory. Same as hits(), limited to HTML files.
+  local out
+  out=$(grep -R -I -F -o --include='*.html' "$1" "$2" 2>/dev/null || true)
+  if [[ -z "$out" ]]; then
+    echo 0
+  else
+    printf '%s\n' "$out" | wc -l | tr -d ' '
+  fi
+}
+
+content_pages() {
+  # HTML pages other than the theme 404. A build of only 404.html counts as 0.
+  find "$1" -type f -name '*.html' ! -name '404.html' | wc -l | tr -d ' '
+}
+
+external_docs() {
+  # Markdown pages under docs/ whose front matter audience is external.
+  ROOT_DOCS="$ROOT/docs" python3 - <<'PY'
+import os
+root = os.environ["ROOT_DOCS"]
+count = 0
+for dirpath, _, files in os.walk(root):
+    for name in files:
+        if not name.endswith(".md"):
+            continue
+        path = os.path.join(dirpath, name)
+        with open(path, encoding="utf-8") as handle:
+            text = handle.read()
+        if not text.startswith("---"):
+            continue
+        end = text.find("\n---", 3)
+        if end < 0:
+            continue
+        for line in text[3:end].splitlines():
+            stripped = line.strip()
+            if not stripped.lower().startswith("audience:"):
+                continue
+            value = stripped.split(":", 1)[1].split("#", 1)[0].strip().strip("'\"").lower()
+            if value == "external":
+                count += 1
+            break
+print(count)
+PY
+}
+
 [[ -f "$FIXTURE/mkdocs.yml" ]] || fail "missing fixture config"
 [[ -f "$FIXTURE/docs/internal.md" ]] || fail "missing fixture internal page"
 [[ -f "$FIXTURE/docs/external.md" ]] || fail "missing fixture external page"
@@ -62,12 +108,33 @@ DOCS_AUDIENCE=external "$MKDOCS" build --strict -f "$FIXTURE/mkdocs.yml" -d "$WO
 [[ $(hits "Edit this page on GitHub" "$WORK/site-internal") -ge 1 ]] || fail "internal build missing the edit tooltip"
 [[ $(hits "/edit/" "$WORK/site-external") == 0 ]] || fail "external build contains an edit link"
 [[ $(hits "github.com/AshNaikAdaptify/adaptify-docs" "$WORK/site-external") == 0 ]] || fail "external build links to the public repo"
+[[ $(html_hits 'class="md-source"' "$WORK/site-external") == 0 ]] || fail "external build rendered the repository header link"
+fixture_ext_pages=$(content_pages "$WORK/site-external")
+echo "prove_audience: fixture external non-404 pages: ${fixture_ext_pages}"
+[[ "$fixture_ext_pages" -ge 1 ]] || fail "fixture external build has no content pages"
 
 for site in "$ROOT/site-internal" "$ROOT/site-external"; do
   if [[ -d "$site" ]]; then
     [[ $(hits "ZZ-AUDIENCE-FIXTURE" "$site") == 0 ]] || fail "fixture page leaked into the real site build at $site"
   fi
 done
+
+# The fixture always has an external page. A real site-external directory
+# (CI builds one before this script) may be 404-only when every doc is
+# internal. Print that count. Fail only when docs actually mark pages external
+# and the build still published none of them, and keep the edit/repo checks
+# on whatever HTML was published.
+if [[ -d "$ROOT/site-external" ]]; then
+  real_ext_pages=$(content_pages "$ROOT/site-external")
+  real_ext_sources=$(external_docs)
+  echo "prove_audience: site-external non-404 pages: ${real_ext_pages} (docs with audience external: ${real_ext_sources})"
+  if [[ "$real_ext_sources" -ge 1 && "$real_ext_pages" -lt 1 ]]; then
+    fail "external pages are in docs but site-external has no non-404 HTML"
+  fi
+  [[ $(html_hits "/edit/" "$ROOT/site-external") == 0 ]] || fail "site-external HTML contains an edit link"
+  [[ $(html_hits 'class="md-source"' "$ROOT/site-external") == 0 ]] || fail "site-external HTML contains the repository header link"
+  [[ $(html_hits "github.com/AshNaikAdaptify/adaptify-docs" "$ROOT/site-external") == 0 ]] || fail "site-external HTML links to the public repo"
+fi
 
 write_config() {
   # $1 dest yml, $2 docs_dir, $3 optional extra support_url line
