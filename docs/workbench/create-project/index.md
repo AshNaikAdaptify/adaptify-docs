@@ -1,6 +1,6 @@
 ---
 title: Create a project
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Choose the right kind of Workbench project
 video: ""

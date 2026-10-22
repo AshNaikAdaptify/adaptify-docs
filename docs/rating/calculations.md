@@ -1,6 +1,6 @@
 ---
 title: Calculations
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Open a calculation flow for a risk item or a coverage
   - Build the flow from table and calculation steps

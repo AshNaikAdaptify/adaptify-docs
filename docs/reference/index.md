@@ -1,6 +1,6 @@
 ---
 title: Reference
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Look up a term you see in Adaptify or in these docs
 video: ""

@@ -1,6 +1,6 @@
 ---
 title: File with the state and record the submission
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Download the filing package ZIP and file it in SERFF
   - Record the SERFF tracking number and dates in Adaptify

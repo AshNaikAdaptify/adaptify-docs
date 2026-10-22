@@ -1,6 +1,6 @@
 ---
 title: Create filings from your project
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Complete the Workbench project as Admitted
   - Set the approval type and owner for each state's filing

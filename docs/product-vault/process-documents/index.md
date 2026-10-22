@@ -1,6 +1,6 @@
 ---
 title: Add metadata and process documents
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Know what the Vault needs before it can process a state's files
   - Follow the three steps from uploaded files to extracted rules

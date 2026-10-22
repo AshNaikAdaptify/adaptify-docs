@@ -1,6 +1,6 @@
 ---
 title: Add manual editions and set up rules
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Give each manual its edition
   - Tell the Vault how your manual headings are numbered, before you process

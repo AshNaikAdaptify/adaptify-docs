@@ -1,6 +1,6 @@
 ---
 title: Filing Manager overview
-audience: internal
+audience: external
 goals:
   - Find every filing and see where each one stands
   - Know what's on a filing page and where each task starts

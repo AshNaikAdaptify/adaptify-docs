@@ -1,6 +1,6 @@
 ---
 title: Start a project to add a state
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Start a Workbench project that adds a state to an existing product
   - Choose the source state and the new state

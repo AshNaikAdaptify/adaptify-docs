@@ -1,6 +1,6 @@
 ---
 title: Delete Product
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Remove a product you created by mistake
   - Know when a product can and can't be deleted

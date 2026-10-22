@@ -1,6 +1,6 @@
 ---
 title: Check the new release in the Product Vault
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Confirm each state shows its new release as current
   - See which forms changed in the new release

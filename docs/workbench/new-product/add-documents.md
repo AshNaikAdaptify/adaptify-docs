@@ -1,6 +1,6 @@
 ---
 title: Add the product's documents
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Add forms to a new product project
   - Know where the product's rates and rules go

@@ -1,6 +1,6 @@
 ---
 title: Rating Administration and rating structures
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Create a rating structure
   - Build the structure's risk items and fields, in the app or in Excel

@@ -1,6 +1,6 @@
 ---
 title: Shared assets across states
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Recognise a document that's shared
   - Avoid locking a shared document before its metadata is in

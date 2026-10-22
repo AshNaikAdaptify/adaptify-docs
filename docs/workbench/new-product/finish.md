@@ -1,6 +1,6 @@
 ---
 title: Finish and publish the new product
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Move the new product project to End
   - Complete it so the product lands in the Product Vault with its first release

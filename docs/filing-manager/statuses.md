@@ -1,6 +1,6 @@
 ---
 title: Filing statuses and dispositions
-audience: internal
+audience: external
 goals:
   - Know what each filing package, submission and objection status means
   - Know which disposition to record when the state decides

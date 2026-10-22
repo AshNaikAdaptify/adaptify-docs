@@ -1,6 +1,6 @@
 ---
 title: Before you start
-audience: internal
+audience: external
 goals:
   - Sign in and confirm your organization
   - Set up the Group and Underwriting Company lists that new products need

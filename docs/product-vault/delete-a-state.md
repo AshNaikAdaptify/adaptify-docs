@@ -1,6 +1,6 @@
 ---
 title: Delete a State
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Remove a state you added to a product by mistake
   - Know what deleting a state removes and what it keeps

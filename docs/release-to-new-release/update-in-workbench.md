@@ -1,6 +1,6 @@
 ---
 title: Update your product in Workbench
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Start one project that updates forms and rates for several states
   - Enter the new editions and move the work to End

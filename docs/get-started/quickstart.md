@@ -1,6 +1,6 @@
 ---
 title: "Your first 10 minutes: tour a product"
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Open a product and see its current release
   - Find a product's forms, manuals, rates and rules

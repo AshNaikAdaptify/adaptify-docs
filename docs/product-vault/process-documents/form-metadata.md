@@ -1,6 +1,6 @@
 ---
 title: Add form numbers and editions
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Add the form number and edition for each form
   - Read both from the form's file name

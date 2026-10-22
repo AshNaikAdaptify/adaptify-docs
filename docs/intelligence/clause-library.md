@@ -1,6 +1,6 @@
 ---
 title: Clause Library
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Find a clause by name, text or line of business
   - Start clause extraction from your published forms

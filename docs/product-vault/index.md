@@ -1,6 +1,6 @@
 ---
 title: Product Vault overview
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Find any product in the Product Vault and open one of its states
   - Know what a product is made of and where each kind of file lives

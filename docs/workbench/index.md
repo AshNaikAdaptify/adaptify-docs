@@ -1,6 +1,6 @@
 ---
 title: Workbench overview
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Know what the Workbench is for
   - Find your projects and start a new one

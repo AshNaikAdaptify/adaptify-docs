@@ -1,6 +1,6 @@
 ---
 title: Test a rater
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Create and run a manual test case
   - Use the Rate log to check the math

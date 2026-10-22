@@ -1,6 +1,6 @@
 ---
 title: Sign in and Org Setup
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Sign in to Adaptify with your email and password
   - Confirm you're working in your organization

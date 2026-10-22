@@ -1,6 +1,6 @@
 ---
 title: Add a state with Edit product
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Add a new state to a product you already have
   - Get the new state ready for its documents

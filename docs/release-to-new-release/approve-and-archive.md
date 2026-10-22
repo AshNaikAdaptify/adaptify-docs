@@ -1,6 +1,6 @@
 ---
 title: Record approval and archive to a new release
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Record the state's approval on the filing
   - Archive the filing so the state gets a new release in the Product Vault

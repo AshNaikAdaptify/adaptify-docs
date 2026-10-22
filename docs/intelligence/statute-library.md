@@ -1,6 +1,6 @@
 ---
 title: Statute Library
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Look up the statutes that apply to your products, by state
   - Find statutes that need review

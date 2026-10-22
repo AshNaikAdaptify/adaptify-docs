@@ -1,6 +1,6 @@
 ---
 title: "Complete a project: Admitted or Non-admitted"
-audience: internal
+audience: external
 goals:
   - Choose between Admitted and Non-admitted when you complete a project
   - Find the steps for each option

@@ -1,6 +1,6 @@
 ---
 title: Release to New Release
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - See the whole path from a product's current release to its next one
   - Find the part you need, from Workbench to Filing Manager and back to the Product Vault

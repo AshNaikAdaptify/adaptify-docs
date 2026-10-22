@@ -1,6 +1,6 @@
 ---
 title: Update rates
-audience: internal  # final audience: external (flips in a release PR)
+audience: external
 goals:
   - Give a rate file a new edition in a Workbench project
 video: ""
