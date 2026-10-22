@@ -35,6 +35,10 @@ See [Your Dashboard](dashboard.md).
 
 Product Vault is a governed repository for all products. It's the single source of truth for your product assets.
 
+![Product Vault, with the Products, Lines of business and Jurisdictions cards above the Product catalog](../assets/get-started/product-vault-landing.webp)
+
+Product Vault opens with three summary cards for your products, lines of business and jurisdictions. Below them, the **Product catalog** lists each product with the states it covers and when it was last updated, its **Status** (such as **Published**, **Processed** or **Pending import**) and its **Active work**. **Search products**, **Filters**, **Sort** and **Add product** sit at the top right of the catalog.
+
 - The summary cards count your **Products**, **Lines of business** and **Jurisdictions**.
 - The **Product catalog** lists each product with its **Status** and **Active work**. Use **Search products**, **Filters** and **Sort** to find one, then open it to see its states and releases.
 - Choose **Add product** to add a product to the Vault.
@@ -44,6 +48,10 @@ See [Product Vault overview](../product-vault/index.md).
 ## Project Workbench
 
 Project Workbench is a collaborative environment for building new products and updating existing products.
+
+![Project Workbench, with the four work-type cards above the Project portfolio](../assets/get-started/project-workbench-landing.webp)
+
+Project Workbench opens with four cards for the kinds of work: **Form updates**, **Rate updates**, **Rules updates** and **New product**. Below them, the **Project portfolio** lists each project with its **Status**, **Jurisdiction**, **Product**, **Due date** and **Current assignee**. Use **Type** to filter the list, and choose **+ New project** to start one.
 
 - The cards at the top cover the kinds of work: **Form updates**, **Rate updates**, **Rules updates** and **New product**.
 - Your projects are listed in the **Project portfolio**. Use **Type** to filter them, or turn on **Show Archived Projects Only**.
@@ -55,6 +63,10 @@ See [Workbench overview](../workbench/index.md).
 ## Filing Manager
 
 Filing Manager lets you manage filings and objection handling all the way to approvals.
+
+![Filing Manager, with the Filings list and its search, filter, sort and group tools](../assets/get-started/filing-manager-landing.webp)
+
+Filing Manager lists your filings under **Filings**. Each row shows the filing, its state and type, the **Source project** it came from, its **Owner** and when it was **Last updated**. Use **Search filings**, **Filters**, **Sort** and **Group** above the list to find one, then open it.
 
 - **Filings** shows each filing as a card with its state and status.
 - Once you have filings, use **Search filings**, **Filters**, **Sort** and **Group** to find one, then open it.
