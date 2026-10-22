@@ -22,16 +22,20 @@
       root.classList.add("is-busy");
       fetch(endpoint, {
         method: "POST",
-        credentials: "omit",
+        redirect: "manual",
+        credentials: "same-origin",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ path: path, release: releaseFromPath(), vote: vote })
       }).then(function (response) {
-        if (!response.ok) {
-          throw new Error("feedback failed");
+        // 204 is the only stored vote. A missing cookie is HTTP 200 (the
+        // sign-in page); 400 and 405 are errors. redirect:manual keeps a
+        // redirect from turning into that 200.
+        if (response.status !== 204) {
+          throw new Error("feedback not stored");
         }
         root.classList.add("is-sent");
       }).catch(function () {
-        /* /_feedback may not be deployed yet. Leave the buttons in place. */
+        /* Leave the buttons in place. No error is shown. */
       }).then(function () {
         root.classList.remove("is-busy");
       });
