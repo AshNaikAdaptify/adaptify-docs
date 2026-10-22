@@ -1,0 +1,9 @@
+{#-
+  Edit this page. Renders only when the audience hook set page.edit_url
+  (internal builds). External builds leave it empty.
+-#}
+{% if page.edit_url %}
+  <a href="{{ page.edit_url }}" title="Edit this page on GitHub" aria-label="Edit this page on GitHub" class="md-content__button md-icon" rel="edit">
+    {% include ".icons/material/pencil.svg" %}
+  </a>
+{% endif %}

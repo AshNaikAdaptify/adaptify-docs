@@ -58,6 +58,10 @@ DOCS_AUDIENCE=external "$MKDOCS" build --strict -f "$FIXTURE/mkdocs.yml" -d "$WO
 [[ $(hits "issues/new" "$WORK/site-internal") -ge 1 ]] || fail "internal build hid the issue feedback link"
 [[ $(hits "Contact Adaptify support" "$WORK/site-internal") == 0 ]] || fail "unset support_url rendered a contact link"
 [[ $(hits "Contact Adaptify support" "$WORK/site-external") == 0 ]] || fail "unset support_url rendered a contact link"
+[[ $(hits "/edit/main/docs/" "$WORK/site-internal") -ge 1 ]] || fail "internal build missing the edit link"
+[[ $(hits "Edit this page on GitHub" "$WORK/site-internal") -ge 1 ]] || fail "internal build missing the edit tooltip"
+[[ $(hits "/edit/" "$WORK/site-external") == 0 ]] || fail "external build contains an edit link"
+[[ $(hits "github.com/AshNaikAdaptify/adaptify-docs" "$WORK/site-external") == 0 ]] || fail "external build links to the public repo"
 
 for site in "$ROOT/site-internal" "$ROOT/site-external"; do
   if [[ -d "$site" ]]; then

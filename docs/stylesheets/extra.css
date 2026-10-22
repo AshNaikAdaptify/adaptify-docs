@@ -174,3 +174,10 @@ html[data-sidebar-tab=bookmarks] #adaptify-panel-bookmarks{display:block}
 .adaptify-support__links a{color:var(--md-default-fg-color--light)!important;text-decoration:underline;text-decoration-color:var(--ad-border);text-underline-offset:3px}
 .adaptify-support__links a:hover{color:var(--ad-cyan)!important}
 .md-nav--primary .adaptify-actions{display:none}
+/* Edit-this-page pencil. Internal builds only; the hook leaves edit_url empty externally. */
+.md-content__button[rel=edit]{float:right;display:inline-flex;align-items:center;justify-content:center;width:1.65rem;height:1.65rem;margin:.15rem 0 .15rem .4rem;padding:0;border-radius:.3rem;color:var(--md-default-fg-color--light)}
+.md-content__button[rel=edit] svg{display:block;width:.9rem;height:.9rem;fill:currentColor}
+.md-content__button[rel=edit]:hover{color:var(--md-default-fg-color);background:#e3e8ef}
+[data-md-color-scheme=slate] .md-content__button[rel=edit]:hover{background:#243044}
+.md-content__button[rel=edit]:focus-visible{outline:2px solid #0091b5;outline-offset:2px}
+[data-md-color-scheme=slate] .md-content__button[rel=edit]:focus-visible{outline-color:#52d4ff}
