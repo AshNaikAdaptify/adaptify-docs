@@ -181,3 +181,18 @@ html[data-sidebar-tab=bookmarks] #adaptify-panel-bookmarks{display:block}
 [data-md-color-scheme=slate] .md-content__button[rel=edit]:hover{background:#243044}
 .md-content__button[rel=edit]:focus-visible{outline:2px solid #0091b5;outline-offset:2px}
 [data-md-color-scheme=slate] .md-content__button[rel=edit]:focus-visible{outline-color:#52d4ff}
+/* External vote widget. Internal pages do not render .adaptify-vote. */
+.adaptify-vote{margin-top:1.6rem;padding-top:1rem;border-top:1px solid var(--ad-border)}
+.adaptify-vote__controls{display:flex;align-items:center;gap:.35rem}
+.adaptify-vote.is-sent .adaptify-vote__controls{display:none}
+.adaptify-vote__thanks{display:none;margin:0;font-size:.72rem;color:var(--md-default-fg-color--light)}
+.adaptify-vote.is-sent .adaptify-vote__thanks{display:block}
+.adaptify-vote.is-busy .adaptify-vote__btn{opacity:.55}
+.adaptify-vote__btn{display:inline-flex;align-items:center;justify-content:center;width:1.65rem;height:1.65rem;margin:0;padding:0;border:1px solid var(--ad-border);border-radius:.3rem;background:transparent;color:var(--md-default-fg-color--light);cursor:pointer}
+.adaptify-vote__btn svg{display:block;width:.9rem;height:.9rem;fill:currentColor}
+.adaptify-vote__btn:hover{color:var(--md-default-fg-color);background:#e3e8ef}
+[data-md-color-scheme=slate] .adaptify-vote__btn:hover{background:#243044}
+.adaptify-vote__btn:focus-visible{outline:2px solid #0091b5;outline-offset:2px}
+[data-md-color-scheme=slate] .adaptify-vote__btn:focus-visible{outline-color:#52d4ff}
+.adaptify-vote__report{margin-left:.35rem;font-size:.68rem;color:var(--md-default-fg-color--light)}
+.adaptify-vote__report:hover{color:var(--ad-cyan)}

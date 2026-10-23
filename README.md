@@ -38,6 +38,8 @@ Every page needs `audience`. A page without it fails the build. `internal` publi
 
 Internal builds show an **Edit this page** pencil that opens the page on GitHub (`edit/main/docs/`). That link is internal-only by design. External builds, including release candidates, clear `repo_url`, `repo_name`, and `edit_uri`, so the pencil and the header link to the public repository are both absent.
 
+External pages show thumbs for **This page was helpful** and **This page was not helpful**. A click sends `{path, release, vote}` to `/_feedback` on the same origin, with no personal data. `release` is the number in a live `/_rc/<n>/` path, or `""` when that prefix is absent. A failed request, including before that endpoint is deployed, leaves the buttons in place and shows no error. `extra.support_email` is empty by default; set it to add a **Report a problem** mailto whose subject is the page path. Internal pages keep the GitHub issue feedback.
+
 ## Publish
 
 Pull requests build both sites in strict mode. A merge to `main` publishes the **internal** site to GitHub Pages. The repo is public, so that site is publicly readable. Internal docs move to AWS when budget allows.

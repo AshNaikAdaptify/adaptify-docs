@@ -102,6 +102,12 @@ DOCS_AUDIENCE=external "$MKDOCS" build --strict -f "$FIXTURE/mkdocs.yml" -d "$WO
 [[ $(hits "internal/" "$WORK/site-external/external/index.html") == 0 ]] || fail "external page still links to the internal fixture page"
 [[ $(hits "issues/new" "$WORK/site-external") == 0 ]] || fail "public issue link leaked into the external build"
 [[ $(hits "issues/new" "$WORK/site-internal") -ge 1 ]] || fail "internal build hid the issue feedback link"
+[[ $(html_hits "This page was helpful" "$WORK/site-external") -ge 1 ]] || fail "external build missing the helpful vote"
+[[ $(html_hits "This page was not helpful" "$WORK/site-external") -ge 1 ]] || fail "external build missing the not-helpful vote"
+[[ $(html_hits 'data-endpoint="/_feedback"' "$WORK/site-external") -ge 1 ]] || fail "external build does not post to /_feedback"
+[[ $(html_hits "mailto:" "$WORK/site-external") == 0 ]] || fail "unset support_email rendered a mailto"
+[[ $(html_hits "This page was helpful" "$WORK/site-internal") == 0 ]] || fail "internal build showed the customer vote widget"
+[[ $(html_hits "/_feedback" "$WORK/site-internal") == 0 ]] || fail "internal build includes the customer feedback endpoint"
 [[ $(hits "Contact Adaptify support" "$WORK/site-internal") == 0 ]] || fail "unset support_url rendered a contact link"
 [[ $(hits "Contact Adaptify support" "$WORK/site-external") == 0 ]] || fail "unset support_url rendered a contact link"
 [[ $(hits "/edit/main/docs/" "$WORK/site-internal") -ge 1 ]] || fail "internal build missing the edit link"
@@ -220,5 +226,20 @@ write_config "$WORK/set-support.yml" "$FIXTURE/docs" "  support_url: https://exa
 DOCS_AUDIENCE=internal "$MKDOCS" build --strict -f "$WORK/set-support.yml" -d "$WORK/site-set-support"
 [[ $(hits "https://example.invalid/help" "$WORK/site-set-support") -ge 1 ]] || fail "set support_url did not render"
 [[ $(hits "Contact Adaptify support" "$WORK/site-set-support") -ge 1 ]] || fail "set support_url did not render the contact link"
+
+# support_email is the external mailto only. Blank and unset render no link.
+write_config "$WORK/blank-email.yml" "$FIXTURE/docs" '  support_email: "   "'
+DOCS_AUDIENCE=external "$MKDOCS" build --strict -f "$WORK/blank-email.yml" -d "$WORK/site-blank-email"
+[[ $(html_hits "mailto:" "$WORK/site-blank-email") == 0 ]] || fail "blank support_email rendered a mailto"
+[[ $(html_hits 'data-endpoint="/_feedback"' "$WORK/site-blank-email") -ge 1 ]] || fail "blank support_email dropped the vote widget"
+
+write_config "$WORK/set-email.yml" "$FIXTURE/docs" "  support_email: docs@example.invalid"
+DOCS_AUDIENCE=external "$MKDOCS" build --strict -f "$WORK/set-email.yml" -d "$WORK/site-set-email"
+[[ $(html_hits "mailto:docs@example.invalid" "$WORK/site-set-email") -ge 1 ]] || fail "support_email did not render a mailto"
+[[ $(html_hits "subject=/external/" "$WORK/site-set-email") -ge 1 ]] || fail "mailto subject is missing the page path"
+[[ $(html_hits "Report a problem" "$WORK/site-set-email") -ge 1 ]] || fail "support_email did not render the report link"
+DOCS_AUDIENCE=internal "$MKDOCS" build --strict -f "$WORK/set-email.yml" -d "$WORK/site-email-internal"
+[[ $(html_hits "mailto:" "$WORK/site-email-internal") == 0 ]] || fail "internal build rendered the customer mailto"
+[[ $(hits "issues/new" "$WORK/site-email-internal") -ge 1 ]] || fail "internal build lost GitHub feedback when support_email is set"
 
 echo "prove_audience: PASS"
