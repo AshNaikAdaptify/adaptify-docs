@@ -137,6 +137,13 @@ html[data-sidebar-tab=bookmarks] #adaptify-panel-bookmarks{display:block}
 .adaptify-feedback__note{flex-basis:100%;margin:.2rem 0 0!important;font-size:.62rem;color:var(--md-default-fg-color--lighter)}
 .md-footer,.md-footer-meta{background:var(--md-default-bg-color);color:var(--md-default-fg-color--lighter);border-top:1px solid var(--ad-border)}
 .md-footer-meta__inner,.md-copyright{color:var(--md-default-fg-color--lighter)}
+/* Material sets html .md-footer-meta.md-typeset a to --md-footer-fg-color--light
+   (#fff at 70%) for a dark footer bar. This footer uses the page background,
+   so that link is white on white in the light scheme. */
+html .md-footer-meta.md-typeset .md-copyright a{color:var(--md-typeset-a-color)}
+html .md-footer-meta.md-typeset .md-copyright a:hover,html .md-footer-meta.md-typeset .md-copyright a:focus{color:var(--md-accent-fg-color)}
+.md-copyright a:focus-visible{outline:2px solid #0091b5;outline-offset:2px}
+[data-md-color-scheme=slate] .md-copyright a:focus-visible{outline-color:#52d4ff}
 
 /* Bookmark + share */
 .adaptify-actions{position:relative;display:flex;flex-wrap:wrap;gap:.35rem;margin:1.6rem .6rem 0}
@@ -183,7 +190,8 @@ html[data-sidebar-tab=bookmarks] #adaptify-panel-bookmarks{display:block}
 [data-md-color-scheme=slate] .md-content__button[rel=edit]:focus-visible{outline-color:#52d4ff}
 /* External vote widget. Internal pages do not render .adaptify-vote. */
 .adaptify-vote{margin-top:1.6rem;padding-top:1rem;border-top:1px solid var(--ad-border)}
-.adaptify-vote__controls{display:flex;align-items:center;gap:.35rem}
+.adaptify-vote__controls{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
+.adaptify-vote .adaptify-feedback__q{white-space:nowrap}
 .adaptify-vote.is-sent .adaptify-vote__controls{display:none}
 .adaptify-vote__thanks{display:none;margin:0;font-size:.72rem;color:var(--md-default-fg-color--light)}
 .adaptify-vote.is-sent .adaptify-vote__thanks{display:block}
