@@ -8,6 +8,7 @@
   {% set page_path = "/" ~ page.url if page.url else "/" %}
   <div class="adaptify-vote" data-adaptify-vote data-endpoint="/_feedback" data-path="{{ page_path }}">
     <div class="adaptify-vote__controls">
+      <p class="adaptify-feedback__q">Was this page helpful?</p>
       <button type="button" class="adaptify-vote__btn" data-vote="up" title="This page was helpful" aria-label="This page was helpful">
         {% include ".icons/material/thumb-up.svg" %}
       </button>
