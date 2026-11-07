@@ -5,12 +5,14 @@
   --md-primary-fg-color:#ffffff;--md-primary-bg-color:#111827;--md-primary-bg-color--light:#3d3d3d;
   --md-accent-fg-color:#00b5e2;--md-typeset-a-color:#0091b5;
   --md-default-bg-color:#ffffff;--md-default-fg-color:#111827;--md-default-fg-color--light:#3d3d3d;--md-default-fg-color--lighter:#8a8f98;--md-default-fg-color--lightest:#e6e7ea;
+  --md-footer-fg-color:#111827;--md-footer-fg-color--light:#006f8c;--md-footer-fg-color--lighter:#5c6570;
   --ad-border:#e6e7ea;--ad-subtle:#f7f8fa;--ad-side:#fafafa}
 [data-md-color-scheme=slate]{
   --md-primary-fg-color:#0b0f19;--md-primary-bg-color:#f2f2f2;--md-primary-bg-color--light:#b8bcc4;
   --md-accent-fg-color:#52d4ff;--md-typeset-a-color:#52d4ff;
   --md-default-bg-color:#0b0f19;--md-default-fg-color:#e8eaee;--md-default-fg-color--light:#b8bcc4;--md-default-fg-color--lighter:#7d8390;--md-default-fg-color--lightest:#222838;
   --md-code-bg-color:#151b28;--md-hue:222;
+  --md-footer-fg-color:#e8eaee;--md-footer-fg-color--light:#52d4ff;--md-footer-fg-color--lighter:#b8bcc4;
   --ad-border:#222838;--ad-subtle:#121827;--ad-side:#0e1320}
 [data-md-color-scheme=slate] .md-header__button.md-logo img{content:url(../assets/adaptify-logo-dark.png)}
 body{-webkit-font-smoothing:antialiased}
@@ -137,11 +139,17 @@ html[data-sidebar-tab=bookmarks] #adaptify-panel-bookmarks{display:block}
 .adaptify-feedback__note{flex-basis:100%;margin:.2rem 0 0!important;font-size:.62rem;color:var(--md-default-fg-color--lighter)}
 .md-footer,.md-footer-meta{background:var(--md-default-bg-color);color:var(--md-default-fg-color--lighter);border-top:1px solid var(--ad-border)}
 .md-footer-meta__inner,.md-copyright{color:var(--md-default-fg-color--lighter)}
-/* Material sets html .md-footer-meta.md-typeset a to --md-footer-fg-color--light
-   (#fff at 70%) for a dark footer bar. This footer uses the page background,
-   so that link is white on white in the light scheme. */
-html .md-footer-meta.md-typeset .md-copyright a{color:var(--md-typeset-a-color)}
-html .md-footer-meta.md-typeset .md-copyright a:hover,html .md-footer-meta.md-typeset .md-copyright a:focus{color:var(--md-accent-fg-color)}
+/* Material paints html .md-footer-meta.md-typeset a with --md-footer-fg-color--light
+   (#ffffffb3) for a dark bar. This footer is the page background, so that token
+   is white on white. #67 only recolored .md-copyright a via --md-typeset-a-color,
+   which the live light footer still does not use. Repeat the tokens on the footer
+   (closer than :root) and set a literal color on Material's own selector. */
+[data-md-color-scheme=default] .md-footer,[data-md-color-scheme=default] .md-footer-meta{--md-footer-fg-color:#111827;--md-footer-fg-color--light:#006f8c;--md-footer-fg-color--lighter:#5c6570}
+[data-md-color-scheme=slate] .md-footer,[data-md-color-scheme=slate] .md-footer-meta{--md-footer-fg-color:#e8eaee;--md-footer-fg-color--light:#52d4ff;--md-footer-fg-color--lighter:#b8bcc4}
+html .md-footer-meta.md-typeset a{color:#006f8c}
+[data-md-color-scheme=slate] .md-footer-meta.md-typeset a{color:#52d4ff}
+html .md-footer-meta.md-typeset a:hover,html .md-footer-meta.md-typeset a:focus{color:#0091b5}
+[data-md-color-scheme=slate] .md-footer-meta.md-typeset a:hover,[data-md-color-scheme=slate] .md-footer-meta.md-typeset a:focus{color:#e8eaee}
 .md-copyright a:focus-visible{outline:2px solid #0091b5;outline-offset:2px}
 [data-md-color-scheme=slate] .md-copyright a:focus-visible{outline-color:#52d4ff}
 
